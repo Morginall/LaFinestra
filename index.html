@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230106020233">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230109225611">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -18,9 +18,18 @@
 			<div class="header__container">
 				<div class="header__body">
 					<div class="header__logo"><picture><source srcset="img/logo2.webp" type="image/webp"><img src="img/logo2.png" alt=""></picture></div>
+					<a data-popup="#close-popup" href="#" class="header__close-day">Закрити зміну</a>
 				</div>
 			</div>
 		</header>
+		<div id="close-popup" aria-hidden="true" class="popup popup-close-day">
+			<div class="popup__wrapper">
+				<div class="popup__content">
+					<button id="closeDay" data-close type="button" class="popup__close">Так, закрити</button>
+					<button data-close type="button" class="popup__close">Ще ні</button>
+				</div>
+			</div>
+		</div>
 		<main class="page">
 			<section class="page__money money">
 				<div class="money__container">
@@ -317,7 +326,7 @@
 			</div>
 		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20230106020233"></script>
+	<script src="js/app.min.js?_v=20230109225611"></script>
 </body>
 
 </html>
