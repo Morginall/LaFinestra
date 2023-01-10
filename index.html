@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230110175840">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230110191526">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -35,7 +35,7 @@
 				<div class="money__container">
 					<div class="money__body">
 						<div class="money__form">
-							<input id="beforeMoney" autocomplete="off" type="text" inputmode="numeric" name="form[]" data-error="Ошибка" placeholder="Грошенят на початку дня" class="money__inp">
+							<input id="beforeMoney" autocomplete="off" type="text" inputmode="numeric" name="form[]" data-error="Ошибка" placeholder="Введіть потрібну сумму" class="money__inp">
 							<button id="beforeMoneyButton" type="submit" class="money__button">Прийняти</button>
 						</div>
 					</div>
@@ -44,192 +44,268 @@
 
 			<section class="page__menu menu">
 				<div class="menu__container">
-					<div class="menu__position position-coffe">
-						<div class="position-coffe__title">Кава</div>
-						<ul class="position-coffe__list">
-							<li class="position-coffe__item item-coffe">
-								<div class="item-coffe__title">Еспрессо</div>
-								<div class="item-coffe__body">
-									<form data-quantity class="item-coffe__form">
-										<button data-quantity-minus type="button" class="item-coffe__button item-coffe__button-minus quantity__button_minus"></button>
-										<div class="item-coffe__input">
+					<div class="menu__position position">
+						<div class="position__title">Кава</div>
+						<ul class="position__list">
+							<li class="position__item item">
+								<div class="item__title">Еспрессо</div>
+								<div class="item__body">
+									<form data-quantity class="item__form">
+										<button data-quantity-minus type="button" class="item__button item__button-minus quantity__button_minus"></button>
+										<div class="item__input">
 											<input id="espresso" data-quantity-value type="text" name="" value="0">
 										</div>
-										<button data-quantity-plus type="button" class="item-coffe__button item-coffe__button-plus quantity__button_plus"></button>
+										<button data-quantity-plus type="button" class="item__button item__button-plus quantity__button_plus"></button>
 									</form>
-									<div id="espressoButton" class="item-coffe__confirm">OK</div>
+									<div id="espressoButton" class="item__confirm">OK</div>
 								</div>
 							</li>
 
-							<li class="position-coffe__item item-coffe">
-								<div class="item-coffe__title">Американо</div>
-								<div class="item-coffe__body">
-									<form data-quantity class="item-coffe__form">
-										<button data-quantity-minus type="button" class="item-coffe__button item-coffe__button-minus quantity__button_minus"></button>
-										<div class="item-coffe__input">
+							<li class="position__item item">
+								<div class="item__title">Американо</div>
+								<div class="item__body">
+									<form data-quantity class="item__form">
+										<button data-quantity-minus type="button" class="item__button item__button-minus quantity__button_minus"></button>
+										<div class="item__input">
 											<input id="americano" data-quantity-value type="text" name="" value="0">
 										</div>
-										<button data-quantity-plus type="button" class="item-coffe__button item-coffe__button-plus quantity__button_plus"></button>
+										<button data-quantity-plus type="button" class="item__button item__button-plus quantity__button_plus"></button>
 									</form>
-									<div id="americanoButton" class="item-coffe__confirm">OK</div>
+									<div id="americanoButton" class="item__confirm">OK</div>
 								</div>
 							</li>
 
-							<!--========================-->
-
-							<li class="position-coffe__item item-coffe">
-								<div class="item-coffe__title">Допіо</div>
-								<div class="item-coffe__body">
-									<form data-quantity class="item-coffe__form">
-										<button data-quantity-minus type="button" class="item-coffe__button item-coffe__button-minus quantity__button_minus"></button>
-										<div class="item-coffe__input">
+							<li class="position__item item">
+								<div class="item__title">Допіо</div>
+								<div class="item__body">
+									<form data-quantity class="item__form">
+										<button data-quantity-minus type="button" class="item__button item__button-minus quantity__button_minus"></button>
+										<div class="item__input">
 											<input id="dopio" data-quantity-value type="text" name="" value="0">
 										</div>
-										<button data-quantity-plus type="button" class="item-coffe__button item-coffe__button-plus quantity__button_plus"></button>
+										<button data-quantity-plus type="button" class="item__button item__button-plus quantity__button_plus"></button>
 									</form>
-									<div id="dopioButton" class="item-coffe__confirm">OK</div>
+									<div id="dopioButton" class="item__confirm">OK</div>
 								</div>
 							</li>
 
-							<li class="position-coffe__item item-coffe">
-								<div class="item-coffe__title">Капучіно S</div>
-								<div class="item-coffe__body">
-									<form data-quantity class="item-coffe__form">
-										<button data-quantity-minus type="button" class="item-coffe__button item-coffe__button-minus quantity__button_minus"></button>
-										<div class="item-coffe__input">
+							<li class="position__item item">
+								<div class="item__title">Капучіно S</div>
+								<div class="item__body">
+									<form data-quantity class="item__form">
+										<button data-quantity-minus type="button" class="item__button item__button-minus quantity__button_minus"></button>
+										<div class="item__input">
 											<input id="kapucinoS" data-quantity-value type="text" name="" value="0">
 										</div>
-										<button data-quantity-plus type="button" class="item-coffe__button item-coffe__button-plus quantity__button_plus"></button>
+										<button data-quantity-plus type="button" class="item__button item__button-plus quantity__button_plus"></button>
 									</form>
-									<div id="kapucinoSButton" class="item-coffe__confirm">OK</div>
+									<div id="kapucinoSButton" class="item__confirm">OK</div>
 								</div>
 							</li>
 
-							<li class="position-coffe__item item-coffe">
-								<div class="item-coffe__title">Капучіно М</div>
-								<div class="item-coffe__body">
-									<form data-quantity class="item-coffe__form">
-										<button data-quantity-minus type="button" class="item-coffe__button item-coffe__button-minus quantity__button_minus"></button>
-										<div class="item-coffe__input">
+							<li class="position__item item">
+								<div class="item__title">Капучіно М</div>
+								<div class="item__body">
+									<form data-quantity class="item__form">
+										<button data-quantity-minus type="button" class="item__button item__button-minus quantity__button_minus"></button>
+										<div class="item__input">
 											<input id="kapucinoM" data-quantity-value type="text" name="" value="0">
 										</div>
-										<button data-quantity-plus type="button" class="item-coffe__button item-coffe__button-plus quantity__button_plus"></button>
+										<button data-quantity-plus type="button" class="item__button item__button-plus quantity__button_plus"></button>
 									</form>
-									<div id="kapucinoMButton" class="item-coffe__confirm">OK</div>
+									<div id="kapucinoMButton" class="item__confirm">OK</div>
 								</div>
 							</li>
 
-							<li class="position-coffe__item item-coffe">
-								<div class="item-coffe__title">Капучіно L</div>
-								<div class="item-coffe__body">
-									<form data-quantity class="item-coffe__form">
-										<button data-quantity-minus type="button" class="item-coffe__button item-coffe__button-minus quantity__button_minus"></button>
-										<div class="item-coffe__input">
+							<li class="position__item item">
+								<div class="item__title">Капучіно L</div>
+								<div class="item__body">
+									<form data-quantity class="item__form">
+										<button data-quantity-minus type="button" class="item__button item__button-minus quantity__button_minus"></button>
+										<div class="item__input">
 											<input id="kapucinoL" data-quantity-value type="text" name="" value="0">
 										</div>
-										<button data-quantity-plus type="button" class="item-coffe__button item-coffe__button-plus quantity__button_plus"></button>
+										<button data-quantity-plus type="button" class="item__button item__button-plus quantity__button_plus"></button>
 									</form>
-									<div id="kapucinoLButton" class="item-coffe__confirm">OK</div>
+									<div id="kapucinoLButton" class="item__confirm">OK</div>
 								</div>
 							</li>
 
-							<li class="position-coffe__item item-coffe">
-								<div class="item-coffe__title">Латте S</div>
-								<div class="item-coffe__body">
-									<form data-quantity class="item-coffe__form">
-										<button data-quantity-minus type="button" class="item-coffe__button item-coffe__button-minus quantity__button_minus"></button>
-										<div class="item-coffe__input">
+							<li class="position__item item">
+								<div class="item__title">Латте S</div>
+								<div class="item__body">
+									<form data-quantity class="item__form">
+										<button data-quantity-minus type="button" class="item__button item__button-minus quantity__button_minus"></button>
+										<div class="item__input">
 											<input id="latteS" data-quantity-value type="text" name="" value="0">
 										</div>
-										<button data-quantity-plus type="button" class="item-coffe__button item-coffe__button-plus quantity__button_plus"></button>
+										<button data-quantity-plus type="button" class="item__button item__button-plus quantity__button_plus"></button>
 									</form>
-									<div id="latteSButton" class="item-coffe__confirm">OK</div>
+									<div id="latteSButton" class="item__confirm">OK</div>
 								</div>
 							</li>
 
-							<li class="position-coffe__item item-coffe">
-								<div class="item-coffe__title">Латте М</div>
-								<div class="item-coffe__body">
-									<form data-quantity class="item-coffe__form">
-										<button data-quantity-minus type="button" class="item-coffe__button item-coffe__button-minus quantity__button_minus"></button>
-										<div class="item-coffe__input">
+							<li class="position__item item">
+								<div class="item__title">Латте М</div>
+								<div class="item__body">
+									<form data-quantity class="item__form">
+										<button data-quantity-minus type="button" class="item__button item__button-minus quantity__button_minus"></button>
+										<div class="item__input">
 											<input id="latteM" data-quantity-value type="text" name="" value="0">
 										</div>
-										<button data-quantity-plus type="button" class="item-coffe__button item-coffe__button-plus quantity__button_plus"></button>
+										<button data-quantity-plus type="button" class="item__button item__button-plus quantity__button_plus"></button>
 									</form>
-									<div id="latteMButton" class="item-coffe__confirm">OK</div>
+									<div id="latteMButton" class="item__confirm">OK</div>
 								</div>
 							</li>
 
-							<li class="position-coffe__item item-coffe">
-								<div class="item-coffe__title">Латте L</div>
-								<div class="item-coffe__body">
-									<form data-quantity class="item-coffe__form">
-										<button data-quantity-minus type="button" class="item-coffe__button item-coffe__button-minus quantity__button_minus"></button>
-										<div class="item-coffe__input">
+							<li class="position__item item">
+								<div class="item__title">Латте L</div>
+								<div class="item__body">
+									<form data-quantity class="item__form">
+										<button data-quantity-minus type="button" class="item__button item__button-minus quantity__button_minus"></button>
+										<div class="item__input">
 											<input id="latteL" data-quantity-value type="text" name="" value="0">
 										</div>
-										<button data-quantity-plus type="button" class="item-coffe__button item-coffe__button-plus quantity__button_plus"></button>
+										<button data-quantity-plus type="button" class="item__button item__button-plus quantity__button_plus"></button>
 									</form>
-									<div id="latteLButton" class="item-coffe__confirm">OK</div>
+									<div id="latteLButton" class="item__confirm">OK</div>
 								</div>
 							</li>
 
-							<li class="position-coffe__item item-coffe">
-								<div class="item-coffe__title">Раф S</div>
-								<div class="item-coffe__body">
-									<form data-quantity class="item-coffe__form">
-										<button data-quantity-minus type="button" class="item-coffe__button item-coffe__button-minus quantity__button_minus"></button>
-										<div class="item-coffe__input">
+							<li class="position__item item">
+								<div class="item__title">Раф S</div>
+								<div class="item__body">
+									<form data-quantity class="item__form">
+										<button data-quantity-minus type="button" class="item__button item__button-minus quantity__button_minus"></button>
+										<div class="item__input">
 											<input id="rafS" data-quantity-value type="text" name="" value="0">
 										</div>
-										<button data-quantity-plus type="button" class="item-coffe__button item-coffe__button-plus quantity__button_plus"></button>
+										<button data-quantity-plus type="button" class="item__button item__button-plus quantity__button_plus"></button>
 									</form>
-									<div id="rafSButton" class="item-coffe__confirm">OK</div>
+									<div id="rafSButton" class="item__confirm">OK</div>
 								</div>
 							</li>
 
-							<li class="position-coffe__item item-coffe">
-								<div class="item-coffe__title">Раф M</div>
-								<div class="item-coffe__body">
-									<form data-quantity class="item-coffe__form">
-										<button data-quantity-minus type="button" class="item-coffe__button item-coffe__button-minus quantity__button_minus"></button>
-										<div class="item-coffe__input">
+							<li class="position__item item">
+								<div class="item__title">Раф M</div>
+								<div class="item__body">
+									<form data-quantity class="item__form">
+										<button data-quantity-minus type="button" class="item__button item__button-minus quantity__button_minus"></button>
+										<div class="item__input">
 											<input id="rafM" data-quantity-value type="text" name="" value="0">
 										</div>
-										<button data-quantity-plus type="button" class="item-coffe__button item-coffe__button-plus quantity__button_plus"></button>
+										<button data-quantity-plus type="button" class="item__button item__button-plus quantity__button_plus"></button>
 									</form>
-									<div id="rafMButton" class="item-coffe__confirm">OK</div>
+									<div id="rafMButton" class="item__confirm">OK</div>
 								</div>
 							</li>
 
-							<li class="position-coffe__item item-coffe">
-								<div class="item-coffe__title">Флет Вайт S</div>
-								<div class="item-coffe__body">
-									<form data-quantity class="item-coffe__form">
-										<button data-quantity-minus type="button" class="item-coffe__button item-coffe__button-minus quantity__button_minus"></button>
-										<div class="item-coffe__input">
+							<li class="position__item item">
+								<div class="item__title">Флет Вайт S</div>
+								<div class="item__body">
+									<form data-quantity class="item__form">
+										<button data-quantity-minus type="button" class="item__button item__button-minus quantity__button_minus"></button>
+										<div class="item__input">
 											<input id="fletWhiteS" data-quantity-value type="text" name="" value="0">
 										</div>
-										<button data-quantity-plus type="button" class="item-coffe__button item-coffe__button-plus quantity__button_plus"></button>
+										<button data-quantity-plus type="button" class="item__button item__button-plus quantity__button_plus"></button>
 									</form>
-									<div id="fletWhiteSButton" class="item-coffe__confirm">OK</div>
+									<div id="fletWhiteSButton" class="item__confirm">OK</div>
 								</div>
 							</li>
 
-							<li class="position-coffe__item item-coffe">
-								<div class="item-coffe__title">Флет Вайт M</div>
-								<div class="item-coffe__body">
-									<form data-quantity class="item-coffe__form">
-										<button data-quantity-minus type="button" class="item-coffe__button item-coffe__button-minus quantity__button_minus"></button>
-										<div class="item-coffe__input">
+							<li class="position__item item">
+								<div class="item__title">Флет Вайт M</div>
+								<div class="item__body">
+									<form data-quantity class="item__form">
+										<button data-quantity-minus type="button" class="item__button item__button-minus quantity__button_minus"></button>
+										<div class="item__input">
 											<input id="fletWhiteM" data-quantity-value type="text" name="" value="0">
 										</div>
-										<button data-quantity-plus type="button" class="item-coffe__button item-coffe__button-plus quantity__button_plus"></button>
+										<button data-quantity-plus type="button" class="item__button item__button-plus quantity__button_plus"></button>
 									</form>
-									<div id="fletWhiteMButton" class="item-coffe__confirm">OK</div>
+									<div id="fletWhiteMButton" class="item__confirm">OK</div>
 								</div>
 							</li>
+						</ul>
+					</div>
+
+
+					<div class="menu__position position">
+						<div class="position__title">Додатки</div>
+						<ul class="position__list">
+
+							<li class="position__item item">
+								<div class="item__title">Вершки</div>
+								<div class="item__body">
+									<form data-quantity class="item__form">
+										<button data-quantity-minus type="button" class="item__button item__button-minus quantity__button_minus"></button>
+										<div class="item__input">
+											<input id="cream" data-quantity-value type="text" name="" value="0">
+										</div>
+										<button data-quantity-plus type="button" class="item__button item__button-plus quantity__button_plus"></button>
+									</form>
+									<div id="creamButton" class="item__confirm">OK</div>
+								</div>
+							</li>
+
+							<li class="position__item item">
+								<div class="item__title">Сироп</div>
+								<div class="item__body">
+									<form data-quantity class="item__form">
+										<button data-quantity-minus type="button" class="item__button item__button-minus quantity__button_minus"></button>
+										<div class="item__input">
+											<input id="syrup" data-quantity-value type="text" name="" value="0">
+										</div>
+										<button data-quantity-plus type="button" class="item__button item__button-plus quantity__button_plus"></button>
+									</form>
+									<div id="syrupButton" class="item__confirm">OK</div>
+								</div>
+							</li>
+
+							<li class="position__item item">
+								<div class="item__title">Молоко</div>
+								<div class="item__body">
+									<form data-quantity class="item__form">
+										<button data-quantity-minus type="button" class="item__button item__button-minus quantity__button_minus"></button>
+										<div class="item__input">
+											<input id="milk" data-quantity-value type="text" name="" value="0">
+										</div>
+										<button data-quantity-plus type="button" class="item__button item__button-plus quantity__button_plus"></button>
+									</form>
+									<div id="milkButton" class="item__confirm">OK</div>
+								</div>
+							</li>
+
+							<li class="position__item item">
+								<div class="item__title">Рос.Молоко</div>
+								<div class="item__body">
+									<form data-quantity class="item__form">
+										<button data-quantity-minus type="button" class="item__button item__button-minus quantity__button_minus"></button>
+										<div class="item__input">
+											<input id="vegetableMilk" data-quantity-value type="text" name="" value="0">
+										</div>
+										<button data-quantity-plus type="button" class="item__button item__button-plus quantity__button_plus"></button>
+									</form>
+									<div id="vegetableMilkButton" class="item__confirm">OK</div>
+								</div>
+							</li>
+
+							<li class="position__item item">
+								<div class="item__title">Безлак.Молоко</div>
+								<div class="item__body">
+									<form data-quantity class="item__form">
+										<button data-quantity-minus type="button" class="item__button item__button-minus quantity__button_minus"></button>
+										<div class="item__input">
+											<input id="lactoseFreeMilk" data-quantity-value type="text" name="" value="0">
+										</div>
+										<button data-quantity-plus type="button" class="item__button item__button-plus quantity__button_plus"></button>
+									</form>
+									<div id="lactoseFreeMilkButton" class="item__confirm">OK</div>
+								</div>
+							</li>
+
 						</ul>
 					</div>
 				</div>
@@ -251,6 +327,8 @@
 							<span class="header-report__text"> <input readonly id="allSumm" type="text"></span>
 						</div>
 					</div>
+
+
 					<div class="report__all all-report">
 						<div class="all-report__item all-report__item-live">
 							<div class="all-report__title">Еспрессо:</div>
@@ -305,6 +383,33 @@
 							<input class="input" id="reportFletWhiteM" readonly type="text" value="0">
 						</div>
 					</div>
+
+					<div class="report__all all-report">
+						<div class="all-report__item all-report__item-live">
+							<div class="all-report__title">Вершки:</div>
+							<input id="reportCream" readonly type="text" value="0">
+						</div>
+
+						<div class="all-report__item">
+							<div class="all-report__title">Сироп:</div>
+							<input id="reportSyrup" readonly type="text" value="0">
+						</div>
+
+						<div class="all-report__item">
+							<div class="all-report__title">Молоко:</div>
+							<input id="reportMilk" readonly type="text" value="0">
+						</div>
+
+						<div class="all-report__item">
+							<div class="all-report__title">Рос.Мл:</div>
+							<input id="reportVegetableMilk" readonly type="text" value="0">
+						</div>
+
+						<div class="all-report__item">
+							<div class="all-report__title">Безлак.Мл:</div>
+							<input id="reportLactoseFreeMilk" readonly type="text" value="0">
+						</div>
+					</div>
 				</div>
 			</section>
 
@@ -326,7 +431,7 @@
 			</div>
 		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20230110175840"></script>
+	<script src="js/app.min.js?_v=20230110191526"></script>
 </body>
 
 </html>

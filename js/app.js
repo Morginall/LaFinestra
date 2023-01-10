@@ -350,6 +350,11 @@
     var rafMPrice = 50;
     var fletWhiteSPrice = 35;
     var fletWhiteMPrice = 43;
+    var creamPrice = 6;
+    var syrupPrice = 6;
+    var milkPrice = 6;
+    var vegetableMilkPrice = 14;
+    var lactoseFreeMilkPrice = 10;
     var espressoCount = Number();
     var americanoCount = Number();
     var dopioCount = Number();
@@ -363,6 +368,11 @@
     var rafMCount = Number();
     var fletWhiteSCount = Number();
     var fletWhiteMCount = Number();
+    var creamCount = Number();
+    var syrupCount = Number();
+    var milkCount = Number();
+    var vegetableMilkCount = Number();
+    var lactoseFreeMilkCount = Number();
     var chek = document.getElementById("chekWindow");
     var chekSumm = Number();
     var espressoSumm = Number();
@@ -378,6 +388,11 @@
     var rafMSumm = Number();
     var fletWhiteSSumm = Number();
     var fletWhiteMSumm = Number();
+    var creamSumm = Number();
+    var syrupSumm = Number();
+    var milkSumm = Number();
+    var vegetableMilkSumm = Number();
+    var lactoseFreeMilkSumm = Number();
     var reportEspressoValue = document.getElementById("reportEspresso");
     var reportAmericanoValue = document.getElementById("reportAmericano");
     var reportDopioValue = document.getElementById("reportDopio");
@@ -391,6 +406,11 @@
     var reportRafMValue = document.getElementById("reportRafM");
     var reportFletWhiteSValue = document.getElementById("reportFletWhiteS");
     var reportFletWhiteMValue = document.getElementById("reportFletWhiteM");
+    var reportCreamValue = document.getElementById("reportCream");
+    var reportSyrupValue = document.getElementById("reportSyrup");
+    var reportMilkValue = document.getElementById("reportMilk");
+    var reportVegetableMilkValue = document.getElementById("reportVegetableMilk");
+    var reportLactoseFreeMilkValue = document.getElementById("reportLactoseFreeMilk");
     const sell = document.getElementById("sell");
     const confirmCash = document.getElementById("confirmCash");
     const confirmCard = document.getElementById("confirmCard");
@@ -408,9 +428,14 @@
     const rafMButton = document.getElementById("rafMButton");
     const fletWhiteSButton = document.getElementById("fletWhiteSButton");
     const fletWhiteMButton = document.getElementById("fletWhiteMButton");
+    const creamButton = document.getElementById("creamButton");
+    const syrupButton = document.getElementById("syrupButton");
+    const milkButton = document.getElementById("milkButton");
+    const vegetableMilkButton = document.getElementById("vegetableMilkButton");
+    const lactoseFreeMilkButton = document.getElementById("lactoseFreeMilkButton");
     function chekCalc() {
         chekSumm = 0;
-        chekSumm = espressoSumm + americanoSumm + dopioSumm + kapucinoSSumm + kapucinoMSumm + kapucinoLSumm + latteSSumm + latteMSumm + latteLSumm + rafSSumm + rafMSumm + fletWhiteSSumm + fletWhiteMSumm;
+        chekSumm = espressoSumm + americanoSumm + dopioSumm + kapucinoSSumm + kapucinoMSumm + kapucinoLSumm + latteSSumm + latteMSumm + latteLSumm + rafSSumm + rafMSumm + fletWhiteSSumm + fletWhiteMSumm + creamSumm + syrupSumm + milkSumm + vegetableMilkSumm + lactoseFreeMilkSumm;
         chek.value = chekSumm;
     }
     function espresso() {
@@ -491,6 +516,36 @@
         chekCalc();
     }
     fletWhiteMButton.addEventListener("click", fletWhiteM);
+    function cream() {
+        creamCount = document.getElementById("cream").value;
+        creamSumm = creamCount * creamPrice;
+        chekCalc();
+    }
+    creamButton.addEventListener("click", cream);
+    function syrup() {
+        syrupCount = document.getElementById("syrup").value;
+        syrupSumm = syrupCount * syrupPrice;
+        chekCalc();
+    }
+    syrupButton.addEventListener("click", syrup);
+    function milk() {
+        milkCount = document.getElementById("milk").value;
+        milkSumm = milkCount * milkPrice;
+        chekCalc();
+    }
+    milkButton.addEventListener("click", milk);
+    function vegetableMilk() {
+        vegetableMilkCount = document.getElementById("vegetableMilk").value;
+        vegetableMilkSumm = vegetableMilkCount * vegetableMilkPrice;
+        chekCalc();
+    }
+    vegetableMilkButton.addEventListener("click", vegetableMilk);
+    function lactoseFreeMilk() {
+        lactoseFreeMilkCount = document.getElementById("lactoseFreeMilk").value;
+        lactoseFreeMilkSumm = lactoseFreeMilkCount * lactoseFreeMilkPrice;
+        chekCalc();
+    }
+    lactoseFreeMilkButton.addEventListener("click", lactoseFreeMilk);
     function sellFoo() {
         chekSumm -= chekSumm / 100 * 20;
         chek.value = chekSumm;
@@ -509,7 +564,12 @@
         rafS: Number(0),
         rafM: Number(0),
         fletWhiteS: Number(0),
-        fletWhiteM: Number(0)
+        fletWhiteM: Number(0),
+        cream: Number(),
+        syrup: Number(),
+        milk: Number(),
+        vegetableMilk: Number(),
+        lactoseFreeMilk: Number()
     };
     function report() {
         summ.allSumm = summ.allSumm + chekSumm;
@@ -549,12 +609,18 @@
         rafMSumm = rafMCount = document.getElementById("rafM").value = 0;
         fletWhiteSSumm = fletWhiteSCount = document.getElementById("fletWhiteS").value = 0;
         fletWhiteMSumm = fletWhiteMCount = document.getElementById("fletWhiteM").value = 0;
+        creamSumm = creamCount = document.getElementById("cream").value = 0;
+        syrupSumm = syrupCount = document.getElementById("syrup").value = 0;
+        milkSumm = milkCount = document.getElementById("milk").value = 0;
+        vegetableMilkSumm = vegetableMilkCount = document.getElementById("vegetableMilk").value = 0;
+        lactoseFreeMilkSumm = lactoseFreeMilkCount = document.getElementById("lactoseFreeMilk").value = 0;
         chek.value = chekSumm = 0;
         document.getElementById("beforeMoney").value = "";
     }
     function beforeMoneyFoo() {
         beforeMoneyValue = document.getElementById("beforeMoney").value;
         summ.allSumm = summ.allSumm + +beforeMoneyValue;
+        localStorage.setItem("summ", JSON.stringify(summ));
         report();
     }
     beforeMoneyButton.addEventListener("click", beforeMoneyFoo);
@@ -577,7 +643,12 @@
             rafS: reportCountObject.rafS + +rafSCount,
             rafM: reportCountObject.rafM + +rafMCount,
             fletWhiteS: reportCountObject.fletWhiteS + +fletWhiteSCount,
-            fletWhiteM: reportCountObject.fletWhiteM + +fletWhiteMCount
+            fletWhiteM: reportCountObject.fletWhiteM + +fletWhiteMCount,
+            cream: reportCountObject.cream + +creamCount,
+            syrup: reportCountObject.syrup + +syrupCount,
+            milk: reportCountObject.milk + +milkCount,
+            vegetableMilk: reportCountObject.vegetableMilk + +vegetableMilkCount,
+            lactoseFreeMilk: reportCountObject.lactoseFreeMilk + +lactoseFreeMilkCount
         };
     }
     function reportSaveCountValue() {
@@ -646,6 +717,31 @@
             var parent = reportFletWhiteMValue.closest(".all-report__item");
             parent.classList.add("active");
         }
+        reportCreamValue.value = reportCountObject.cream;
+        if (reportCreamValue.value > 0) {
+            parent = reportCreamValue.closest(".all-report__item");
+            parent.classList.add("active");
+        }
+        reportSyrupValue.value = reportCountObject.syrup;
+        if (reportSyrupValue.value > 0) {
+            parent = reportSyrupValue.closest(".all-report__item");
+            parent.classList.add("active");
+        }
+        reportMilkValue.value = reportCountObject.milk;
+        if (reportMilkValue.value > 0) {
+            parent = reportMilkValue.closest(".all-report__item");
+            parent.classList.add("active");
+        }
+        reportVegetableMilkValue.value = reportCountObject.vegetableMilk;
+        if (reportVegetableMilkValue.value > 0) {
+            parent = reportVegetableMilkValue.closest(".all-report__item");
+            parent.classList.add("active");
+        }
+        reportLactoseFreeMilkValue.value = reportCountObject.lactoseFreeMilk;
+        if (reportLactoseFreeMilkValue.value > 0) {
+            parent = reportLactoseFreeMilkValue.closest(".all-report__item");
+            parent.classList.add("active");
+        }
     }
     var auditCounter = Number(0);
     window.onload = reloadSave;
@@ -677,7 +773,12 @@
             rafS: 0,
             rafM: 0,
             fletWhiteS: 0,
-            fletWhiteM: 0
+            fletWhiteM: 0,
+            cream: 0,
+            syrup: 0,
+            milk: 0,
+            vegetableMilk: 0,
+            lactoseFreeMilk: 0
         };
         summ = {
             allSumm: 0,
