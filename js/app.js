@@ -412,7 +412,6 @@
         chekSumm = 0;
         chekSumm = espressoSumm + americanoSumm + dopioSumm + kapucinoSSumm + kapucinoMSumm + kapucinoLSumm + latteSSumm + latteMSumm + latteLSumm + rafSSumm + rafMSumm + fletWhiteSSumm + fletWhiteMSumm;
         chek.value = chekSumm;
-        console.log(chekSumm);
     }
     function espresso() {
         espressoCount = document.getElementById("espresso").value;
@@ -537,7 +536,6 @@
     confirmCard.addEventListener("click", reportCard);
     function clearAll() {
         localStorage.setItem("summ", JSON.stringify(summ));
-        console.log(summ);
         americanoSumm = americanoCount = document.getElementById("americano").value = 0;
         espressoSumm = espressoCount = document.getElementById("espresso").value = 0;
         dopioSumm = dopioCount = document.getElementById("dopio").value = 0;
@@ -584,18 +582,70 @@
     }
     function reportSaveCountValue() {
         reportEspressoValue.value = reportCountObject.espresso;
+        if (reportEspressoValue.value > 0) {
+            let parent = reportEspressoValue.closest(".all-report__item");
+            parent.classList.add("active");
+        }
         reportAmericanoValue.value = reportCountObject.americano;
+        if (reportAmericanoValue.value > 0) {
+            let parent = reportAmericanoValue.closest(".all-report__item");
+            parent.classList.add("active");
+        }
         reportDopioValue.value = reportCountObject.dopio;
+        if (reportDopioValue.value > 0) {
+            let parent = reportDopioValue.closest(".all-report__item");
+            parent.classList.add("active");
+        }
         reportKapucinoSValue.value = reportCountObject.kapucinoS;
+        if (reportKapucinoSValue.value > 0) {
+            let parent = reportKapucinoSValue.closest(".all-report__item");
+            parent.classList.add("active");
+        }
         reportKapucinoMValue.value = reportCountObject.kapucinoM;
+        if (reportKapucinoMValue.value > 0) {
+            let parent = reportKapucinoMValue.closest(".all-report__item");
+            parent.classList.add("active");
+        }
         reportKapucinoLValue.value = reportCountObject.kapucinoL;
+        if (reportKapucinoLValue.value > 0) {
+            let parent = reportKapucinoLValue.closest(".all-report__item");
+            parent.classList.add("active");
+        }
         reportLatteSValue.value = reportCountObject.latteS;
+        if (reportLatteSValue.value > 0) {
+            let parent = reportLatteSValue.closest(".all-report__item");
+            parent.classList.add("active");
+        }
         reportLatteMValue.value = reportCountObject.latteM;
+        if (reportLatteMValue.value > 0) {
+            let parent = reportLatteMValue.closest(".all-report__item");
+            parent.classList.add("active");
+        }
         reportLatteLValue.value = reportCountObject.latteL;
+        if (reportLatteLValue.value > 0) {
+            let parent = reportLatteLValue.closest(".all-report__item");
+            parent.classList.add("active");
+        }
         reportRafSValue.value = reportCountObject.rafS;
+        if (reportRafSValue.value > 0) {
+            let parent = reportRafSValue.closest(".all-report__item");
+            parent.classList.add("active");
+        }
         reportRafMValue.value = reportCountObject.rafM;
+        if (reportRafMValue.value > 0) {
+            let parent = reportRafMValue.closest(".all-report__item");
+            parent.classList.add("active");
+        }
         reportFletWhiteSValue.value = reportCountObject.fletWhiteS;
+        if (reportFletWhiteSValue.value > 0) {
+            let parent = reportFletWhiteSValue.closest(".all-report__item");
+            parent.classList.add("active");
+        }
         reportFletWhiteMValue.value = reportCountObject.fletWhiteM;
+        if (reportFletWhiteMValue.value > 0) {
+            var parent = reportFletWhiteMValue.closest(".all-report__item");
+            parent.classList.add("active");
+        }
     }
     var auditCounter = Number(0);
     window.onload = reloadSave;
@@ -611,7 +661,6 @@
     }
     function saveReport() {
         localStorage.setItem("object", JSON.stringify(reportCountObject));
-        console.log(localStorage);
     }
     var buttonCloseDay = document.getElementById("closeDay");
     function closeDay() {
@@ -643,10 +692,11 @@
         localStorage.removeItem("summ");
         localStorage.removeItem("auditCounter");
         auditCounter = 0;
-        console.log("zhopa");
+        setTimeout((function() {
+            location.reload();
+        }), 50);
     }
     buttonCloseDay.addEventListener("click", closeDay);
-    document.querySelectorAll("all-report-item");
     window["FLS"] = true;
     isWebp();
     formQuantity();

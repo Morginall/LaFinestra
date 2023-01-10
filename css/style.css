@@ -733,11 +733,9 @@ body::after {
 }
 
 .all-report__item {
+  display: none;
   background-color: #85586F;
   border-radius: 1.25rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -749,13 +747,25 @@ body::after {
   padding: 0.4375rem 0.8125rem;
 }
 
+.all-report__item.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.all-report__item-live {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .all-report__title {
   color: #F8EDE3;
   font-weight: 600;
   font-size: 0.875rem;
 }
 
-.all-report__count input {
+.all-report input {
   width: 1.875rem;
   font-size: 0.75rem;
   background-color: #F8EDE3;
@@ -763,7 +773,7 @@ body::after {
   text-align: center;
 }
 
-.all-report__count input:focus {
+.all-report input:focus {
   outline: none;
 }
 
