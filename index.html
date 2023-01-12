@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="UA">
+
+<head>
+	<title>LaFinestra</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20230112194236">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<div class="header__body">
+					<div class="header__logo"><picture><source srcset="img/logo2.webp" type="image/webp"><img src="img/logo2.png" alt=""></picture></div>
+					<a data-popup="#close-popup" href="#" class="header__close-day">Закрити зміну</a>
+				</div>
+			</div>
+		</header>
+		<div id="close-popup" aria-hidden="true" class="popup popup-close-day">
+			<div class="popup__wrapper">
+				<div class="popup__content">
+					<button id="closeDay" data-close type="button" class="popup__close">Так, закрити</button>
+					<button data-close type="button" class="popup__close">Ще ні</button>
+				</div>
+			</div>
+		</div>
+		<main class="page">
+			<section class="page__money money">
+				<div class="money__container">
+					<div class="money__body">
+						<div class="money__form">
+							<input id="beforeMoney" autocomplete="off" type="text" inputmode="numeric" name="form[]" data-error="Ошибка" placeholder="Введіть потрібну сумму" class="money__inp">
+							<button id="beforeMoneyButton" type="submit" class="money__button">Прийняти</button>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="page__menu menu">
+				<div class="menu__container">
+					<div class="menu__position position">
+						<div class="position__title">Кава</div>
+						<ul class="position__list">
+							<li class="position__item item">
+								<div class="item__title">Еспрессо</div>
+								<div class="item__body">
+									<form data-quantity class="item__form">
+										<button data-quantity-minus type="button" class="item__button item__button-minus quantity__button_minus"></button>
+										<div class="item__input">
+											<input id="espresso" data-quantity-value type="text" name="" value="0">
+										</div>
+										<button data-quantity-plus type="button" class="item__button item__button-plus quantity__button_plus"></button>
+									</form>
+									<div id="espressoButton" class="item__confirm">OK</div>
+								</div>
+							</li>
+
+							<li class="position__item item">
+								<div class="item__title">Американо</div>
+								<div class="item__body">
+									<form data-quantity class="item__form">
+										<button data-quantity-minus type="button" class="item__button item__button-minus quantity__button_minus"></button>
+										<div class="item__input">
+											<input id="americano" data-quantity-value type="text" name="" value="0">
+										</div>
+										<button data-quantity-plus type="button" class="item__button item__button-plus quantity__button_plus"></button>
+									</form>
+									<div id="americanoButton" class="item__confirm">OK</div>
+								</div>
+							</li>
+
+							<li class="position__item item">
+								<div class="item__title">Допіо</div>
+								<div class="item__body">
+									<form data-quantity class="item__form">
+										<button data-quantity-minus type="button" class="item__button item__button-minus quantity__button_minus"></button>
+										<div class="item__input">
+											<input id="dopio" data-quantity-value type="text" name="" value="0">
+										</div>
+										<button data-quantity-plus type="button" class="item__button item__button-plus quantity__button_plus"></button>
+									</form>
+									<div id="dopioButton" class="item__confirm">OK</div>
+								</div>
+							</li>
+
+							<li class="position__item item">
+								<div class="item__title">Капучіно S</div>
+								<div class="item__body">
+									<form data-quantity class="item__form">
+										<button data-quantity-minus type="button" class="item__button item__button-minus quantity__button_minus"></button>
+										<div class="item__input">
+											<input id="kapucinoS" data-quantity-value type="text" name="" value="0">
+										</div>
+										<button data-quantity-plus type="button" class="item__button item__button-plus quantity__button_plus"></button>
+									</form>
+									<div id="kapucinoSButton" class="item__confirm">OK</div>
+								</div>
+							</li>
+
+							<li class="position__item item">
+								<div class="item__title">Капучіно М</div>
+								<div class="item__body">
+									<form data-quantity class="item__form">
+										<button data-quantity-minus type="button" class="item__button item__button-minus quantity__button_minus"></button>
+										<div class="item__input">
+											<input id="kapucinoM" data-quantity-value type="text" name="" value="0">
+										</div>
+										<button data-quantity-plus type="button" class="item__button item__button-plus quantity__button_plus"></button>
+									</form>
+									<div id="kapucinoMButton" class="item__confirm">OK</div>
+								</div>
+							</li>
+
+							<li class="position__item item">
+								<div class="item__title">Капучіно L</div>
+								<div class="item__body">
+									<form data-quantity class="item__form">
+										<button data-quantity-minus type="button" class="item__button item__button-minus quantity__button_minus"></button>
+										<div class="item__input">
+											<input id="kapucinoL" data-quantity-value type="text" name="" value="0">
+										</div>
+										<button data-quantity-plus type="button" class="item__button item__button-plus quantity__button_plus"></button>
+									</form>
+									<div id="kapucinoLButton" class="item__confirm">OK</div>
+								</div>
+							</li>
+
+							<li class="position__item item">
+								<div class="item__title">Латте S</div>
+								<div class="item__body">
+									<form data-quantity class="item__form">
+										<button data-quantity-minus type="button" class="item__button item__button-minus quantity__button_minus"></button>
+										<div class="item__input">
+											<input id="latteS" data-quantity-value type="text" name="" value="0">
+										</div>
+										<button data-quantity-plus type="button" class="item__button item__button-plus quantity__button_plus"></button>
+									</form>
+									<div id="latteSButton" class="item__confirm">OK</div>
+								</div>
+							</li>
+
+							<li class="position__item item">
+								<div class="item__title">Латте М</div>
+								<div class="item__body">
+									<form data-quantity class="item__form">
+										<button data-quantity-minus type="button" class="item__button item__button-minus quantity__button_minus"></button>
+										<div class="item__input">
+											<input id="latteM" data-quantity-value type="text" name="" value="0">
+										</div>
+										<button data-quantity-plus type="button" class="item__button item__button-plus quantity__button_plus"></button>
+									</form>
+									<div id="latteMButton" class="item__confirm">OK</div>
+								</div>
+							</li>
+
+							<li class="position__item item">
+								<div class="item__title">Латте L</div>
+								<div class="item__body">
+									<form data-quantity class="item__form">
+										<button data-quantity-minus type="button" class="item__button item__button-minus quantity__button_minus"></button>
+										<div class="item__input">
+											<input id="latteL" data-quantity-value type="text" name="" value="0">
+										</div>
+										<button data-quantity-plus type="button" class="item__button item__button-plus quantity__button_plus"></button>
+									</form>
+									<div id="latteLButton" class="item__confirm">OK</div>
+								</div>
+							</li>
+
+							<li class="position__item item">
+								<div class="item__title">Раф S</div>
+								<div class="item__body">
+									<form data-quantity class="item__form">
+										<button data-quantity-minus type="button" class="item__button item__button-minus quantity__button_minus"></button>
+										<div class="item__input">
+											<input id="rafS" data-quantity-value type="text" name="" value="0">
+										</div>
+										<button data-quantity-plus type="button" class="item__button item__button-plus quantity__button_plus"></button>
+									</form>
+									<div id="rafSButton" class="item__confirm">OK</div>
+								</div>
+							</li>
+
+							<li class="position__item item">
+								<div class="item__title">Раф M</div>
+								<div class="item__body">
+									<form data-quantity class="item__form">
+										<button data-quantity-minus type="button" class="item__button item__button-minus quantity__button_minus"></button>
+										<div class="item__input">
+											<input id="rafM" data-quantity-value type="text" name="" value="0">
+										</div>
+										<button data-quantity-plus type="button" class="item__button item__button-plus quantity__button_plus"></button>
+									</form>
+									<div id="rafMButton" class="item__confirm">OK</div>
+								</div>
+							</li>
+
+							<li class="position__item item">
+								<div class="item__title">Флет Вайт S</div>
+								<div class="item__body">
+									<form data-quantity class="item__form">
+										<button data-quantity-minus type="button" class="item__button item__button-minus quantity__button_minus"></button>
+										<div class="item__input">
+											<input id="fletWhiteS" data-quantity-value type="text" name="" value="0">
+										</div>
+										<button data-quantity-plus type="button" class="item__button item__button-plus quantity__button_plus"></button>
+									</form>
+									<div id="fletWhiteSButton" class="item__confirm">OK</div>
+								</div>
+							</li>
+
+							<li class="position__item item">
+								<div class="item__title">Флет Вайт M</div>
+								<div class="item__body">
+									<form data-quantity class="item__form">
+										<button data-quantity-minus type="button" class="item__button item__button-minus quantity__button_minus"></button>
+										<div class="item__input">
+											<input id="fletWhiteM" data-quantity-value type="text" name="" value="0">
+										</div>
+										<button data-quantity-plus type="button" class="item__button item__button-plus quantity__button_plus"></button>
+									</form>
+									<div id="fletWhiteMButton" class="item__confirm">OK</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+
+
+					<div class="menu__position position">
+						<div class="position__title">Додатки</div>
+						<ul class="position__list">
+
+							<li class="position__item item">
+								<div class="item__title">Вершки</div>
+								<div class="item__body">
+									<form data-quantity class="item__form">
+										<button data-quantity-minus type="button" class="item__button item__button-minus quantity__button_minus"></button>
+										<div class="item__input">
+											<input id="cream" data-quantity-value type="text" name="" value="0">
+										</div>
+										<button data-quantity-plus type="button" class="item__button item__button-plus quantity__button_plus"></button>
+									</form>
+									<div id="creamButton" class="item__confirm">OK</div>
+								</div>
+							</li>
+
+							<li class="position__item item">
+								<div class="item__title">Сироп</div>
+								<div class="item__body">
+									<form data-quantity class="item__form">
+										<button data-quantity-minus type="button" class="item__button item__button-minus quantity__button_minus"></button>
+										<div class="item__input">
+											<input id="syrup" data-quantity-value type="text" name="" value="0">
+										</div>
+										<button data-quantity-plus type="button" class="item__button item__button-plus quantity__button_plus"></button>
+									</form>
+									<div id="syrupButton" class="item__confirm">OK</div>
+								</div>
+							</li>
+
+							<li class="position__item item">
+								<div class="item__title">Молоко</div>
+								<div class="item__body">
+									<form data-quantity class="item__form">
+										<button data-quantity-minus type="button" class="item__button item__button-minus quantity__button_minus"></button>
+										<div class="item__input">
+											<input id="milk" data-quantity-value type="text" name="" value="0">
+										</div>
+										<button data-quantity-plus type="button" class="item__button item__button-plus quantity__button_plus"></button>
+									</form>
+									<div id="milkButton" class="item__confirm">OK</div>
+								</div>
+							</li>
+
+							<li class="position__item item">
+								<div class="item__title">Рос.Молоко</div>
+								<div class="item__body">
+									<form data-quantity class="item__form">
+										<button data-quantity-minus type="button" class="item__button item__button-minus quantity__button_minus"></button>
+										<div class="item__input">
+											<input id="vegetableMilk" data-quantity-value type="text" name="" value="0">
+										</div>
+										<button data-quantity-plus type="button" class="item__button item__button-plus quantity__button_plus"></button>
+									</form>
+									<div id="vegetableMilkButton" class="item__confirm">OK</div>
+								</div>
+							</li>
+
+							<li class="position__item item">
+								<div class="item__title">Безлак.Молоко</div>
+								<div class="item__body">
+									<form data-quantity class="item__form">
+										<button data-quantity-minus type="button" class="item__button item__button-minus quantity__button_minus"></button>
+										<div class="item__input">
+											<input id="lactoseFreeMilk" data-quantity-value type="text" name="" value="0">
+										</div>
+										<button data-quantity-plus type="button" class="item__button item__button-plus quantity__button_plus"></button>
+									</form>
+									<div id="lactoseFreeMilkButton" class="item__confirm">OK</div>
+								</div>
+							</li>
+
+						</ul>
+					</div>
+				</div>
+			</section>
+
+			<section class="page__report report">
+				<div class="report__container">
+					<div class="report__header header-report">
+						<div class="header-report__item">
+							<div class="header-report__title">Картою:</div>
+							<span class="header-report__text"><input readonly id="cardSumm" type="text"></span>
+						</div>
+						<div class="header-report__item">
+							<div class="header-report__title">Готівкою:</div>
+							<span class="header-report__text"><input readonly id="cashSumm" type="text"></span>
+						</div>
+						<div class="header-report__item">
+							<div class="header-report__title">Загалом:</div>
+							<span class="header-report__text"> <input readonly id="allSumm" type="text"></span>
+						</div>
+					</div>
+
+
+					<div class="report__all all-report">
+						<div class="all-report__item all-report__item-live">
+							<div class="all-report__title">Еспрессо:</div>
+							<input id="reportEspresso" readonly type="text" value="0">
+						</div>
+						<div class="all-report__item">
+							<div class="all-report__title">Американо:</div>
+							<input id="reportAmericano" readonly type="text" value="0">
+						</div>
+						<div class="all-report__item">
+							<div class="all-report__title">Допіо:</div>
+							<input id="reportDopio" readonly type="text" value="0">
+						</div>
+						<div class="all-report__item">
+							<div class="all-report__title">КапучіноS:</div>
+							<input id="reportKapucinoS" readonly type="text" value="0">
+						</div>
+						<div class="all-report__item">
+							<div class="all-report__title">КапучіноM:</div>
+							<input id="reportKapucinoM" readonly type="text" value="0">
+						</div>
+						<div class="all-report__item">
+							<div class="all-report__title">КапучіноL:</div>
+							<input id="reportKapucinoL" readonly type="text" value="0">
+						</div>
+						<div class="all-report__item">
+							<div class="all-report__title">ЛаттеS:</div>
+							<input id="reportLatteS" readonly type="text" value="0">
+						</div>
+						<div class="all-report__item">
+							<div class="all-report__title">ЛаттеM:</div>
+							<input id="reportLatteM" readonly type="text" value="0">
+						</div>
+						<div class="all-report__item">
+							<div class="all-report__title">ЛаттеL:</div>
+							<input id="reportLatteL" readonly type="text" value="0">
+						</div>
+						<div class="all-report__item">
+							<div class="all-report__title">РафS:</div>
+							<input id="reportRafS" readonly type="text" value="0">
+						</div>
+						<div class="all-report__item">
+							<div class="all-report__title">РафM:</div>
+							<input id="reportRafM" readonly type="text" value="0">
+						</div>
+						<div class="all-report__item">
+							<div class="all-report__title">ФлетВайтS:</div>
+							<input id="reportFletWhiteS" readonly type="text" value="0">
+						</div>
+						<div class="all-report__item">
+							<div class="all-report__title">ФлетВайтM:</div>
+							<input class="input" id="reportFletWhiteM" readonly type="text" value="0">
+						</div>
+					</div>
+
+					<div class="report__all all-report">
+						<div class="all-report__item all-report__item-live">
+							<div class="all-report__title">Вершки:</div>
+							<input id="reportCream" readonly type="text" value="0">
+						</div>
+
+						<div class="all-report__item">
+							<div class="all-report__title">Сироп:</div>
+							<input id="reportSyrup" readonly type="text" value="0">
+						</div>
+
+						<div class="all-report__item">
+							<div class="all-report__title">Молоко:</div>
+							<input id="reportMilk" readonly type="text" value="0">
+						</div>
+
+						<div class="all-report__item">
+							<div class="all-report__title">Рос.Мл:</div>
+							<input id="reportVegetableMilk" readonly type="text" value="0">
+						</div>
+
+						<div class="all-report__item">
+							<div class="all-report__title">Безлак.Мл:</div>
+							<input id="reportLactoseFreeMilk" readonly type="text" value="0">
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="page__chek chek">
+				<div class="chek__container">
+					<div class="chek__window">Загальна сумма:
+						<input id="chekWindow" readonly autocomplete="off" type="text" name="chekSumm" data-error="Ошибка" value="0.00" class="chek__input">
+					</div>
+					<div class="chek__btns">
+						<button id="sell" type="button" class="chek__btn">-20%</button>
+						<button id="confirmCash" type="button" class="chek__btn">Готівкою</button>
+						<button id="confirmCard" type="button" class="chek__btn">Картою</button>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+			</div>
+		</footer>
+	</div>
+	<script src="js/app.min.js?_v=20230112194236"></script>
+</body>
+
+</html>
