@@ -86,7 +86,7 @@ body {
 }
 
 .no-webp .wrapper{
-  background-image: url("img/logo2.png"); }
+  background-image: url("../img/logo2.png"); }
 
 .wrapper {
   background-attachment: fixed;
@@ -859,7 +859,7 @@ body::after {
       -ms-flex-pack: justify;
           justify-content: space-between;
   gap: 0.4375rem;
-  padding: 0.4375rem 0.8125rem;
+  padding: 0.3125rem 0.625rem;
 }
 
 .all-report__item.active {
@@ -888,7 +888,7 @@ body::after {
 }
 
 .all-report__lable {
-  font-size: 1rem;
+  font-size: 0.875rem;
   font-weight: 600;
 }
 
@@ -972,4 +972,4 @@ body::after {
   }
 }
 
-.webp .wrapper{ background-image: url(img/logo2.webp); }
+.webp .wrapper{ background-image: url(../img/logo2.webp); }
