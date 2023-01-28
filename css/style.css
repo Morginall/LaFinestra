@@ -904,6 +904,10 @@ body::after {
   outline: none;
 }
 
+.all-report-sell .all-report__item {
+  background-color: #4a2b3a;
+}
+
 .cost-report {
   padding: 0.9375rem;
   border-radius: 1.875rem;

@@ -399,7 +399,26 @@
         jarIceCream: 100,
         jarSorbet: 100,
         iceCream001: 30,
-        iceCream002: 30
+        iceCream002: 30,
+        iceCream003: 30,
+        iceCream004: 30,
+        waffle001: 32,
+        waffle002: 45,
+        waffle003: 48,
+        waffle004: 48,
+        waffle005: 57,
+        waffle006: 57,
+        waffle007: 75,
+        waffle008: 83,
+        waffle009: 73,
+        waffle0091: 78,
+        waffle010: 73,
+        waffle0101: 78,
+        waffle011: 48,
+        waffle012: 48,
+        waffle013: 63,
+        waffle014: 78,
+        waffle015: 69
     };
     var count = {
         espresso: Number(),
@@ -467,7 +486,30 @@
         iceCream001PCS3: Number(),
         iceCream002: Number(),
         iceCream002PCS2: Number(),
-        iceCream002PCS3: Number()
+        iceCream002PCS3: Number(),
+        iceCream003: Number(),
+        iceCream003PCS2: Number(),
+        iceCream003PCS3: Number(),
+        iceCream004: Number(),
+        iceCream004PCS2: Number(),
+        iceCream004PCS3: Number(),
+        waffle001: Number(),
+        waffle002: Number(),
+        waffle003: Number(),
+        waffle004: Number(),
+        waffle005: Number(),
+        waffle006: Number(),
+        waffle007: Number(),
+        waffle008: Number(),
+        waffle009: Number(),
+        waffle0091: Number(),
+        waffle010: Number(),
+        waffle0101: Number(),
+        waffle011: Number(),
+        waffle012: Number(),
+        waffle013: Number(),
+        waffle014: Number(),
+        waffle015: Number()
     };
     var chek = document.getElementById("chekWindow");
     var chekSumm = Number();
@@ -533,6 +575,25 @@
     var jarSorbetSumm = Number();
     var iceCream001Summ = Number();
     var iceCream002Summ = Number();
+    var iceCream003Summ = Number();
+    var iceCream004Summ = Number();
+    var waffle001Summ = Number();
+    var waffle002Summ = Number();
+    var waffle003Summ = Number();
+    var waffle004Summ = Number();
+    var waffle005Summ = Number();
+    var waffle006Summ = Number();
+    var waffle007Summ = Number();
+    var waffle008Summ = Number();
+    var waffle009Summ = Number();
+    var waffle0091Summ = Number();
+    var waffle010Summ = Number();
+    var waffle0101Summ = Number();
+    var waffle011Summ = Number();
+    var waffle012Summ = Number();
+    var waffle013Summ = Number();
+    var waffle014Summ = Number();
+    var waffle015Summ = Number();
     var reportEspressoValue = document.getElementById("reportEspresso");
     var reportAmericanoValue = document.getElementById("reportAmericano");
     var reportDopioValue = document.getElementById("reportDopio");
@@ -599,7 +660,121 @@
     var reportIceCream002Value = document.getElementById("reportIceCream002");
     var reportIceCream002PCS2Value = document.getElementById("reportIceCream002PCS2");
     var reportIceCream002PCS3Value = document.getElementById("reportIceCream002PCS3");
+    var reportIceCream003Value = document.getElementById("reportIceCream003");
+    var reportIceCream003PCS2Value = document.getElementById("reportIceCream003PCS2");
+    var reportIceCream003PCS3Value = document.getElementById("reportIceCream003PCS3");
+    var reportIceCream004Value = document.getElementById("reportIceCream004");
+    var reportIceCream004PCS2Value = document.getElementById("reportIceCream004PCS2");
+    var reportIceCream004PCS3Value = document.getElementById("reportIceCream004PCS3");
+    var reportWaffle001Value = document.getElementById("reportWaffle001");
+    var reportWaffle002Value = document.getElementById("reportWaffle002");
+    var reportWaffle003Value = document.getElementById("reportWaffle003");
+    var reportWaffle004Value = document.getElementById("reportWaffle004");
+    var reportWaffle005Value = document.getElementById("reportWaffle005");
+    var reportWaffle006Value = document.getElementById("reportWaffle006");
+    var reportWaffle007Value = document.getElementById("reportWaffle007");
+    var reportWaffle008Value = document.getElementById("reportWaffle008");
+    var reportWaffle009Value = document.getElementById("reportWaffle009");
+    var reportWaffle0091Value = document.getElementById("reportWaffle0091");
+    var reportWaffle010Value = document.getElementById("reportWaffle010");
+    var reportWaffle0101Value = document.getElementById("reportWaffle0101");
+    var reportWaffle011Value = document.getElementById("reportWaffle011");
+    var reportWaffle012Value = document.getElementById("reportWaffle012");
+    var reportWaffle013Value = document.getElementById("reportWaffle013");
+    var reportWaffle014Value = document.getElementById("reportWaffle014");
+    var reportWaffle015Value = document.getElementById("reportWaffle015");
     const sell = document.getElementById("sell");
+    let reportSellCount = {
+        espressoValue: document.getElementById("reportEspressoSell"),
+        americanoValue: document.getElementById("reportAmericanoSell"),
+        dopioValue: document.getElementById("reportDopioSell"),
+        kapucinoSValue: document.getElementById("reportKapucinoSSell"),
+        kapucinoMValue: document.getElementById("reportKapucinoMSell"),
+        kapucinoLValue: document.getElementById("reportKapucinoLSell"),
+        latteSValue: document.getElementById("reportLatteSSell"),
+        latteMValue: document.getElementById("reportLatteMSell"),
+        latteLValue: document.getElementById("reportLatteLSell"),
+        rafSValue: document.getElementById("reportRafSSell"),
+        rafMValue: document.getElementById("reportRafMSell"),
+        fletWhiteSValue: document.getElementById("reportFletWhiteSSell"),
+        fletWhiteMValue: document.getElementById("reportFletWhiteMSell"),
+        creamValue: document.getElementById("reportCreamSell"),
+        syrupValue: document.getElementById("reportSyrupSell"),
+        milkValue: document.getElementById("reportMilkSell"),
+        vegetableMilkValue: document.getElementById("reportVegetableMilkSell"),
+        lactoseFreeMilkValue: document.getElementById("reportLactoseFreeMilkSell"),
+        peanutValue: document.getElementById("reportPeanutSell"),
+        coconutShavingsValue: document.getElementById("reportCoconutShavingsSell"),
+        marshmellowValue: document.getElementById("reportMarshmellowSell"),
+        oreoCoffeValue: document.getElementById("reportOreoCoffeSell"),
+        lionCoffeValue: document.getElementById("reportLionCoffeSell"),
+        bananaCoffeValue: document.getElementById("reportBananaCoffeSell"),
+        coconutCoffeValue: document.getElementById("reportCoconutCoffeSell"),
+        kendyNutCoffeValue: document.getElementById("reportKendyNutCoffeSell"),
+        mmsCoffeValue: document.getElementById("reportMmsCoffeSell"),
+        cherryCoffeValue: document.getElementById("reportCherryCoffeSell"),
+        glyaseCoffeValue: document.getElementById("reportGlyaseCoffeSell"),
+        kakaoRainbowCoffeValue: document.getElementById("reportKakaoRainbowCoffeSell"),
+        coldLatteValue: document.getElementById("reportColdLatteSell"),
+        tigerLatteValue: document.getElementById("reportTigerLatteSell"),
+        fruitMexicanValue: document.getElementById("reportFruitMexicanSell"),
+        teeValue: document.getElementById("reportTeeSell"),
+        ekoTeeValue: document.getElementById("reportEkoTeeSell"),
+        chokolateValue: document.getElementById("reportChokolateSell"),
+        chokolatePlusValue: document.getElementById("reportChokolatePlusSell"),
+        mulledWineValue: document.getElementById("reportMulledWineSell"),
+        cacaoNaturalValue: document.getElementById("reportCacaoNaturalSell"),
+        nesquikSValue: document.getElementById("reportNesquikSSell"),
+        nesquikMValue: document.getElementById("reportNesquikMSell"),
+        matchaValue: document.getElementById("reportMatchaSell"),
+        matchaLatteValue: document.getElementById("reportMatchaLatteSell"),
+        kapucinoSLactoseFreeValue: document.getElementById("reportKapucinoSLactoseFreeSell"),
+        kapucinoMLactoseFreeValue: document.getElementById("reportKapucinoMLactoseFreeSell"),
+        kapucinoLLactoseFreeValue: document.getElementById("reportKapucinoLLactoseFreeSell"),
+        latteSLactoseFreeValue: document.getElementById("reportLatteSLactoseFreeSell"),
+        latteMLactoseFreeValue: document.getElementById("reportLatteMLactoseFreeSell"),
+        latteLLactoseFreeValue: document.getElementById("reportLatteLLactoseFreeSell"),
+        nesquikSLactoseFreeValue: document.getElementById("reportNesquikSLactoseFreeSell"),
+        cacaoNaturalLactoseFreeValue: document.getElementById("reportCacaoNaturalLactoseFreeSell"),
+        fletWhiteSLactoseFreeValue: document.getElementById("reportFletWhiteSLactoseFreeSell"),
+        kapucinoSVegetableValue: document.getElementById("reportKapucinoSVegetableSell"),
+        kapucinoMVegetableValue: document.getElementById("reportKapucinoMVegetableSell"),
+        latteSVegetableValue: document.getElementById("reportLatteSVegetableSell"),
+        latteMVegetableValue: document.getElementById("reportLatteMVegetableSell"),
+        cacaoNaturalVegetableValue: document.getElementById("reportCacaoNaturalVegetableSell"),
+        fletWhiteSVegetableValue: document.getElementById("reportFletWhiteSVegetableSell"),
+        jarIceCreamValue: document.getElementById("reportJarIceCreamSell"),
+        jarSorbetValue: document.getElementById("reportJarSorbetSell"),
+        iceCream001Value: document.getElementById("reportIceCream001Sell"),
+        iceCream001ValuePCS2: document.getElementById("reportIceCream001PCS2Sell"),
+        iceCream001ValuePCS3: document.getElementById("reportIceCream001PCS3Sell"),
+        iceCream002Value: document.getElementById("reportIceCream002Sell"),
+        iceCream002ValuePCS2: document.getElementById("reportIceCream002PCS2Sell"),
+        iceCream002ValuePCS3: document.getElementById("reportIceCream002PCS3Sell"),
+        iceCream003Value: document.getElementById("reportIceCream003Sell"),
+        iceCream003ValuePCS2: document.getElementById("reportIceCream003PCS2Sell"),
+        iceCream003ValuePCS3: document.getElementById("reportIceCream003PCS3Sell"),
+        iceCream004Value: document.getElementById("reportIceCream004Sell"),
+        iceCream004ValuePCS2: document.getElementById("reportIceCream004PCS2Sell"),
+        iceCream004ValuePCS3: document.getElementById("reportIceCream004PCS3Sell"),
+        waffle001Value: document.getElementById("reportWaffle001Sell"),
+        waffle002Value: document.getElementById("reportWaffle002Sell"),
+        waffle003Value: document.getElementById("reportWaffle003Sell"),
+        waffle004Value: document.getElementById("reportWaffle004Sell"),
+        waffle005Value: document.getElementById("reportWaffle005Sell"),
+        waffle006Value: document.getElementById("reportWaffle006Sell"),
+        waffle007Value: document.getElementById("reportWaffle007Sell"),
+        waffle008Value: document.getElementById("reportWaffle008Sell"),
+        waffle009Value: document.getElementById("reportWaffle009Sell"),
+        waffle0091Value: document.getElementById("reportWaffle0091Sell"),
+        waffle010Value: document.getElementById("reportWaffle010Sell"),
+        waffle0101Value: document.getElementById("reportWaffle0101Sell"),
+        waffle011Value: document.getElementById("reportWaffle011Sell"),
+        waffle012Value: document.getElementById("reportWaffle012Sell"),
+        waffle013Value: document.getElementById("reportWaffle013Sell"),
+        waffle014Value: document.getElementById("reportWaffle014Sell"),
+        waffle015Value: document.getElementById("reportWaffle015Sell")
+    };
     const confirmCash = document.getElementById("confirmCash");
     const confirmCard = document.getElementById("confirmCard");
     const beforeMoneyButton = document.getElementById("beforeMoneyButton");
@@ -665,9 +840,28 @@
     const jarSorbetButton = document.getElementById("jarSorbetButton");
     const iceCream001Button = document.getElementById("iceCream001Button");
     const iceCream002Button = document.getElementById("iceCream002Button");
+    const iceCream003Button = document.getElementById("iceCream003Button");
+    const iceCream004Button = document.getElementById("iceCream004Button");
+    const waffle001Button = document.getElementById("waffle001Button");
+    const waffle002Button = document.getElementById("waffle002Button");
+    const waffle003Button = document.getElementById("waffle003Button");
+    const waffle004Button = document.getElementById("waffle004Button");
+    const waffle005Button = document.getElementById("waffle005Button");
+    const waffle006Button = document.getElementById("waffle006Button");
+    const waffle007Button = document.getElementById("waffle007Button");
+    const waffle008Button = document.getElementById("waffle008Button");
+    const waffle009Button = document.getElementById("waffle009Button");
+    const waffle0091Button = document.getElementById("waffle0091Button");
+    const waffle010Button = document.getElementById("waffle010Button");
+    const waffle0101Button = document.getElementById("waffle0101Button");
+    const waffle011Button = document.getElementById("waffle011Button");
+    const waffle012Button = document.getElementById("waffle012Button");
+    const waffle013Button = document.getElementById("waffle013Button");
+    const waffle014Button = document.getElementById("waffle014Button");
+    const waffle015Button = document.getElementById("waffle015Button");
     function chekCalc() {
         chekSumm = 0;
-        chekSumm = espressoSumm + americanoSumm + dopioSumm + kapucinoSSumm + kapucinoMSumm + kapucinoLSumm + latteSSumm + latteMSumm + latteLSumm + rafSSumm + rafMSumm + fletWhiteSSumm + fletWhiteMSumm + peanutSumm + coconutShavingsSumm + marshmellowSumm + creamSumm + syrupSumm + milkSumm + vegetableMilkSumm + lactoseFreeMilkSumm + oreoCoffeSumm + lionCoffeSumm + bananaCoffeSumm + coconutCoffeSumm + kendyNutCoffeSumm + mmsCoffeSumm + cherryCoffeSumm + glyaseCoffeSumm + kakaoRainbowCoffeSumm + coldLatteSumm + tigerLatteSumm + fruitMexicanSumm + teeSumm + ekoTeeSumm + chokolateSumm + chokolatePlusSumm + mulledWineSumm + cacaoNaturalSumm + nesquikSSumm + nesquikMSumm + matchaSumm + matchaLatteSumm + kapucinoSLactoseFreeSumm + kapucinoMLactoseFreeSumm + kapucinoLLactoseFreeSumm + latteSLactoseFreeSumm + latteMLactoseFreeSumm + latteLLactoseFreeSumm + nesquikSLactoseFreeSumm + cacaoNaturalLactoseFreeSumm + fletWhiteSLactoseFreeSumm + kapucinoSVegetableSumm + kapucinoMVegetableSumm + latteSVegetableSumm + latteMVegetableSumm + cacaoNaturalVegetableSumm + fletWhiteSVegetableSumm + jarIceCreamSumm + jarSorbetSumm + iceCream001Summ + iceCream002Summ;
+        chekSumm = espressoSumm + americanoSumm + dopioSumm + kapucinoSSumm + kapucinoMSumm + kapucinoLSumm + latteSSumm + latteMSumm + latteLSumm + rafSSumm + rafMSumm + fletWhiteSSumm + fletWhiteMSumm + peanutSumm + coconutShavingsSumm + marshmellowSumm + creamSumm + syrupSumm + milkSumm + vegetableMilkSumm + lactoseFreeMilkSumm + oreoCoffeSumm + lionCoffeSumm + bananaCoffeSumm + coconutCoffeSumm + kendyNutCoffeSumm + mmsCoffeSumm + cherryCoffeSumm + glyaseCoffeSumm + kakaoRainbowCoffeSumm + coldLatteSumm + tigerLatteSumm + fruitMexicanSumm + teeSumm + ekoTeeSumm + chokolateSumm + chokolatePlusSumm + mulledWineSumm + cacaoNaturalSumm + nesquikSSumm + nesquikMSumm + matchaSumm + matchaLatteSumm + kapucinoSLactoseFreeSumm + kapucinoMLactoseFreeSumm + kapucinoLLactoseFreeSumm + latteSLactoseFreeSumm + latteMLactoseFreeSumm + latteLLactoseFreeSumm + nesquikSLactoseFreeSumm + cacaoNaturalLactoseFreeSumm + fletWhiteSLactoseFreeSumm + kapucinoSVegetableSumm + kapucinoMVegetableSumm + latteSVegetableSumm + latteMVegetableSumm + cacaoNaturalVegetableSumm + fletWhiteSVegetableSumm + jarIceCreamSumm + jarSorbetSumm + iceCream001Summ + iceCream002Summ + iceCream003Summ + iceCream004Summ + waffle001Summ + waffle002Summ + waffle003Summ + waffle004Summ + waffle005Summ + waffle006Summ + waffle007Summ + waffle008Summ + waffle009Summ + waffle0091Summ + waffle010Summ + waffle0101Summ + waffle011Summ + waffle012Summ + waffle013Summ + waffle014Summ + waffle015Summ;
         chek.value = chekSumm;
     }
     function espresso() {
@@ -1059,25 +1253,157 @@
         chekCalc();
     }
     iceCream002Button.addEventListener("click", iceCream002);
+    function iceCream003() {
+        count.iceCream003 = document.getElementById("iceCream003").value;
+        if (1 == count.iceCream003) iceCream003Summ = count.iceCream003 * prices.iceCream003; else if (2 == count.iceCream003) {
+            count.iceCream003PCS3 = 0;
+            count.iceCream003PCS2 = 1;
+            iceCream003Summ = count.iceCream003 * prices.iceCream003 - 2;
+        } else if (count.iceCream003 >= 3) {
+            count.iceCream003PCS2 = 0;
+            count.iceCream003PCS3 = 1;
+            iceCream003Summ = count.iceCream003 * prices.iceCream003 - 6;
+        } else iceCream003Summ = 0;
+        chekCalc();
+    }
+    iceCream003Button.addEventListener("click", iceCream003);
+    function iceCream004() {
+        count.iceCream004 = document.getElementById("iceCream004").value;
+        if (1 == count.iceCream004) iceCream004Summ = count.iceCream004 * prices.iceCream004; else if (2 == count.iceCream004) {
+            count.iceCream004PCS3 = 0;
+            count.iceCream004PCS2 = 1;
+            iceCream004Summ = count.iceCream004 * prices.iceCream004 - 2;
+        } else if (count.iceCream004 >= 3) {
+            count.iceCream004PCS2 = 0;
+            count.iceCream004PCS3 = 1;
+            iceCream004Summ = count.iceCream004 * prices.iceCream004 - 6;
+        } else iceCream004Summ = 0;
+        chekCalc();
+    }
+    iceCream004Button.addEventListener("click", iceCream004);
+    function waffle001() {
+        count.waffle001 = document.getElementById("waffle001").value;
+        waffle001Summ = count.waffle001 * prices.waffle001;
+        chekCalc();
+    }
+    waffle001Button.addEventListener("click", waffle001);
+    function waffle002() {
+        count.waffle002 = document.getElementById("waffle002").value;
+        waffle002Summ = count.waffle002 * prices.waffle002;
+        chekCalc();
+    }
+    waffle002Button.addEventListener("click", waffle002);
+    function waffle003() {
+        count.waffle003 = document.getElementById("waffle003").value;
+        waffle003Summ = count.waffle003 * prices.waffle003;
+        chekCalc();
+    }
+    waffle003Button.addEventListener("click", waffle003);
+    function waffle004() {
+        count.waffle004 = document.getElementById("waffle004").value;
+        waffle004Summ = count.waffle004 * prices.waffle004;
+        chekCalc();
+    }
+    waffle004Button.addEventListener("click", waffle004);
+    function waffle005() {
+        count.waffle005 = document.getElementById("waffle005").value;
+        waffle005Summ = count.waffle005 * prices.waffle005;
+        chekCalc();
+    }
+    waffle005Button.addEventListener("click", waffle005);
+    function waffle006() {
+        count.waffle006 = document.getElementById("waffle006").value;
+        waffle006Summ = count.waffle006 * prices.waffle006;
+        chekCalc();
+    }
+    waffle006Button.addEventListener("click", waffle006);
+    function waffle007() {
+        count.waffle007 = document.getElementById("waffle007").value;
+        waffle007Summ = count.waffle007 * prices.waffle007;
+        chekCalc();
+    }
+    waffle007Button.addEventListener("click", waffle007);
+    function waffle008() {
+        count.waffle008 = document.getElementById("waffle008").value;
+        waffle008Summ = count.waffle008 * prices.waffle008;
+        chekCalc();
+    }
+    waffle008Button.addEventListener("click", waffle008);
+    function waffle009() {
+        count.waffle009 = document.getElementById("waffle009").value;
+        waffle009Summ = count.waffle009 * prices.waffle009;
+        chekCalc();
+    }
+    waffle009Button.addEventListener("click", waffle009);
+    function waffle0091() {
+        count.waffle0091 = document.getElementById("waffle0091").value;
+        waffle0091Summ = count.waffle0091 * prices.waffle0091;
+        chekCalc();
+    }
+    waffle0091Button.addEventListener("click", waffle0091);
+    function waffle010() {
+        count.waffle010 = document.getElementById("waffle010").value;
+        waffle010Summ = count.waffle010 * prices.waffle010;
+        chekCalc();
+    }
+    waffle010Button.addEventListener("click", waffle010);
+    function waffle0101() {
+        count.waffle0101 = document.getElementById("waffle0101").value;
+        waffle0101Summ = count.waffle0101 * prices.waffle0101;
+        chekCalc();
+    }
+    waffle0101Button.addEventListener("click", waffle0101);
+    function waffle011() {
+        count.waffle011 = document.getElementById("waffle011").value;
+        waffle011Summ = count.waffle011 * prices.waffle011;
+        chekCalc();
+    }
+    waffle011Button.addEventListener("click", waffle011);
+    function waffle012() {
+        count.waffle012 = document.getElementById("waffle012").value;
+        waffle012Summ = count.waffle012 * prices.waffle012;
+        chekCalc();
+    }
+    waffle012Button.addEventListener("click", waffle012);
+    function waffle013() {
+        count.waffle013 = document.getElementById("waffle013").value;
+        waffle013Summ = count.waffle013 * prices.waffle013;
+        chekCalc();
+    }
+    waffle013Button.addEventListener("click", waffle013);
+    function waffle014() {
+        count.waffle014 = document.getElementById("waffle014").value;
+        waffle014Summ = count.waffle014 * prices.waffle014;
+        chekCalc();
+    }
+    waffle014Button.addEventListener("click", waffle014);
+    function waffle015() {
+        count.waffle015 = document.getElementById("waffle015").value;
+        waffle015Summ = count.waffle015 * prices.waffle015;
+        chekCalc();
+    }
+    waffle015Button.addEventListener("click", waffle015);
+    var sellCount = Number();
     function sellFoo() {
         chekSumm -= chekSumm / 100 * 20;
         chek.value = chekSumm;
+        sellCount = 1;
     }
     sell.addEventListener("click", sellFoo);
     let reportCountObject = {
-        espresso: Number(0),
-        americano: Number(0),
-        dopio: Number(0),
-        kapucinoS: Number(0),
-        kapucinoM: Number(0),
-        kapucinoL: Number(0),
-        latteS: Number(0),
-        latteM: Number(0),
-        latteL: Number(0),
-        rafS: Number(0),
-        rafM: Number(0),
-        fletWhiteS: Number(0),
-        fletWhiteM: Number(0),
+        espresso: Number(),
+        americano: Number(),
+        dopio: Number(),
+        kapucinoS: Number(),
+        kapucinoM: Number(),
+        kapucinoL: Number(),
+        latteS: Number(),
+        latteM: Number(),
+        latteL: Number(),
+        rafS: Number(),
+        rafM: Number(),
+        fletWhiteS: Number(),
+        fletWhiteM: Number(),
         cream: Number(),
         syrup: Number(),
         milk: Number(),
@@ -1130,7 +1456,119 @@
         iceCream001PCS3: Number(),
         iceCream002: Number(),
         iceCream002PCS2: Number(),
-        iceCream002PCS3: Number()
+        iceCream002PCS3: Number(),
+        iceCream003: Number(),
+        iceCream003PCS2: Number(),
+        iceCream003PCS3: Number(),
+        iceCream004: Number(),
+        iceCream004PCS2: Number(),
+        iceCream004PCS3: Number(),
+        waffle001: Number(),
+        waffle002: Number(),
+        waffle003: Number(),
+        waffle004: Number(),
+        waffle005: Number(),
+        waffle006: Number(),
+        waffle007: Number(),
+        waffle008: Number(),
+        waffle009: Number(),
+        waffle0091: Number(),
+        waffle010: Number(),
+        waffle0101: Number(),
+        waffle011: Number(),
+        waffle012: Number(),
+        waffle013: Number(),
+        waffle014: Number(),
+        waffle015: Number(),
+        espressoSell: Number(),
+        americanoSell: Number(),
+        dopioSell: Number(),
+        kapucinoSSell: Number(),
+        kapucinoMSell: Number(),
+        kapucinoLSell: Number(),
+        latteSSell: Number(),
+        latteMSell: Number(),
+        latteLSell: Number(),
+        rafSSell: Number(),
+        rafMSell: Number(),
+        fletWhiteSSell: Number(),
+        fletWhiteMSell: Number(),
+        creamSell: Number(),
+        syrupSell: Number(),
+        milkSell: Number(),
+        vegetableMilkSell: Number(),
+        lactoseFreeMilkSell: Number(),
+        peanutSell: Number(),
+        coconutShavingsSell: Number(),
+        marshmellowSell: Number(),
+        oreoCoffeSell: Number(),
+        lionCoffeSell: Number(),
+        bananaCoffeSell: Number(),
+        coconutCoffeSell: Number(),
+        kendyNutCoffeSell: Number(),
+        mmsCoffeSell: Number(),
+        cherryCoffeSell: Number(),
+        glyaseCoffeSell: Number(),
+        kakaoRainbowCoffeSell: Number(),
+        coldLatteSell: Number(),
+        tigerLatteSell: Number(),
+        fruitMexicanSell: Number(),
+        teeSell: Number(),
+        ekoTeeSell: Number(),
+        chokolateSell: Number(),
+        chokolatePlusSell: Number(),
+        mulledWineSell: Number(),
+        cacaoNaturalSell: Number(),
+        nesquikSSell: Number(),
+        nesquikMSell: Number(),
+        matchaSell: Number(),
+        matchaLatteSell: Number(),
+        kapucinoSLactoseFreeSell: Number(),
+        kapucinoMLactoseFreeSell: Number(),
+        kapucinoLLactoseFreeSell: Number(),
+        latteSLactoseFreeSell: Number(),
+        latteMLactoseFreeSell: Number(),
+        latteLLactoseFreeSell: Number(),
+        nesquikSLactoseFreeSell: Number(),
+        cacaoNaturalLactoseFreeSell: Number(),
+        fletWhiteSLactoseFreeSell: Number(),
+        kapucinoSVegetableSell: Number(),
+        kapucinoMVegetableSell: Number(),
+        latteSVegetableSell: Number(),
+        latteMVegetableSell: Number(),
+        cacaoNaturalVegetableSell: Number(),
+        fletWhiteSVegetableSell: Number(),
+        jarIceCreamSell: Number(),
+        jarSorbetSell: Number(),
+        iceCream001Sell: Number(),
+        iceCream001PCS2Sell: Number(),
+        iceCream001PCS3Sell: Number(),
+        iceCream002Sell: Number(),
+        iceCream002PCS2Sell: Number(),
+        iceCream002PCS3Sell: Number(),
+        iceCream003Sell: Number(),
+        iceCream003PCS2Sell: Number(),
+        iceCream003PCS3Sell: Number(),
+        iceCream004Sell: Number(),
+        iceCream004PCS2Sell: Number(),
+        iceCream004PCS3Sell: Number(),
+        waffle001Sell: Number(),
+        waffle002Sell: Number(),
+        waffle003Sell: Number(),
+        waffle004Sell: Number(),
+        waffle005Sell: Number(),
+        waffle006Sell: Number(),
+        waffle007Sell: Number(),
+        waffle008Sell: Number(),
+        waffle009Sell: Number(),
+        waffle0091Sell: Number(),
+        waffle010Sell: Number(),
+        waffle0101Sell: Number(),
+        waffle011Sell: Number(),
+        waffle012Sell: Number(),
+        waffle013Sell: Number(),
+        waffle014Sell: Number(),
+        waffle015Sell: Number()
     };
     function report() {
         summ.allSumm = summ.allSumm + chekSumm;
@@ -1219,8 +1657,28 @@
         jarSorbetSumm = count.jarSorbet = document.getElementById("jarSorbet").value = 0;
         iceCream001Summ = count.iceCream001 = count.iceCream001PCS2 = count.iceCream001PCS3 = document.getElementById("iceCream001").value = 0;
         iceCream002Summ = count.iceCream002 = count.iceCream002PCS2 = count.iceCream002PCS3 = document.getElementById("iceCream002").value = 0;
+        iceCream003Summ = count.iceCream003 = count.iceCream003PCS2 = count.iceCream003PCS3 = document.getElementById("iceCream003").value = 0;
+        iceCream004Summ = count.iceCream004 = count.iceCream004PCS2 = count.iceCream004PCS3 = document.getElementById("iceCream004").value = 0;
+        waffle001Summ = count.waffle001 = document.getElementById("waffle001").value = 0;
+        waffle002Summ = count.waffle002 = document.getElementById("waffle002").value = 0;
+        waffle003Summ = count.waffle003 = document.getElementById("waffle003").value = 0;
+        waffle004Summ = count.waffle004 = document.getElementById("waffle004").value = 0;
+        waffle005Summ = count.waffle005 = document.getElementById("waffle005").value = 0;
+        waffle006Summ = count.waffle006 = document.getElementById("waffle006").value = 0;
+        waffle007Summ = count.waffle007 = document.getElementById("waffle007").value = 0;
+        waffle008Summ = count.waffle008 = document.getElementById("waffle008").value = 0;
+        waffle009Summ = count.waffle009 = document.getElementById("waffle009").value = 0;
+        waffle0091Summ = count.waffle0091 = document.getElementById("waffle0091").value = 0;
+        waffle010Summ = count.waffle010 = document.getElementById("waffle010").value = 0;
+        waffle0101Summ = count.waffle0101 = document.getElementById("waffle0101").value = 0;
+        waffle011Summ = count.waffle011 = document.getElementById("waffle011").value = 0;
+        waffle012Summ = count.waffle012 = document.getElementById("waffle012").value = 0;
+        waffle013Summ = count.waffle013 = document.getElementById("waffle013").value = 0;
+        waffle014Summ = count.waffle014 = document.getElementById("waffle014").value = 0;
+        waffle015Summ = count.waffle015 = document.getElementById("waffle015").value = 0;
         chek.value = chekSumm = 0;
         document.getElementById("beforeMoney").value = "";
+        sellCount = 0;
     }
     function beforeMoneyFoo() {
         beforeMoneyValue = document.getElementById("beforeMoney").value;
@@ -1238,7 +1696,190 @@
         reportSaveCountValue();
     }
     function reportSaveCount() {
-        reportCountObject = {
+        console.log(sellCount);
+        if (sellCount) {
+            reportCountObject = {
+                espresso: reportCountObject.espresso + +count.espresso,
+                americano: reportCountObject.americano + +count.americano,
+                dopio: reportCountObject.dopio + +count.dopio,
+                kapucinoS: reportCountObject.kapucinoS + +count.kapucinoS,
+                kapucinoM: reportCountObject.kapucinoM + +count.kapucinoM,
+                kapucinoL: reportCountObject.kapucinoL + +count.kapucinoL,
+                latteS: reportCountObject.latteS + +count.latteS,
+                latteM: reportCountObject.latteM + +count.latteM,
+                latteL: reportCountObject.latteL + +count.latteL,
+                rafS: reportCountObject.rafS + +count.rafS,
+                rafM: reportCountObject.rafM + +count.rafM,
+                fletWhiteS: reportCountObject.fletWhiteS + +count.fletWhiteS,
+                fletWhiteM: reportCountObject.fletWhiteM + +count.fletWhiteM,
+                cream: reportCountObject.cream + +count.cream,
+                syrup: reportCountObject.syrup + +count.syrup,
+                milk: reportCountObject.milk + +count.milk,
+                vegetableMilk: reportCountObject.vegetableMilk + +count.vegetableMilk,
+                lactoseFreeMilk: reportCountObject.lactoseFreeMilk + +count.lactoseFreeMilk,
+                peanut: reportCountObject.peanut + +count.peanut,
+                coconutShavings: reportCountObject.coconutShavings + +count.coconutShavings,
+                marshmellow: reportCountObject.marshmellow + +count.marshmellow,
+                oreoCoffe: reportCountObject.oreoCoffe + +count.oreoCoffe,
+                lionCoffe: reportCountObject.lionCoffe + +count.lionCoffe,
+                bananaCoffe: reportCountObject.bananaCoffe + +count.bananaCoffe,
+                coconutCoffe: reportCountObject.coconutCoffe + +count.coconutCoffe,
+                kendyNutCoffe: reportCountObject.kendyNutCoffe + +count.kendyNutCoffe,
+                mmsCoffe: reportCountObject.mmsCoffe + +count.mmsCoffe,
+                cherryCoffe: reportCountObject.cherryCoffe + +count.cherryCoffe,
+                glyaseCoffe: reportCountObject.glyaseCoffe + +count.glyaseCoffe,
+                kakaoRainbowCoffe: reportCountObject.kakaoRainbowCoffe + +count.kakaoRainbowCoffe,
+                coldLatte: reportCountObject.coldLatte + +count.coldLatte,
+                tigerLatte: reportCountObject.tigerLatte + +count.tigerLatte,
+                fruitMexican: reportCountObject.fruitMexican + +count.fruitMexican,
+                tee: reportCountObject.tee + +count.tee,
+                ekoTee: reportCountObject.ekoTee + +count.ekoTee,
+                chokolate: reportCountObject.chokolate + +count.chokolate,
+                chokolatePlus: reportCountObject.chokolatePlus + +count.chokolatePlus,
+                mulledWine: reportCountObject.mulledWine + +count.mulledWine,
+                cacaoNatural: reportCountObject.cacaoNatural + +count.cacaoNatural,
+                nesquikS: reportCountObject.nesquikS + +count.nesquikS,
+                nesquikM: reportCountObject.nesquikM + +count.nesquikM,
+                matcha: reportCountObject.matcha + +count.matcha,
+                matchaLatte: reportCountObject.matchaLatte + +count.matchaLatte,
+                kapucinoSLactoseFree: reportCountObject.kapucinoSLactoseFree + +count.kapucinoSLactoseFree,
+                kapucinoMLactoseFree: reportCountObject.kapucinoMLactoseFree + +count.kapucinoMLactoseFree,
+                kapucinoLLactoseFree: reportCountObject.kapucinoLLactoseFree + +count.kapucinoLLactoseFree,
+                latteSLactoseFree: reportCountObject.latteSLactoseFree + +count.latteSLactoseFree,
+                latteMLactoseFree: reportCountObject.latteMLactoseFree + +count.latteMLactoseFree,
+                latteLLactoseFree: reportCountObject.latteLLactoseFree + +count.latteLLactoseFree,
+                nesquikSLactoseFree: reportCountObject.nesquikSLactoseFree + +count.nesquikSLactoseFree,
+                cacaoNaturalLactoseFree: reportCountObject.cacaoNaturalLactoseFree + +count.cacaoNaturalLactoseFree,
+                fletWhiteSLactoseFree: reportCountObject.fletWhiteSLactoseFree + +count.fletWhiteSLactoseFree,
+                kapucinoSVegetable: reportCountObject.kapucinoSVegetable + +count.kapucinoSVegetable,
+                kapucinoMVegetable: reportCountObject.kapucinoMVegetable + +count.kapucinoMVegetable,
+                latteSVegetable: reportCountObject.latteSVegetable + +count.latteSVegetable,
+                latteMVegetable: reportCountObject.latteMVegetable + +count.latteMVegetable,
+                cacaoNaturalVegetable: reportCountObject.cacaoNaturalVegetable + +count.cacaoNaturalVegetable,
+                fletWhiteSVegetable: reportCountObject.fletWhiteSVegetable + +count.fletWhiteSVegetable,
+                jarIceCream: reportCountObject.jarIceCream + +count.jarIceCream,
+                jarSorbet: reportCountObject.jarSorbet + +count.jarSorbet,
+                iceCream001: reportCountObject.iceCream001 + +count.iceCream001,
+                iceCream001PCS2: reportCountObject.iceCream001PCS2 + +count.iceCream001PCS2,
+                iceCream001PCS3: reportCountObject.iceCream001PCS3 + +count.iceCream001PCS3,
+                iceCream002: reportCountObject.iceCream002 + +count.iceCream002,
+                iceCream002PCS2: reportCountObject.iceCream002PCS2 + +count.iceCream002PCS2,
+                iceCream002PCS3: reportCountObject.iceCream002PCS3 + +count.iceCream002PCS3,
+                iceCream003: reportCountObject.iceCream003 + +count.iceCream003,
+                iceCream003PCS2: reportCountObject.iceCream003PCS2 + +count.iceCream003PCS2,
+                iceCream003PCS3: reportCountObject.iceCream003PCS3 + +count.iceCream003PCS3,
+                iceCream004: reportCountObject.iceCream004 + +count.iceCream004,
+                iceCream004PCS2: reportCountObject.iceCream004PCS2 + +count.iceCream004PCS2,
+                iceCream004PCS3: reportCountObject.iceCream004PCS3 + +count.iceCream004PCS3,
+                waffle001: reportCountObject.waffle001 + +count.waffle001,
+                waffle002: reportCountObject.waffle002 + +count.waffle002,
+                waffle003: reportCountObject.waffle003 + +count.waffle003,
+                waffle004: reportCountObject.waffle004 + +count.waffle004,
+                waffle005: reportCountObject.waffle005 + +count.waffle005,
+                waffle006: reportCountObject.waffle006 + +count.waffle006,
+                waffle007: reportCountObject.waffle007 + +count.waffle007,
+                waffle008: reportCountObject.waffle008 + +count.waffle008,
+                waffle009: reportCountObject.waffle009 + +count.waffle009,
+                waffle0091: reportCountObject.waffle0091 + +count.waffle0091,
+                waffle010: reportCountObject.waffle010 + +count.waffle010,
+                waffle0101: reportCountObject.waffle0101 + +count.waffle0101,
+                waffle011: reportCountObject.waffle011 + +count.waffle011,
+                waffle012: reportCountObject.waffle012 + +count.waffle012,
+                waffle013: reportCountObject.waffle013 + +count.waffle013,
+                waffle014: reportCountObject.waffle014 + +count.waffle014,
+                waffle015: reportCountObject.waffle015 + +count.waffle015,
+                espressoSell: reportCountObject.espressoSell + +count.espresso,
+                americanoSell: reportCountObject.americanoSell + +count.americano,
+                dopioSell: reportCountObject.dopioSell + +count.dopio,
+                kapucinoSSell: reportCountObject.kapucinoSSell + +count.kapucinoS,
+                kapucinoMSell: reportCountObject.kapucinoMSell + +count.kapucinoM,
+                kapucinoLSell: reportCountObject.kapucinoLSell + +count.kapucinoL,
+                latteSSell: reportCountObject.latteSSell + +count.latteS,
+                latteMSell: reportCountObject.latteMSell + +count.latteM,
+                latteLSell: reportCountObject.latteLSell + +count.latteL,
+                rafSSell: reportCountObject.rafSSell + +count.rafS,
+                rafMSell: reportCountObject.rafMSell + +count.rafM,
+                fletWhiteSSell: reportCountObject.fletWhiteSSell + +count.fletWhiteS,
+                fletWhiteMSell: reportCountObject.fletWhiteMSell + +count.fletWhiteM,
+                creamSell: reportCountObject.creamSell + +count.cream,
+                syrupSell: reportCountObject.syrupSell + +count.syrup,
+                milkSell: reportCountObject.milkSell + +count.milk,
+                vegetableMilkSell: reportCountObject.vegetableMilkSell + +count.vegetableMilk,
+                lactoseFreeMilkSell: reportCountObject.lactoseFreeMilkSell + +count.lactoseFreeMilk,
+                peanutSell: reportCountObject.peanutSell + +count.peanut,
+                coconutShavingsSell: reportCountObject.coconutShavingsSell + +count.coconutShavings,
+                marshmellowSell: reportCountObject.marshmellowSell + +count.marshmellow,
+                oreoCoffeSell: reportCountObject.oreoCoffeSell + +count.oreoCoffe,
+                lionCoffeSell: reportCountObject.lionCoffeSell + +count.lionCoffe,
+                bananaCoffeSell: reportCountObject.bananaCoffeSell + +count.bananaCoffe,
+                coconutCoffeSell: reportCountObject.coconutCoffeSell + +count.coconutCoffe,
+                kendyNutCoffeSell: reportCountObject.kendyNutCoffeSell + +count.kendyNutCoffe,
+                mmsCoffeSell: reportCountObject.mmsCoffeSell + +count.mmsCoffe,
+                cherryCoffeSell: reportCountObject.cherryCoffeSell + +count.cherryCoffe,
+                glyaseCoffeSell: reportCountObject.glyaseCoffeSell + +count.glyaseCoffe,
+                kakaoRainbowCoffeSell: reportCountObject.kakaoRainbowCoffeSell + +count.kakaoRainbowCoffe,
+                coldLatteSell: reportCountObject.coldLatteSell + +count.coldLatte,
+                tigerLatteSell: reportCountObject.tigerLatteSell + +count.tigerLatte,
+                fruitMexicanSell: reportCountObject.fruitMexicanSell + +count.fruitMexican,
+                teeSell: reportCountObject.teeSell + +count.tee,
+                ekoTeeSell: reportCountObject.ekoTeeSell + +count.ekoTee,
+                chokolateSell: reportCountObject.chokolateSell + +count.chokolate,
+                chokolatePlusSell: reportCountObject.chokolatePlusSell + +count.chokolatePlus,
+                mulledWineSell: reportCountObject.mulledWineSell + +count.mulledWine,
+                cacaoNaturalSell: reportCountObject.cacaoNaturalSell + +count.cacaoNatural,
+                nesquikSSell: reportCountObject.nesquikSSell + +count.nesquikS,
+                nesquikMSell: reportCountObject.nesquikMSell + +count.nesquikM,
+                matchaSell: reportCountObject.matchaSell + +count.matcha,
+                matchaLatteSell: reportCountObject.matchaLatteSell + +count.matchaLatte,
+                kapucinoSLactoseFreeSell: reportCountObject.kapucinoSLactoseFreeSell + +count.kapucinoSLactoseFree,
+                kapucinoMLactoseFreeSell: reportCountObject.kapucinoMLactoseFreeSell + +count.kapucinoMLactoseFree,
+                kapucinoLLactoseFreeSell: reportCountObject.kapucinoLLactoseFreeSell + +count.kapucinoLLactoseFree,
+                latteSLactoseFreeSell: reportCountObject.latteSLactoseFreeSell + +count.latteSLactoseFree,
+                latteMLactoseFreeSell: reportCountObject.latteMLactoseFreeSell + +count.latteMLactoseFree,
+                latteLLactoseFreeSell: reportCountObject.latteLLactoseFreeSell + +count.latteLLactoseFree,
+                nesquikSLactoseFreeSell: reportCountObject.nesquikSLactoseFreeSell + +count.nesquikSLactoseFree,
+                cacaoNaturalLactoseFreeSell: reportCountObject.cacaoNaturalLactoseFreeSell + +count.cacaoNaturalLactoseFree,
+                fletWhiteSLactoseFreeSell: reportCountObject.fletWhiteSLactoseFreeSell + +count.fletWhiteSLactoseFree,
+                kapucinoSVegetableSell: reportCountObject.kapucinoSVegetableSell + +count.kapucinoSVegetable,
+                kapucinoMVegetableSell: reportCountObject.kapucinoMVegetableSell + +count.kapucinoMVegetable,
+                latteSVegetableSell: reportCountObject.latteSVegetableSell + +count.latteSVegetable,
+                latteMVegetableSell: reportCountObject.latteMVegetableSell + +count.latteMVegetable,
+                cacaoNaturalVegetableSell: reportCountObject.cacaoNaturalVegetableSell + +count.cacaoNaturalVegetable,
+                fletWhiteSVegetableSell: reportCountObject.fletWhiteSVegetableSell + +count.fletWhiteSVegetable,
+                jarIceCreamSell: reportCountObject.jarIceCreamSell + +count.jarIceCream,
+                jarSorbetSell: reportCountObject.jarSorbetSell + +count.jarSorbet,
+                iceCream001Sell: reportCountObject.iceCream001Sell + +count.iceCream001,
+                iceCream001PCS2Sell: reportCountObject.iceCream001PCS2Sell + +count.iceCream001PCS2,
+                iceCream001PCS3Sell: reportCountObject.iceCream001PCS3Sell + +count.iceCream001PCS3,
+                iceCream002Sell: reportCountObject.iceCream002Sell + +count.iceCream002,
+                iceCream002PCS2Sell: reportCountObject.iceCream002PCS2Sell + +count.iceCream002PCS2,
+                iceCream002PCS3Sell: reportCountObject.iceCream002PCS3Sell + +count.iceCream002PCS3,
+                iceCream003Sell: reportCountObject.iceCream003Sell + +count.iceCream003,
+                iceCream003PCS2Sell: reportCountObject.iceCream003PCS2Sell + +count.iceCream003PCS2,
+                iceCream003PCS3Sell: reportCountObject.iceCream003PCS3Sell + +count.iceCream003PCS3,
+                iceCream004Sell: reportCountObject.iceCream004Sell + +count.iceCream004,
+                iceCream004PCS2Sell: reportCountObject.iceCream004PCS2Sell + +count.iceCream004PCS2,
+                iceCream004PCS3Sell: reportCountObject.iceCream004PCS3Sell + +count.iceCream004PCS3,
+                waffle001Sell: reportCountObject.waffle001Sell + +count.waffle001,
+                waffle002Sell: reportCountObject.waffle002Sell + +count.waffle002,
+                waffle003Sell: reportCountObject.waffle003Sell + +count.waffle003,
+                waffle004Sell: reportCountObject.waffle004Sell + +count.waffle004,
+                waffle005Sell: reportCountObject.waffle005Sell + +count.waffle005,
+                waffle006Sell: reportCountObject.waffle006Sell + +count.waffle006,
+                waffle007Sell: reportCountObject.waffle007Sell + +count.waffle007,
+                waffle008Sell: reportCountObject.waffle008Sell + +count.waffle008,
+                waffle009Sell: reportCountObject.waffle009Sell + +count.waffle009,
+                waffle0091Sell: reportCountObject.waffle0091Sell + +count.waffle0091,
+                waffle010Sell: reportCountObject.waffle010Sell + +count.waffle010,
+                waffle0101Sell: reportCountObject.waffle0101Sell + +count.waffle0101,
+                waffle011Sell: reportCountObject.waffle011Sell + +count.waffle011,
+                waffle012Sell: reportCountObject.waffle012Sell + +count.waffle012,
+                waffle013Sell: reportCountObject.waffle013Sell + +count.waffle013,
+                waffle014Sell: reportCountObject.waffle014Sell + +count.waffle014,
+                waffle015Sell: reportCountObject.waffle015Sell + +count.waffle015
+            };
+            console.log(reportCountObject.espressoSell);
+        } else reportCountObject = {
             espresso: reportCountObject.espresso + +count.espresso,
             americano: reportCountObject.americano + +count.americano,
             dopio: reportCountObject.dopio + +count.dopio,
@@ -1304,7 +1945,119 @@
             iceCream001PCS3: reportCountObject.iceCream001PCS3 + +count.iceCream001PCS3,
             iceCream002: reportCountObject.iceCream002 + +count.iceCream002,
             iceCream002PCS2: reportCountObject.iceCream002PCS2 + +count.iceCream002PCS2,
-            iceCream002PCS3: reportCountObject.iceCream002PCS3 + +count.iceCream002PCS3
+            iceCream002PCS3: reportCountObject.iceCream002PCS3 + +count.iceCream002PCS3,
+            iceCream003: reportCountObject.iceCream003 + +count.iceCream003,
+            iceCream003PCS2: reportCountObject.iceCream003PCS2 + +count.iceCream003PCS2,
+            iceCream003PCS3: reportCountObject.iceCream003PCS3 + +count.iceCream003PCS3,
+            iceCream004: reportCountObject.iceCream004 + +count.iceCream004,
+            iceCream004PCS2: reportCountObject.iceCream004PCS2 + +count.iceCream004PCS2,
+            iceCream004PCS3: reportCountObject.iceCream004PCS3 + +count.iceCream004PCS3,
+            waffle001: reportCountObject.waffle001 + +count.waffle001,
+            waffle002: reportCountObject.waffle002 + +count.waffle002,
+            waffle003: reportCountObject.waffle003 + +count.waffle003,
+            waffle004: reportCountObject.waffle004 + +count.waffle004,
+            waffle005: reportCountObject.waffle005 + +count.waffle005,
+            waffle006: reportCountObject.waffle006 + +count.waffle006,
+            waffle007: reportCountObject.waffle007 + +count.waffle007,
+            waffle008: reportCountObject.waffle008 + +count.waffle008,
+            waffle009: reportCountObject.waffle009 + +count.waffle009,
+            waffle0091: reportCountObject.waffle0091 + +count.waffle0091,
+            waffle010: reportCountObject.waffle010 + +count.waffle010,
+            waffle0101: reportCountObject.waffle0101 + +count.waffle0101,
+            waffle011: reportCountObject.waffle011 + +count.waffle011,
+            waffle012: reportCountObject.waffle012 + +count.waffle012,
+            waffle013: reportCountObject.waffle013 + +count.waffle013,
+            waffle014: reportCountObject.waffle014 + +count.waffle014,
+            waffle015: reportCountObject.waffle015 + +count.waffle015,
+            espressoSell: reportCountObject.espressoSell,
+            americanoSell: reportCountObject.americanoSell,
+            dopioSell: reportCountObject.dopioSell,
+            kapucinoSSell: reportCountObject.kapucinoSSell,
+            kapucinoMSell: reportCountObject.kapucinoMSell,
+            kapucinoLSell: reportCountObject.kapucinoLSell,
+            latteSSell: reportCountObject.latteSSell,
+            latteMSell: reportCountObject.latteMSell,
+            latteLSell: reportCountObject.latteLSell,
+            rafSSell: reportCountObject.rafSSell,
+            rafMSell: reportCountObject.rafMSell,
+            fletWhiteSSell: reportCountObject.fletWhiteSSell,
+            fletWhiteMSell: reportCountObject.fletWhiteMSell,
+            creamSell: reportCountObject.creamSell,
+            syrupSell: reportCountObject.syrupSell,
+            milkSell: reportCountObject.milkSell,
+            vegetableMilkSell: reportCountObject.vegetableMilkSell,
+            lactoseFreeMilkSell: reportCountObject.lactoseFreeMilkSell,
+            peanutSell: reportCountObject.peanutSell,
+            coconutShavingsSell: reportCountObject.coconutShavingsSell,
+            marshmellowSell: reportCountObject.marshmellowSell,
+            oreoCoffeSell: reportCountObject.oreoCoffeSell,
+            lionCoffeSell: reportCountObject.lionCoffeSell,
+            bananaCoffeSell: reportCountObject.bananaCoffeSell,
+            coconutCoffeSell: reportCountObject.coconutCoffeSell,
+            kendyNutCoffeSell: reportCountObject.kendyNutCoffeSell,
+            mmsCoffeSell: reportCountObject.mmsCoffeSell,
+            cherryCoffeSell: reportCountObject.cherryCoffeSell,
+            glyaseCoffeSell: reportCountObject.glyaseCoffeSell,
+            kakaoRainbowCoffeSell: reportCountObject.kakaoRainbowCoffeSell,
+            coldLatteSell: reportCountObject.coldLatteSell,
+            tigerLatteSell: reportCountObject.tigerLatteSell,
+            fruitMexicanSell: reportCountObject.fruitMexicanSell,
+            teeSell: reportCountObject.teeSell,
+            ekoTeeSell: reportCountObject.ekoTeeSell,
+            chokolateSell: reportCountObject.chokolateSell,
+            chokolatePlusSell: reportCountObject.chokolatePlusSell,
+            mulledWineSell: reportCountObject.mulledWineSell,
+            cacaoNaturalSell: reportCountObject.cacaoNaturalSell,
+            nesquikSSell: reportCountObject.nesquikSSell,
+            nesquikMSell: reportCountObject.nesquikMSell,
+            matchaSell: reportCountObject.matchaSell,
+            matchaLatteSell: reportCountObject.matchaLatteSell,
+            kapucinoSLactoseFreeSell: reportCountObject.kapucinoSLactoseFreeSell,
+            kapucinoMLactoseFreeSell: reportCountObject.kapucinoMLactoseFreeSell,
+            kapucinoLLactoseFreeSell: reportCountObject.kapucinoLLactoseFreeSell,
+            latteSLactoseFreeSell: reportCountObject.latteSLactoseFreeSell,
+            latteMLactoseFreeSell: reportCountObject.latteMLactoseFreeSell,
+            latteLLactoseFreeSell: reportCountObject.latteLLactoseFreeSell,
+            nesquikSLactoseFreeSell: reportCountObject.nesquikSLactoseFreeSell,
+            cacaoNaturalLactoseFreeSell: reportCountObject.cacaoNaturalLactoseFreeSell,
+            fletWhiteSLactoseFreeSell: reportCountObject.fletWhiteSLactoseFreeSell,
+            kapucinoSVegetableSell: reportCountObject.kapucinoSVegetableSell,
+            kapucinoMVegetableSell: reportCountObject.kapucinoMVegetableSell,
+            latteSVegetableSell: reportCountObject.latteSVegetableSell,
+            latteMVegetableSell: reportCountObject.latteMVegetableSell,
+            cacaoNaturalVegetableSell: reportCountObject.cacaoNaturalVegetableSell,
+            fletWhiteSVegetableSell: reportCountObject.fletWhiteSVegetableSell,
+            jarIceCreamSell: reportCountObject.jarIceCreamSell,
+            jarSorbetSell: reportCountObject.jarSorbetSell,
+            iceCream001Sell: reportCountObject.iceCream001Sell,
+            iceCream001PCS2Sell: reportCountObject.iceCream001PCS2Sell,
+            iceCream001PCS3Sell: reportCountObject.iceCream001PCS3Sell,
+            iceCream002Sell: reportCountObject.iceCream002Sell,
+            iceCream002PCS2Sell: reportCountObject.iceCream002PCS2Sell,
+            iceCream002PCS3Sell: reportCountObject.iceCream002PCS3Sell,
+            iceCream003Sell: reportCountObject.iceCream003Sell,
+            iceCream003PCS2Sell: reportCountObject.iceCream003PCS2Sell,
+            iceCream003PCS3Sell: reportCountObject.iceCream003PCS3Sell,
+            iceCream004Sell: reportCountObject.iceCream004Sell,
+            iceCream004PCS2Sell: reportCountObject.iceCream004PCS2Sell,
+            iceCream004PCS3Sell: reportCountObject.iceCream004PCS3Sell,
+            waffle001Sell: reportCountObject.waffle001Sell,
+            waffle002Sell: reportCountObject.waffle002Sell,
+            waffle003Sell: reportCountObject.waffle003Sell,
+            waffle004Sell: reportCountObject.waffle004Sell,
+            waffle005Sell: reportCountObject.waffle005Sell,
+            waffle006Sell: reportCountObject.waffle006Sell,
+            waffle007Sell: reportCountObject.waffle007Sell,
+            waffle008Sell: reportCountObject.waffle008Sell,
+            waffle009Sell: reportCountObject.waffle009Sell,
+            waffle0091Sell: reportCountObject.waffle0091Sell,
+            waffle010Sell: reportCountObject.waffle010Sell,
+            waffle0101Sell: reportCountObject.waffle0101Sell,
+            waffle011Sell: reportCountObject.waffle011Sell,
+            waffle012Sell: reportCountObject.waffle012Sell,
+            waffle013Sell: reportCountObject.waffle013Sell,
+            waffle014Sell: reportCountObject.waffle014Sell,
+            waffle015Sell: reportCountObject.waffle015Sell
         };
     }
     function reportSaveCountValue() {
@@ -1638,6 +2391,566 @@
             parent = reportIceCream002PCS3Value.closest(".all-report__item");
             parent.classList.add("active");
         }
+        reportIceCream003Value.value = reportCountObject.iceCream003;
+        if (reportIceCream003Value.value > 0) {
+            parent = reportIceCream003Value.closest(".all-report__item");
+            parent.classList.add("active");
+        }
+        reportIceCream003PCS2Value.value = reportCountObject.iceCream003PCS2;
+        if (reportIceCream003PCS2Value.value > 0) {
+            parent = reportIceCream003PCS2Value.closest(".all-report__item");
+            parent.classList.add("active");
+        }
+        reportIceCream003PCS3Value.value = reportCountObject.iceCream003PCS3;
+        if (reportIceCream003PCS3Value.value > 0) {
+            parent = reportIceCream003PCS3Value.closest(".all-report__item");
+            parent.classList.add("active");
+        }
+        reportIceCream004Value.value = reportCountObject.iceCream004;
+        if (reportIceCream004Value.value > 0) {
+            parent = reportIceCream004Value.closest(".all-report__item");
+            parent.classList.add("active");
+        }
+        reportIceCream004PCS2Value.value = reportCountObject.iceCream004PCS2;
+        if (reportIceCream004PCS2Value.value > 0) {
+            parent = reportIceCream004PCS2Value.closest(".all-report__item");
+            parent.classList.add("active");
+        }
+        reportIceCream004PCS3Value.value = reportCountObject.iceCream004PCS3;
+        if (reportIceCream004PCS3Value.value > 0) {
+            parent = reportIceCream004PCS3Value.closest(".all-report__item");
+            parent.classList.add("active");
+        }
+        reportWaffle001Value.value = reportCountObject.waffle001;
+        if (reportWaffle001Value.value > 0) {
+            parent = reportWaffle001Value.closest(".all-report__item");
+            parent.classList.add("active");
+        }
+        reportWaffle002Value.value = reportCountObject.waffle002;
+        if (reportWaffle002Value.value > 0) {
+            parent = reportWaffle002Value.closest(".all-report__item");
+            parent.classList.add("active");
+        }
+        reportWaffle003Value.value = reportCountObject.waffle003;
+        if (reportWaffle003Value.value > 0) {
+            parent = reportWaffle003Value.closest(".all-report__item");
+            parent.classList.add("active");
+        }
+        reportWaffle004Value.value = reportCountObject.waffle004;
+        if (reportWaffle004Value.value > 0) {
+            parent = reportWaffle004Value.closest(".all-report__item");
+            parent.classList.add("active");
+        }
+        reportWaffle005Value.value = reportCountObject.waffle005;
+        if (reportWaffle005Value.value > 0) {
+            parent = reportWaffle005Value.closest(".all-report__item");
+            parent.classList.add("active");
+        }
+        reportWaffle006Value.value = reportCountObject.waffle006;
+        if (reportWaffle006Value.value > 0) {
+            parent = reportWaffle006Value.closest(".all-report__item");
+            parent.classList.add("active");
+        }
+        reportWaffle007Value.value = reportCountObject.waffle007;
+        if (reportWaffle007Value.value > 0) {
+            parent = reportWaffle007Value.closest(".all-report__item");
+            parent.classList.add("active");
+        }
+        reportWaffle008Value.value = reportCountObject.waffle008;
+        if (reportWaffle008Value.value > 0) {
+            parent = reportWaffle008Value.closest(".all-report__item");
+            parent.classList.add("active");
+        }
+        reportWaffle009Value.value = reportCountObject.waffle009;
+        if (reportWaffle009Value.value > 0) {
+            parent = reportWaffle009Value.closest(".all-report__item");
+            parent.classList.add("active");
+        }
+        reportWaffle0091Value.value = reportCountObject.waffle0091;
+        if (reportWaffle0091Value.value > 0) {
+            parent = reportWaffle0091Value.closest(".all-report__item");
+            parent.classList.add("active");
+        }
+        reportWaffle010Value.value = reportCountObject.waffle010;
+        if (reportWaffle010Value.value > 0) {
+            parent = reportWaffle010Value.closest(".all-report__item");
+            parent.classList.add("active");
+        }
+        reportWaffle0101Value.value = reportCountObject.waffle0101;
+        if (reportWaffle0101Value.value > 0) {
+            parent = reportWaffle0101Value.closest(".all-report__item");
+            parent.classList.add("active");
+        }
+        reportWaffle011Value.value = reportCountObject.waffle011;
+        if (reportWaffle011Value.value > 0) {
+            parent = reportWaffle011Value.closest(".all-report__item");
+            parent.classList.add("active");
+        }
+        reportWaffle012Value.value = reportCountObject.waffle012;
+        if (reportWaffle012Value.value > 0) {
+            parent = reportWaffle012Value.closest(".all-report__item");
+            parent.classList.add("active");
+        }
+        reportWaffle013Value.value = reportCountObject.waffle013;
+        if (reportWaffle013Value.value > 0) {
+            parent = reportWaffle013Value.closest(".all-report__item");
+            parent.classList.add("active");
+        }
+        reportWaffle014Value.value = reportCountObject.waffle014;
+        if (reportWaffle014Value.value > 0) {
+            parent = reportWaffle014Value.closest(".all-report__item");
+            parent.classList.add("active");
+        }
+        reportWaffle015Value.value = reportCountObject.waffle015;
+        if (reportWaffle015Value.value > 0) {
+            parent = reportWaffle015Value.closest(".all-report__item");
+            parent.classList.add("active");
+        }
+        reportSellCount.espressoValue.value = reportCountObject.espressoSell;
+        if (reportSellCount.espressoValue.value > 0) {
+            let parent = reportSellCount.espressoValue.closest(".all-report__item");
+            parent.classList.add("active");
+        }
+        reportSellCount.americanoValue.value = reportCountObject.americanoSell;
+        if (reportSellCount.americanoValue.value > 0) {
+            let parent = reportSellCount.americanoValue.closest(".all-report__item");
+            parent.classList.add("active");
+        }
+        reportSellCount.dopioValue.value = reportCountObject.dopioSell;
+        if (reportSellCount.dopioValue.value > 0) {
+            let parent = reportSellCount.dopioValue.closest(".all-report__item");
+            parent.classList.add("active");
+        }
+        reportSellCount.kapucinoSValue.value = reportCountObject.kapucinoSSell;
+        if (reportSellCount.kapucinoSValue.value > 0) {
+            let parent = reportSellCount.kapucinoSValue.closest(".all-report__item");
+            parent.classList.add("active");
+        }
+        reportSellCount.kapucinoMValue.value = reportCountObject.kapucinoMSell;
+        if (reportSellCount.kapucinoMValue.value > 0) {
+            let parent = reportSellCount.kapucinoMValue.closest(".all-report__item");
+            parent.classList.add("active");
+        }
+        reportSellCount.kapucinoLValue.value = reportCountObject.kapucinoLSell;
+        if (reportSellCount.kapucinoLValue.value > 0) {
+            let parent = reportSellCount.kapucinoLValue.closest(".all-report__item");
+            parent.classList.add("active");
+        }
+        reportSellCount.latteSValue.value = reportCountObject.latteSSell;
+        if (reportSellCount.latteSValue.value > 0) {
+            let parent = reportSellCount.latteSValue.closest(".all-report__item");
+            parent.classList.add("active");
+        }
+        reportSellCount.latteMValue.value = reportCountObject.latteMSell;
+        if (reportSellCount.latteMValue.value > 0) {
+            let parent = reportSellCount.latteMValue.closest(".all-report__item");
+            parent.classList.add("active");
+        }
+        reportSellCount.latteLValue.value = reportCountObject.latteLSell;
+        if (reportSellCount.latteLValue.value > 0) {
+            let parent = reportSellCount.latteLValue.closest(".all-report__item");
+            parent.classList.add("active");
+        }
+        reportSellCount.rafSValue.value = reportCountObject.rafSSell;
+        if (reportSellCount.rafSValue.value > 0) {
+            let parent = reportSellCount.rafSValue.closest(".all-report__item");
+            parent.classList.add("active");
+        }
+        reportSellCount.rafMValue.value = reportCountObject.rafMSell;
+        if (reportSellCount.rafMValue.value > 0) {
+            let parent = reportSellCount.rafMValue.closest(".all-report__item");
+            parent.classList.add("active");
+        }
+        reportSellCount.fletWhiteSValue.value = reportCountObject.fletWhiteSSell;
+        if (reportSellCount.fletWhiteSValue.value > 0) {
+            let parent = reportSellCount.fletWhiteSValue.closest(".all-report__item");
+            parent.classList.add("active");
+        }
+        reportSellCount.fletWhiteMValue.value = reportCountObject.fletWhiteMSell;
+        if (reportSellCount.fletWhiteMValue.value > 0) {
+            parent = reportSellCount.fletWhiteMValue.closest(".all-report__item");
+            parent.classList.add("active");
+        }
+        reportSellCount.creamValue.value = reportCountObject.creamSell;
+        if (reportSellCount.creamValue.value > 0) {
+            parent = reportSellCount.creamValue.closest(".all-report__item");
+            parent.classList.add("active");
+        }
+        reportSellCount.syrupValue.value = reportCountObject.syrupSell;
+        if (reportSellCount.syrupValue.value > 0) {
+            parent = reportSellCount.syrupValue.closest(".all-report__item");
+            parent.classList.add("active");
+        }
+        reportSellCount.milkValue.value = reportCountObject.milkSell;
+        if (reportSellCount.milkValue.value > 0) {
+            parent = reportSellCount.milkValue.closest(".all-report__item");
+            parent.classList.add("active");
+        }
+        reportSellCount.vegetableMilkValue.value = reportCountObject.vegetableMilkSell;
+        if (reportSellCount.vegetableMilkValue.value > 0) {
+            parent = reportSellCount.vegetableMilkValue.closest(".all-report__item");
+            parent.classList.add("active");
+        }
+        reportSellCount.lactoseFreeMilkValue.value = reportCountObject.lactoseFreeMilkSell;
+        if (reportSellCount.lactoseFreeMilkValue.value > 0) {
+            parent = reportSellCount.lactoseFreeMilkValue.closest(".all-report__item");
+            parent.classList.add("active");
+        }
+        reportSellCount.peanutValue.value = reportCountObject.peanutSell;
+        if (reportSellCount.peanutValue.value > 0) {
+            parent = reportSellCount.peanutValue.closest(".all-report__item");
+            parent.classList.add("active");
+        }
+        reportSellCount.coconutShavingsValue.value = reportCountObject.coconutShavingsSell;
+        if (reportSellCount.coconutShavingsValue.value > 0) {
+            parent = reportSellCount.coconutShavingsValue.closest(".all-report__item");
+            parent.classList.add("active");
+        }
+        reportSellCount.marshmellowValue.value = reportCountObject.marshmellowSell;
+        if (reportSellCount.marshmellowValue.value > 0) {
+            parent = reportSellCount.marshmellowValue.closest(".all-report__item");
+            parent.classList.add("active");
+        }
+        reportSellCount.oreoCoffeValue.value = reportCountObject.oreoCoffeSell;
+        if (reportSellCount.oreoCoffeValue.value > 0) {
+            parent = reportSellCount.oreoCoffeValue.closest(".all-report__item");
+            parent.classList.add("active");
+        }
+        reportSellCount.lionCoffeValue.value = reportCountObject.lionCoffeSell;
+        if (reportSellCount.lionCoffeValue.value > 0) {
+            parent = reportSellCount.lionCoffeValue.closest(".all-report__item");
+            parent.classList.add("active");
+        }
+        reportSellCount.bananaCoffeValue.value = reportCountObject.bananaCoffeSell;
+        if (reportSellCount.bananaCoffeValue.value > 0) {
+            parent = reportSellCount.bananaCoffeValue.closest(".all-report__item");
+            parent.classList.add("active");
+        }
+        reportSellCount.coconutCoffeValue.value = reportCountObject.coconutCoffeSell;
+        if (reportSellCount.coconutCoffeValue.value > 0) {
+            parent = reportSellCount.coconutCoffeValue.closest(".all-report__item");
+            parent.classList.add("active");
+        }
+        reportSellCount.kendyNutCoffeValue.value = reportCountObject.kendyNutCoffeSell;
+        if (reportSellCount.kendyNutCoffeValue.value > 0) {
+            parent = reportSellCount.kendyNutCoffeValue.closest(".all-report__item");
+            parent.classList.add("active");
+        }
+        reportSellCount.mmsCoffeValue.value = reportCountObject.mmsCoffeSell;
+        if (reportSellCount.mmsCoffeValue.value > 0) {
+            parent = reportSellCount.mmsCoffeValue.closest(".all-report__item");
+            parent.classList.add("active");
+        }
+        reportSellCount.cherryCoffeValue.value = reportCountObject.cherryCoffeSell;
+        if (reportSellCount.cherryCoffeValue.value > 0) {
+            parent = reportSellCount.cherryCoffeValue.closest(".all-report__item");
+            parent.classList.add("active");
+        }
+        reportSellCount.glyaseCoffeValue.value = reportCountObject.glyaseCoffeSell;
+        if (reportSellCount.glyaseCoffeValue.value > 0) {
+            parent = reportSellCount.glyaseCoffeValue.closest(".all-report__item");
+            parent.classList.add("active");
+        }
+        reportSellCount.kakaoRainbowCoffeValue.value = reportCountObject.kakaoRainbowCoffeSell;
+        if (reportSellCount.kakaoRainbowCoffeValue.value > 0) {
+            parent = reportSellCount.kakaoRainbowCoffeValue.closest(".all-report__item");
+            parent.classList.add("active");
+        }
+        reportSellCount.coldLatteValue.value = reportCountObject.coldLatteSell;
+        if (reportSellCount.coldLatteValue.value > 0) {
+            parent = reportSellCount.coldLatteValue.closest(".all-report__item");
+            parent.classList.add("active");
+        }
+        reportSellCount.tigerLatteValue.value = reportCountObject.tigerLatteSell;
+        if (reportSellCount.tigerLatteValue.value > 0) {
+            parent = reportSellCount.tigerLatteValue.closest(".all-report__item");
+            parent.classList.add("active");
+        }
+        reportSellCount.fruitMexicanValue.value = reportCountObject.fruitMexicanSell;
+        if (reportSellCount.fruitMexicanValue.value > 0) {
+            parent = reportSellCount.fruitMexicanValue.closest(".all-report__item");
+            parent.classList.add("active");
+        }
+        reportSellCount.teeValue.value = reportCountObject.teeSell;
+        if (reportSellCount.teeValue.value > 0) {
+            parent = reportSellCount.teeValue.closest(".all-report__item");
+            parent.classList.add("active");
+        }
+        reportSellCount.ekoTeeValue.value = reportCountObject.ekoTeeSell;
+        if (reportSellCount.ekoTeeValue.value > 0) {
+            parent = reportSellCount.ekoTeeValue.closest(".all-report__item");
+            parent.classList.add("active");
+        }
+        reportSellCount.chokolateValue.value = reportCountObject.chokolateSell;
+        if (reportSellCount.chokolateValue.value > 0) {
+            parent = reportSellCount.chokolateValue.closest(".all-report__item");
+            parent.classList.add("active");
+        }
+        reportSellCount.chokolatePlusValue.value = reportCountObject.chokolatePlusSell;
+        if (reportSellCount.chokolatePlusValue.value > 0) {
+            parent = reportSellCount.chokolatePlusValue.closest(".all-report__item");
+            parent.classList.add("active");
+        }
+        reportSellCount.mulledWineValue.value = reportCountObject.mulledWineSell;
+        if (reportSellCount.mulledWineValue.value > 0) {
+            parent = reportSellCount.mulledWineValue.closest(".all-report__item");
+            parent.classList.add("active");
+        }
+        reportSellCount.cacaoNaturalValue.value = reportCountObject.cacaoNaturalSell;
+        if (reportSellCount.cacaoNaturalValue.value > 0) {
+            parent = reportSellCount.cacaoNaturalValue.closest(".all-report__item");
+            parent.classList.add("active");
+        }
+        reportSellCount.nesquikSValue.value = reportCountObject.nesquikSSell;
+        if (reportSellCount.nesquikSValue.value > 0) {
+            parent = reportSellCount.nesquikSValue.closest(".all-report__item");
+            parent.classList.add("active");
+        }
+        reportSellCount.nesquikMValue.value = reportCountObject.nesquikMSell;
+        if (reportSellCount.nesquikMValue.value > 0) {
+            parent = reportSellCount.nesquikMValue.closest(".all-report__item");
+            parent.classList.add("active");
+        }
+        reportSellCount.matchaValue.value = reportCountObject.matchaSell;
+        if (reportSellCount.matchaValue.value > 0) {
+            parent = reportSellCount.matchaValue.closest(".all-report__item");
+            parent.classList.add("active");
+        }
+        reportSellCount.matchaLatteValue.value = reportCountObject.matchaLatteSell;
+        if (reportSellCount.matchaLatteValue.value > 0) {
+            parent = reportSellCount.matchaLatteValue.closest(".all-report__item");
+            parent.classList.add("active");
+        }
+        reportSellCount.kapucinoSLactoseFreeValue.value = reportCountObject.kapucinoSLactoseFreeSell;
+        if (reportSellCount.kapucinoSLactoseFreeValue.value > 0) {
+            parent = reportSellCount.kapucinoSLactoseFreeValue.closest(".all-report__item");
+            parent.classList.add("active");
+        }
+        reportSellCount.kapucinoMLactoseFreeValue.value = reportCountObject.kapucinoMLactoseFreeSell;
+        if (reportSellCount.kapucinoMLactoseFreeValue.value > 0) {
+            parent = reportSellCount.kapucinoMLactoseFreeValue.closest(".all-report__item");
+            parent.classList.add("active");
+        }
+        reportSellCount.kapucinoLLactoseFreeValue.value = reportCountObject.kapucinoLLactoseFreeSell;
+        if (reportSellCount.kapucinoLLactoseFreeValue.value > 0) {
+            parent = reportSellCount.kapucinoLLactoseFreeValue.closest(".all-report__item");
+            parent.classList.add("active");
+        }
+        reportSellCount.latteSLactoseFreeValue.value = reportCountObject.latteSLactoseFreeSell;
+        if (reportSellCount.latteSLactoseFreeValue.value > 0) {
+            parent = reportSellCount.latteSLactoseFreeValue.closest(".all-report__item");
+            parent.classList.add("active");
+        }
+        reportSellCount.latteMLactoseFreeValue.value = reportCountObject.latteMLactoseFreeSell;
+        if (reportSellCount.latteMLactoseFreeValue.value > 0) {
+            parent = reportSellCount.latteMLactoseFreeValue.closest(".all-report__item");
+            parent.classList.add("active");
+        }
+        reportSellCount.latteLLactoseFreeValue.value = reportCountObject.latteLLactoseFreeSell;
+        if (reportSellCount.latteLLactoseFreeValue.value > 0) {
+            parent = reportSellCount.latteLLactoseFreeValue.closest(".all-report__item");
+            parent.classList.add("active");
+        }
+        reportSellCount.nesquikSLactoseFreeValue.value = reportCountObject.nesquikSLactoseFreeSell;
+        if (reportSellCount.nesquikSLactoseFreeValue.value > 0) {
+            parent = reportSellCount.nesquikSLactoseFreeValue.closest(".all-report__item");
+            parent.classList.add("active");
+        }
+        reportSellCount.cacaoNaturalLactoseFreeValue.value = reportCountObject.cacaoNaturalLactoseFreeSell;
+        if (reportSellCount.cacaoNaturalLactoseFreeValue.value > 0) {
+            parent = reportSellCount.cacaoNaturalLactoseFreeValue.closest(".all-report__item");
+            parent.classList.add("active");
+        }
+        reportSellCount.fletWhiteSLactoseFreeValue.value = reportCountObject.fletWhiteSLactoseFreeSell;
+        if (reportSellCount.fletWhiteSLactoseFreeValue.value > 0) {
+            parent = reportSellCount.fletWhiteSLactoseFreeValue.closest(".all-report__item");
+            parent.classList.add("active");
+        }
+        reportSellCount.kapucinoSVegetableValue.value = reportCountObject.kapucinoSVegetableSell;
+        if (reportSellCount.kapucinoSVegetableValue.value > 0) {
+            parent = reportSellCount.kapucinoSVegetableValue.closest(".all-report__item");
+            parent.classList.add("active");
+        }
+        reportSellCount.kapucinoMVegetableValue.value = reportCountObject.kapucinoMVegetableSell;
+        if (reportSellCount.kapucinoMVegetableValue.value > 0) {
+            parent = reportSellCount.kapucinoMVegetableValue.closest(".all-report__item");
+            parent.classList.add("active");
+        }
+        reportSellCount.latteSVegetableValue.value = reportCountObject.latteSVegetableSell;
+        if (reportSellCount.latteSVegetableValue.value > 0) {
+            parent = reportSellCount.latteSVegetableValue.closest(".all-report__item");
+            parent.classList.add("active");
+        }
+        reportSellCount.latteMVegetableValue.value = reportCountObject.latteMVegetableSell;
+        if (reportSellCount.latteMVegetableValue.value > 0) {
+            parent = reportSellCount.latteMVegetableValue.closest(".all-report__item");
+            parent.classList.add("active");
+        }
+        reportSellCount.cacaoNaturalVegetableValue.value = reportCountObject.cacaoNaturalVegetableSell;
+        if (reportSellCount.cacaoNaturalVegetableValue.value > 0) {
+            parent = reportSellCount.cacaoNaturalVegetableValue.closest(".all-report__item");
+            parent.classList.add("active");
+        }
+        reportSellCount.fletWhiteSVegetableValue.value = reportCountObject.fletWhiteSVegetableSell;
+        if (reportSellCount.fletWhiteSVegetableValue.value > 0) {
+            parent = reportSellCount.fletWhiteSVegetableValue.closest(".all-report__item");
+            parent.classList.add("active");
+        }
+        reportSellCount.jarIceCreamValue.value = reportCountObject.jarIceCreamSell;
+        if (reportSellCount.jarIceCreamValue.value > 0) {
+            parent = reportSellCount.jarIceCreamValue.closest(".all-report__item");
+            parent.classList.add("active");
+        }
+        reportSellCount.jarSorbetValue.value = reportCountObject.jarSorbetSell;
+        if (reportSellCount.jarSorbetValue.value > 0) {
+            parent = reportSellCount.jarSorbetValue.closest(".all-report__item");
+            parent.classList.add("active");
+        }
+        reportSellCount.iceCream001Value.value = reportCountObject.iceCream001Sell;
+        if (reportSellCount.iceCream001Value.value > 0) {
+            parent = reportSellCount.iceCream001Value.closest(".all-report__item");
+            parent.classList.add("active");
+        }
+        reportSellCount.iceCream001ValuePCS2.value = reportCountObject.iceCream001PCS2Sell;
+        if (reportSellCount.iceCream001ValuePCS2.value > 0) {
+            parent = reportSellCount.iceCream001ValuePCS2.closest(".all-report__item");
+            parent.classList.add("active");
+        }
+        reportSellCount.iceCream001ValuePCS3.value = reportCountObject.iceCream001PCS3Sell;
+        if (reportSellCount.iceCream001ValuePCS3.value > 0) {
+            parent = reportSellCount.iceCream001ValuePCS3.closest(".all-report__item");
+            parent.classList.add("active");
+        }
+        reportSellCount.iceCream002Value.value = reportCountObject.iceCream002Sell;
+        if (reportSellCount.iceCream002Value.value > 0) {
+            parent = reportSellCount.iceCream002Value.closest(".all-report__item");
+            parent.classList.add("active");
+        }
+        reportSellCount.iceCream002ValuePCS2.value = reportCountObject.iceCream002PCS2Sell;
+        if (reportSellCount.iceCream002ValuePCS2.value > 0) {
+            parent = reportSellCount.iceCream002ValuePCS2.closest(".all-report__item");
+            parent.classList.add("active");
+        }
+        reportSellCount.iceCream002ValuePCS3.value = reportCountObject.iceCream002PCS3Sell;
+        if (reportSellCount.iceCream002ValuePCS3.value > 0) {
+            parent = reportSellCount.iceCream002ValuePCS3.closest(".all-report__item");
+            parent.classList.add("active");
+        }
+        reportSellCount.iceCream003Value.value = reportCountObject.iceCream003Sell;
+        if (reportSellCount.iceCream003Value.value > 0) {
+            parent = reportSellCount.iceCream003Value.closest(".all-report__item");
+            parent.classList.add("active");
+        }
+        reportSellCount.iceCream003ValuePCS2.value = reportCountObject.iceCream003PCS2Sell;
+        if (reportSellCount.iceCream003ValuePCS2.value > 0) {
+            parent = reportSellCount.iceCream003ValuePCS2.closest(".all-report__item");
+            parent.classList.add("active");
+        }
+        reportSellCount.iceCream003ValuePCS3.value = reportCountObject.iceCream003PCS3Sell;
+        if (reportSellCount.iceCream003ValuePCS3.value > 0) {
+            parent = reportSellCount.iceCream003ValuePCS3.closest(".all-report__item");
+            parent.classList.add("active");
+        }
+        reportSellCount.iceCream004Value.value = reportCountObject.iceCream004Sell;
+        if (reportSellCount.iceCream004Value.value > 0) {
+            parent = reportSellCount.iceCream004Value.closest(".all-report__item");
+            parent.classList.add("active");
+        }
+        reportSellCount.iceCream004ValuePCS2.value = reportCountObject.iceCream004PCS2Sell;
+        if (reportSellCount.iceCream004ValuePCS2.value > 0) {
+            parent = reportSellCount.iceCream004ValuePCS2.closest(".all-report__item");
+            parent.classList.add("active");
+        }
+        reportSellCount.iceCream004ValuePCS3.value = reportCountObject.iceCream004PCS3Sell;
+        if (reportSellCount.iceCream004ValuePCS3.value > 0) {
+            parent = reportSellCount.iceCream004ValuePCS3.closest(".all-report__item");
+            parent.classList.add("active");
+        }
+        reportSellCount.waffle001Value.value = reportCountObject.waffle001Sell;
+        if (reportSellCount.waffle001Value.value > 0) {
+            parent = reportSellCount.waffle001Value.closest(".all-report__item");
+            parent.classList.add("active");
+        }
+        reportSellCount.waffle002Value.value = reportCountObject.waffle002Sell;
+        if (reportSellCount.waffle002Value.value > 0) {
+            parent = reportSellCount.waffle002Value.closest(".all-report__item");
+            parent.classList.add("active");
+        }
+        reportSellCount.waffle003Value.value = reportCountObject.waffle003Sell;
+        if (reportSellCount.waffle003Value.value > 0) {
+            parent = reportSellCount.waffle003Value.closest(".all-report__item");
+            parent.classList.add("active");
+        }
+        reportSellCount.waffle004Value.value = reportCountObject.waffle004Sell;
+        if (reportSellCount.waffle004Value.value > 0) {
+            parent = reportSellCount.waffle004Value.closest(".all-report__item");
+            parent.classList.add("active");
+        }
+        reportSellCount.waffle005Value.value = reportCountObject.waffle005Sell;
+        if (reportSellCount.waffle005Value.value > 0) {
+            parent = reportSellCount.waffle005Value.closest(".all-report__item");
+            parent.classList.add("active");
+        }
+        reportSellCount.waffle006Value.value = reportCountObject.waffle006Sell;
+        if (reportSellCount.waffle006Value.value > 0) {
+            parent = reportSellCount.waffle006Value.closest(".all-report__item");
+            parent.classList.add("active");
+        }
+        reportSellCount.waffle007Value.value = reportCountObject.waffle007Sell;
+        if (reportSellCount.waffle007Value.value > 0) {
+            parent = reportSellCount.waffle007Value.closest(".all-report__item");
+            parent.classList.add("active");
+        }
+        reportSellCount.waffle008Value.value = reportCountObject.waffle008Sell;
+        if (reportSellCount.waffle008Value.value > 0) {
+            parent = reportSellCount.waffle008Value.closest(".all-report__item");
+            parent.classList.add("active");
+        }
+        reportSellCount.waffle009Value.value = reportCountObject.waffle009Sell;
+        if (reportSellCount.waffle009Value.value > 0) {
+            parent = reportSellCount.waffle009Value.closest(".all-report__item");
+            parent.classList.add("active");
+        }
+        reportSellCount.waffle0091Value.value = reportCountObject.waffle0091Sell;
+        if (reportSellCount.waffle0091Value.value > 0) {
+            parent = reportSellCount.waffle0091Value.closest(".all-report__item");
+            parent.classList.add("active");
+        }
+        reportSellCount.waffle010Value.value = reportCountObject.waffle010Sell;
+        if (reportSellCount.waffle010Value.value > 0) {
+            parent = reportSellCount.waffle010Value.closest(".all-report__item");
+            parent.classList.add("active");
+        }
+        reportSellCount.waffle0101Value.value = reportCountObject.waffle0101Sell;
+        if (reportSellCount.waffle0101Value.value > 0) {
+            parent = reportSellCount.waffle0101Value.closest(".all-report__item");
+            parent.classList.add("active");
+        }
+        reportSellCount.waffle011Value.value = reportCountObject.waffle011Sell;
+        if (reportSellCount.waffle011Value.value > 0) {
+            parent = reportSellCount.waffle011Value.closest(".all-report__item");
+            parent.classList.add("active");
+        }
+        reportSellCount.waffle012Value.value = reportCountObject.waffle012Sell;
+        if (reportSellCount.waffle012Value.value > 0) {
+            parent = reportSellCount.waffle012Value.closest(".all-report__item");
+            parent.classList.add("active");
+        }
+        reportSellCount.waffle013Value.value = reportCountObject.waffle013Sell;
+        if (reportSellCount.waffle013Value.value > 0) {
+            parent = reportSellCount.waffle013Value.closest(".all-report__item");
+            parent.classList.add("active");
+        }
+        reportSellCount.waffle014Value.value = reportCountObject.waffle014Sell;
+        if (reportSellCount.waffle014Value.value > 0) {
+            parent = reportSellCount.waffle014Value.closest(".all-report__item");
+            parent.classList.add("active");
+        }
+        reportSellCount.waffle015Value.value = reportCountObject.waffle015Sell;
+        if (reportSellCount.waffle015Value.value > 0) {
+            parent = reportSellCount.waffle015Value.closest(".all-report__item");
+            parent.classList.add("active");
+        }
     }
     var auditCounter = Number(0);
     window.onload = reloadSave;
@@ -1718,7 +3031,115 @@
             jarIceCream: 0,
             jarSorbet: 0,
             iceCream001: 0,
-            iceCream002: 0
+            iceCream002: 0,
+            iceCream003: 0,
+            iceCream004: 0,
+            waffle001: 0,
+            waffle002: 0,
+            waffle003: 0,
+            waffle004: 0,
+            waffle005: 0,
+            waffle006: 0,
+            waffle007: 0,
+            waffle008: 0,
+            waffle009: 0,
+            waffle0091: 0,
+            waffle010: 0,
+            waffle0101: 0,
+            waffle011: 0,
+            waffle012: 0,
+            waffle013: 0,
+            waffle014: 0,
+            waffle015: 0,
+            espressoSell: 0,
+            americanoSell: 0,
+            dopioSell: 0,
+            kapucinoSSell: 0,
+            kapucinoMSell: 0,
+            kapucinoLSell: 0,
+            latteSSell: 0,
+            latteMSell: 0,
+            latteLSell: 0,
+            rafSSell: 0,
+            rafMSell: 0,
+            fletWhiteSSell: 0,
+            fletWhiteMSell: 0,
+            creamSell: 0,
+            syrupSell: 0,
+            milkSell: 0,
+            vegetableMilkSell: 0,
+            lactoseFreeMilkSell: 0,
+            peanutSell: 0,
+            coconutShavingsSell: 0,
+            marshmellowSell: 0,
+            oreoCoffeSell: 0,
+            lionCoffeSell: 0,
+            bananaCoffeSell: 0,
+            coconutCoffeSell: 0,
+            kendyNutCoffeSell: 0,
+            mmsCoffeSell: 0,
+            cherryCoffeSell: 0,
+            glyaseCoffeSell: 0,
+            kakaoRainbowCoffeSell: 0,
+            coldLatteSell: 0,
+            tigerLatteSell: 0,
+            fruitMexicanSell: 0,
+            teeSell: 0,
+            ekoTeeSell: 0,
+            chokolateSell: 0,
+            chokolatePlusSell: 0,
+            mulledWineSell: 0,
+            cacaoNaturalSell: 0,
+            nesquikSSell: 0,
+            nesquikMSell: 0,
+            matchaSell: 0,
+            matchaLatteSell: 0,
+            kapucinoSLactoseFreeSell: 0,
+            kapucinoMLactoseFreeSell: 0,
+            kapucinoLLactoseFreeSell: 0,
+            latteSLactoseFreeSell: 0,
+            latteMLactoseFreeSell: 0,
+            latteLLactoseFreeSell: 0,
+            nesquikSLactoseFreeSell: 0,
+            cacaoNaturalLactoseFreeSell: 0,
+            fletWhiteSLactoseFreeSell: 0,
+            kapucinoSVegetableSell: 0,
+            kapucinoMVegetableSell: 0,
+            latteSVegetableSell: 0,
+            latteMVegetableSell: 0,
+            cacaoNaturalVegetableSell: 0,
+            fletWhiteSVegetableSell: 0,
+            jarIceCreamSell: 0,
+            jarSorbetSell: 0,
+            iceCream001Sell: 0,
+            iceCream001PCS2Sell: 0,
+            iceCream001PCS3Sell: 0,
+            iceCream002Sell: 0,
+            iceCream002PCS2Sell: 0,
+            iceCream002PCS3Sell: 0,
+            iceCream003Sell: 0,
+            iceCream003PCS2Sell: 0,
+            iceCream003PCS3Sell: 0,
+            iceCream004Sell: 0,
+            iceCream004PCS2Sell: 0,
+            iceCream004PCS3Sell: 0,
+            waffle001Sell: 0,
+            waffle002Sell: 0,
+            waffle003Sell: 0,
+            waffle004Sell: 0,
+            waffle005Sell: 0,
+            waffle006Sell: 0,
+            waffle007Sell: 0,
+            waffle008Sell: 0,
+            waffle009Sell: 0,
+            waffle0091Sell: 0,
+            waffle010Sell: 0,
+            waffle0101Sell: 0,
+            waffle011Sell: 0,
+            waffle012Sell: 0,
+            waffle013Sell: 0,
+            waffle014Sell: 0,
+            waffle015Sell: 0
         };
         summ = {
             allSumm: 0,
