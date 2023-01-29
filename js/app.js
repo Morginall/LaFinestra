@@ -2063,892 +2063,1249 @@
     function reportSaveCountValue() {
         reportEspressoValue.value = reportCountObject.espresso;
         if (reportEspressoValue.value > 0) {
-            let parent = reportEspressoValue.closest(".all-report__item");
+            parent = reportEspressoValue.closest(".all-report__item");
+            parent.classList.add("active");
+            parent = reportEspressoValue.closest(".report__all");
             parent.classList.add("active");
         }
         reportAmericanoValue.value = reportCountObject.americano;
         if (reportAmericanoValue.value > 0) {
-            let parent = reportAmericanoValue.closest(".all-report__item");
+            parent = reportAmericanoValue.closest(".all-report__item");
+            parent.classList.add("active");
+            parent = reportAmericanoValue.closest(".report__all");
             parent.classList.add("active");
         }
         reportDopioValue.value = reportCountObject.dopio;
         if (reportDopioValue.value > 0) {
-            let parent = reportDopioValue.closest(".all-report__item");
+            parent = reportDopioValue.closest(".all-report__item");
+            parent.classList.add("active");
+            parent = reportDopioValue.closest(".report__all");
             parent.classList.add("active");
         }
         reportKapucinoSValue.value = reportCountObject.kapucinoS;
         if (reportKapucinoSValue.value > 0) {
-            let parent = reportKapucinoSValue.closest(".all-report__item");
+            parent = reportKapucinoSValue.closest(".all-report__item");
+            parent.classList.add("active");
+            parent = reportKapucinoSValue.closest(".report__all");
             parent.classList.add("active");
         }
         reportKapucinoMValue.value = reportCountObject.kapucinoM;
         if (reportKapucinoMValue.value > 0) {
-            let parent = reportKapucinoMValue.closest(".all-report__item");
+            parent = reportKapucinoMValue.closest(".all-report__item");
+            parent.classList.add("active");
+            parent = reportKapucinoMValue.closest(".report__all");
             parent.classList.add("active");
         }
         reportKapucinoLValue.value = reportCountObject.kapucinoL;
         if (reportKapucinoLValue.value > 0) {
-            let parent = reportKapucinoLValue.closest(".all-report__item");
+            parent = reportKapucinoLValue.closest(".all-report__item");
+            parent.classList.add("active");
+            parent = reportKapucinoLValue.closest(".report__all");
             parent.classList.add("active");
         }
         reportLatteSValue.value = reportCountObject.latteS;
         if (reportLatteSValue.value > 0) {
-            let parent = reportLatteSValue.closest(".all-report__item");
+            parent = reportLatteSValue.closest(".all-report__item");
+            parent.classList.add("active");
+            parent = reportLatteSValue.closest(".report__all");
             parent.classList.add("active");
         }
         reportLatteMValue.value = reportCountObject.latteM;
         if (reportLatteMValue.value > 0) {
-            let parent = reportLatteMValue.closest(".all-report__item");
+            parent = reportLatteMValue.closest(".all-report__item");
+            parent.classList.add("active");
+            parent = reportLatteMValue.closest(".report__all");
             parent.classList.add("active");
         }
         reportLatteLValue.value = reportCountObject.latteL;
         if (reportLatteLValue.value > 0) {
-            let parent = reportLatteLValue.closest(".all-report__item");
+            parent = reportLatteLValue.closest(".all-report__item");
+            parent.classList.add("active");
+            parent = reportLatteLValue.closest(".report__all");
             parent.classList.add("active");
         }
         reportRafSValue.value = reportCountObject.rafS;
         if (reportRafSValue.value > 0) {
-            let parent = reportRafSValue.closest(".all-report__item");
+            parent = reportRafSValue.closest(".all-report__item");
+            parent.classList.add("active");
+            parent = reportRafSValue.closest(".report__all");
             parent.classList.add("active");
         }
         reportRafMValue.value = reportCountObject.rafM;
         if (reportRafMValue.value > 0) {
-            let parent = reportRafMValue.closest(".all-report__item");
+            parent = reportRafMValue.closest(".all-report__item");
+            parent.classList.add("active");
+            parent = reportRafMValue.closest(".report__all");
             parent.classList.add("active");
         }
         reportFletWhiteSValue.value = reportCountObject.fletWhiteS;
         if (reportFletWhiteSValue.value > 0) {
-            let parent = reportFletWhiteSValue.closest(".all-report__item");
+            parent = reportFletWhiteSValue.closest(".all-report__item");
+            parent.classList.add("active");
+            parent = reportFletWhiteSValue.closest(".report__all");
             parent.classList.add("active");
         }
         reportFletWhiteMValue.value = reportCountObject.fletWhiteM;
         if (reportFletWhiteMValue.value > 0) {
-            var parent = reportFletWhiteMValue.closest(".all-report__item");
+            parent = reportFletWhiteMValue.closest(".all-report__item");
+            parent.classList.add("active");
+            parent = reportFletWhiteMValue.closest(".report__all");
             parent.classList.add("active");
         }
         reportCreamValue.value = reportCountObject.cream;
         if (reportCreamValue.value > 0) {
             parent = reportCreamValue.closest(".all-report__item");
             parent.classList.add("active");
+            parent = reportCreamValue.closest(".report__all");
+            parent.classList.add("active");
         }
         reportSyrupValue.value = reportCountObject.syrup;
         if (reportSyrupValue.value > 0) {
             parent = reportSyrupValue.closest(".all-report__item");
+            parent.classList.add("active");
+            parent = reportSyrupValue.closest(".report__all");
             parent.classList.add("active");
         }
         reportMilkValue.value = reportCountObject.milk;
         if (reportMilkValue.value > 0) {
             parent = reportMilkValue.closest(".all-report__item");
             parent.classList.add("active");
+            parent = reportMilkValue.closest(".report__all");
+            parent.classList.add("active");
         }
         reportVegetableMilkValue.value = reportCountObject.vegetableMilk;
         if (reportVegetableMilkValue.value > 0) {
             parent = reportVegetableMilkValue.closest(".all-report__item");
+            parent.classList.add("active");
+            parent = reportVegetableMilkValue.closest(".report__all");
             parent.classList.add("active");
         }
         reportLactoseFreeMilkValue.value = reportCountObject.lactoseFreeMilk;
         if (reportLactoseFreeMilkValue.value > 0) {
             parent = reportLactoseFreeMilkValue.closest(".all-report__item");
             parent.classList.add("active");
+            parent = reportLactoseFreeMilkValue.closest(".report__all");
+            parent.classList.add("active");
         }
         reportPeanutValue.value = reportCountObject.peanut;
         if (reportPeanutValue.value > 0) {
             parent = reportPeanutValue.closest(".all-report__item");
+            parent.classList.add("active");
+            parent = reportPeanutValue.closest(".report__all");
             parent.classList.add("active");
         }
         reportCoconutShavingsValue.value = reportCountObject.coconutShavings;
         if (reportCoconutShavingsValue.value > 0) {
             parent = reportCoconutShavingsValue.closest(".all-report__item");
             parent.classList.add("active");
+            parent = reportCoconutShavingsValue.closest(".report__all");
+            parent.classList.add("active");
         }
         reportMarshmellowValue.value = reportCountObject.marshmellow;
         if (reportMarshmellowValue.value > 0) {
             parent = reportMarshmellowValue.closest(".all-report__item");
+            parent.classList.add("active");
+            parent = reportMarshmellowValue.closest(".report__all");
             parent.classList.add("active");
         }
         reportOreoCoffeValue.value = reportCountObject.oreoCoffe;
         if (reportOreoCoffeValue.value > 0) {
             parent = reportOreoCoffeValue.closest(".all-report__item");
             parent.classList.add("active");
+            parent = reportOreoCoffeValue.closest(".report__all");
+            parent.classList.add("active");
         }
         reportLionCoffeValue.value = reportCountObject.lionCoffe;
         if (reportLionCoffeValue.value > 0) {
             parent = reportLionCoffeValue.closest(".all-report__item");
+            parent.classList.add("active");
+            parent = reportLionCoffeValue.closest(".report__all");
             parent.classList.add("active");
         }
         reportBananaCoffeValue.value = reportCountObject.bananaCoffe;
         if (reportBananaCoffeValue.value > 0) {
             parent = reportBananaCoffeValue.closest(".all-report__item");
             parent.classList.add("active");
+            parent = reportBananaCoffeValue.closest(".report__all");
+            parent.classList.add("active");
         }
         reportCoconutCoffeValue.value = reportCountObject.coconutCoffe;
         if (reportCoconutCoffeValue.value > 0) {
             parent = reportCoconutCoffeValue.closest(".all-report__item");
+            parent.classList.add("active");
+            parent = reportCoconutCoffeValue.closest(".report__all");
             parent.classList.add("active");
         }
         reportKendyNutCoffeValue.value = reportCountObject.kendyNutCoffe;
         if (reportKendyNutCoffeValue.value > 0) {
             parent = reportKendyNutCoffeValue.closest(".all-report__item");
             parent.classList.add("active");
+            parent = reportKendyNutCoffeValue.closest(".report__all");
+            parent.classList.add("active");
         }
         reportMmsCoffeValue.value = reportCountObject.mmsCoffe;
         if (reportMmsCoffeValue.value > 0) {
             parent = reportMmsCoffeValue.closest(".all-report__item");
+            parent.classList.add("active");
+            parent = reportMmsCoffeValue.closest(".report__all");
             parent.classList.add("active");
         }
         reportCherryCoffeValue.value = reportCountObject.cherryCoffe;
         if (reportCherryCoffeValue.value > 0) {
             parent = reportCherryCoffeValue.closest(".all-report__item");
             parent.classList.add("active");
+            parent = reportCherryCoffeValue.closest(".report__all");
+            parent.classList.add("active");
         }
         reportGlyaseCoffeValue.value = reportCountObject.glyaseCoffe;
         if (reportGlyaseCoffeValue.value > 0) {
             parent = reportGlyaseCoffeValue.closest(".all-report__item");
+            parent.classList.add("active");
+            parent = reportGlyaseCoffeValue.closest(".report__all");
             parent.classList.add("active");
         }
         reportKakaoRainbowCoffeValue.value = reportCountObject.kakaoRainbowCoffe;
         if (reportKakaoRainbowCoffeValue.value > 0) {
             parent = reportKakaoRainbowCoffeValue.closest(".all-report__item");
             parent.classList.add("active");
+            parent = reportKakaoRainbowCoffeValue.closest(".report__all");
+            parent.classList.add("active");
         }
         reportColdLatteValue.value = reportCountObject.coldLatte;
         if (reportColdLatteValue.value > 0) {
             parent = reportColdLatteValue.closest(".all-report__item");
+            parent.classList.add("active");
+            parent = reportColdLatteValue.closest(".report__all");
             parent.classList.add("active");
         }
         reportTigerLatteValue.value = reportCountObject.tigerLatte;
         if (reportTigerLatteValue.value > 0) {
             parent = reportTigerLatteValue.closest(".all-report__item");
             parent.classList.add("active");
+            parent = reportTigerLatteValue.closest(".report__all");
+            parent.classList.add("active");
         }
         reportFruitMexicanValue.value = reportCountObject.fruitMexican;
         if (reportFruitMexicanValue.value > 0) {
             parent = reportFruitMexicanValue.closest(".all-report__item");
+            parent.classList.add("active");
+            parent = reportFruitMexicanValue.closest(".report__all");
             parent.classList.add("active");
         }
         reportTeeValue.value = reportCountObject.tee;
         if (reportTeeValue.value > 0) {
             parent = reportTeeValue.closest(".all-report__item");
             parent.classList.add("active");
+            parent = reportTeeValue.closest(".report__all");
+            parent.classList.add("active");
         }
         reportEkoTeeValue.value = reportCountObject.ekoTee;
         if (reportEkoTeeValue.value > 0) {
             parent = reportEkoTeeValue.closest(".all-report__item");
+            parent.classList.add("active");
+            parent = reportEkoTeeValue.closest(".report__all");
             parent.classList.add("active");
         }
         reportChokolateValue.value = reportCountObject.chokolate;
         if (reportChokolateValue.value > 0) {
             parent = reportChokolateValue.closest(".all-report__item");
             parent.classList.add("active");
+            parent = reportChokolateValue.closest(".report__all");
+            parent.classList.add("active");
         }
         reportChokolatePlusValue.value = reportCountObject.chokolatePlus;
         if (reportChokolatePlusValue.value > 0) {
             parent = reportChokolatePlusValue.closest(".all-report__item");
+            parent.classList.add("active");
+            parent = reportChokolatePlusValue.closest(".report__all");
             parent.classList.add("active");
         }
         reportMulledWineValue.value = reportCountObject.mulledWine;
         if (reportMulledWineValue.value > 0) {
             parent = reportMulledWineValue.closest(".all-report__item");
             parent.classList.add("active");
+            parent = reportMulledWineValue.closest(".report__all");
+            parent.classList.add("active");
         }
         reportCacaoNaturalValue.value = reportCountObject.cacaoNatural;
         if (reportCacaoNaturalValue.value > 0) {
             parent = reportCacaoNaturalValue.closest(".all-report__item");
+            parent.classList.add("active");
+            parent = reportCacaoNaturalValue.closest(".report__all");
             parent.classList.add("active");
         }
         reportNesquikSValue.value = reportCountObject.nesquikS;
         if (reportNesquikSValue.value > 0) {
             parent = reportNesquikSValue.closest(".all-report__item");
             parent.classList.add("active");
+            parent = reportNesquikSValue.closest(".report__all");
+            parent.classList.add("active");
         }
         reportNesquikMValue.value = reportCountObject.nesquikM;
         if (reportNesquikMValue.value > 0) {
             parent = reportNesquikMValue.closest(".all-report__item");
+            parent.classList.add("active");
+            parent = reportNesquikMValue.closest(".report__all");
             parent.classList.add("active");
         }
         reportMatchaValue.value = reportCountObject.matcha;
         if (reportMatchaValue.value > 0) {
             parent = reportMatchaValue.closest(".all-report__item");
             parent.classList.add("active");
+            parent = reportMatchaValue.closest(".report__all");
+            parent.classList.add("active");
         }
         reportMatchaLatteValue.value = reportCountObject.matchaLatte;
         if (reportMatchaLatteValue.value > 0) {
             parent = reportMatchaLatteValue.closest(".all-report__item");
+            parent.classList.add("active");
+            parent = reportMatchaLatteValue.closest(".report__all");
             parent.classList.add("active");
         }
         reportKapucinoSLactoseFreeValue.value = reportCountObject.kapucinoSLactoseFree;
         if (reportKapucinoSLactoseFreeValue.value > 0) {
             parent = reportKapucinoSLactoseFreeValue.closest(".all-report__item");
             parent.classList.add("active");
+            parent = reportKapucinoSLactoseFreeValue.closest(".report__all");
+            parent.classList.add("active");
         }
         reportKapucinoMLactoseFreeValue.value = reportCountObject.kapucinoMLactoseFree;
         if (reportKapucinoMLactoseFreeValue.value > 0) {
             parent = reportKapucinoMLactoseFreeValue.closest(".all-report__item");
+            parent.classList.add("active");
+            parent = reportKapucinoMLactoseFreeValue.closest(".report__all");
             parent.classList.add("active");
         }
         reportKapucinoLLactoseFreeValue.value = reportCountObject.kapucinoLLactoseFree;
         if (reportKapucinoLLactoseFreeValue.value > 0) {
             parent = reportKapucinoLLactoseFreeValue.closest(".all-report__item");
             parent.classList.add("active");
+            parent = reportKapucinoLLactoseFreeValue.closest(".report__all");
+            parent.classList.add("active");
         }
         reportLatteSLactoseFreeValue.value = reportCountObject.latteSLactoseFree;
         if (reportLatteSLactoseFreeValue.value > 0) {
             parent = reportLatteSLactoseFreeValue.closest(".all-report__item");
+            parent.classList.add("active");
+            parent = reportLatteSLactoseFreeValue.closest(".report__all");
             parent.classList.add("active");
         }
         reportLatteMLactoseFreeValue.value = reportCountObject.latteMLactoseFree;
         if (reportLatteMLactoseFreeValue.value > 0) {
             parent = reportLatteMLactoseFreeValue.closest(".all-report__item");
             parent.classList.add("active");
+            parent = reportLatteMLactoseFreeValue.closest(".report__all");
+            parent.classList.add("active");
         }
         reportLatteLLactoseFreeValue.value = reportCountObject.latteLLactoseFree;
         if (reportLatteLLactoseFreeValue.value > 0) {
             parent = reportLatteLLactoseFreeValue.closest(".all-report__item");
+            parent.classList.add("active");
+            parent = reportLatteLLactoseFreeValue.closest(".report__all");
             parent.classList.add("active");
         }
         reportNesquikSLactoseFreeValue.value = reportCountObject.nesquikSLactoseFree;
         if (reportNesquikSLactoseFreeValue.value > 0) {
             parent = reportNesquikSLactoseFreeValue.closest(".all-report__item");
             parent.classList.add("active");
+            parent = reportNesquikSLactoseFreeValue.closest(".report__all");
+            parent.classList.add("active");
         }
         reportCacaoNaturalLactoseFreeValue.value = reportCountObject.cacaoNaturalLactoseFree;
         if (reportCacaoNaturalLactoseFreeValue.value > 0) {
             parent = reportCacaoNaturalLactoseFreeValue.closest(".all-report__item");
+            parent.classList.add("active");
+            parent = reportCacaoNaturalLactoseFreeValue.closest(".report__all");
             parent.classList.add("active");
         }
         reportFletWhiteSLactoseFreeValue.value = reportCountObject.fletWhiteSLactoseFree;
         if (reportFletWhiteSLactoseFreeValue.value > 0) {
             parent = reportFletWhiteSLactoseFreeValue.closest(".all-report__item");
             parent.classList.add("active");
+            parent = reportFletWhiteSLactoseFreeValue.closest(".report__all");
+            parent.classList.add("active");
         }
         reportKapucinoSVegetableValue.value = reportCountObject.kapucinoSVegetable;
         if (reportKapucinoSVegetableValue.value > 0) {
             parent = reportKapucinoSVegetableValue.closest(".all-report__item");
+            parent.classList.add("active");
+            parent = reportKapucinoSVegetableValue.closest(".report__all");
             parent.classList.add("active");
         }
         reportKapucinoMVegetableValue.value = reportCountObject.kapucinoMVegetable;
         if (reportKapucinoMVegetableValue.value > 0) {
             parent = reportKapucinoMVegetableValue.closest(".all-report__item");
             parent.classList.add("active");
+            parent = reportKapucinoMVegetableValue.closest(".report__all");
+            parent.classList.add("active");
         }
         reportLatteSVegetableValue.value = reportCountObject.latteSVegetable;
         if (reportLatteSVegetableValue.value > 0) {
             parent = reportLatteSVegetableValue.closest(".all-report__item");
+            parent.classList.add("active");
+            parent = reportLatteSVegetableValue.closest(".report__all");
             parent.classList.add("active");
         }
         reportLatteMVegetableValue.value = reportCountObject.latteMVegetable;
         if (reportLatteMVegetableValue.value > 0) {
             parent = reportLatteMVegetableValue.closest(".all-report__item");
             parent.classList.add("active");
+            parent = reportLatteMVegetableValue.closest(".report__all");
+            parent.classList.add("active");
         }
         reportCacaoNaturalVegetableValue.value = reportCountObject.cacaoNaturalVegetable;
         if (reportCacaoNaturalVegetableValue.value > 0) {
             parent = reportCacaoNaturalVegetableValue.closest(".all-report__item");
+            parent.classList.add("active");
+            parent = reportCacaoNaturalVegetableValue.closest(".report__all");
             parent.classList.add("active");
         }
         reportFletWhiteSVegetableValue.value = reportCountObject.fletWhiteSVegetable;
         if (reportFletWhiteSVegetableValue.value > 0) {
             parent = reportFletWhiteSVegetableValue.closest(".all-report__item");
             parent.classList.add("active");
+            parent = reportFletWhiteSVegetableValue.closest(".report__all");
+            parent.classList.add("active");
         }
         reportJarIceCreamValue.value = reportCountObject.jarIceCream;
         if (reportJarIceCreamValue.value > 0) {
             parent = reportJarIceCreamValue.closest(".all-report__item");
+            parent.classList.add("active");
+            parent = reportJarIceCreamValue.closest(".report__all");
             parent.classList.add("active");
         }
         reportJarSorbetValue.value = reportCountObject.jarSorbet;
         if (reportJarSorbetValue.value > 0) {
             parent = reportJarSorbetValue.closest(".all-report__item");
             parent.classList.add("active");
+            parent = reportJarSorbetValue.closest(".report__all");
+            parent.classList.add("active");
         }
         reportIceCream001Value.value = reportCountObject.iceCream001;
         if (reportIceCream001Value.value > 0) {
             parent = reportIceCream001Value.closest(".all-report__item");
+            parent.classList.add("active");
+            parent = reportIceCream001Value.closest(".report__all");
             parent.classList.add("active");
         }
         reportIceCream001PCS2Value.value = reportCountObject.iceCream001PCS2;
         if (reportIceCream001PCS2Value.value > 0) {
             parent = reportIceCream001PCS2Value.closest(".all-report__item");
             parent.classList.add("active");
+            parent = reportIceCream001PCS2Value.closest(".report__all");
+            parent.classList.add("active");
         }
         reportIceCream001PCS3Value.value = reportCountObject.iceCream001PCS3;
         if (reportIceCream001PCS3Value.value > 0) {
             parent = reportIceCream001PCS3Value.closest(".all-report__item");
+            parent.classList.add("active");
+            parent = reportIceCream001PCS3Value.closest(".report__all");
             parent.classList.add("active");
         }
         reportIceCream002Value.value = reportCountObject.iceCream002;
         if (reportIceCream002Value.value > 0) {
             parent = reportIceCream002Value.closest(".all-report__item");
             parent.classList.add("active");
+            parent = reportIceCream002Value.closest(".report__all");
+            parent.classList.add("active");
         }
         reportIceCream002PCS2Value.value = reportCountObject.iceCream002PCS2;
         if (reportIceCream002PCS2Value.value > 0) {
             parent = reportIceCream002PCS2Value.closest(".all-report__item");
+            parent.classList.add("active");
+            parent = reportIceCream002PCS2Value.closest(".report__all");
             parent.classList.add("active");
         }
         reportIceCream002PCS3Value.value = reportCountObject.iceCream002PCS3;
         if (reportIceCream002PCS3Value.value > 0) {
             parent = reportIceCream002PCS3Value.closest(".all-report__item");
             parent.classList.add("active");
+            parent = reportIceCream002PCS3Value.closest(".report__all");
+            parent.classList.add("active");
         }
         reportIceCream003Value.value = reportCountObject.iceCream003;
         if (reportIceCream003Value.value > 0) {
             parent = reportIceCream003Value.closest(".all-report__item");
+            parent.classList.add("active");
+            parent = reportIceCream003Value.closest(".report__all");
             parent.classList.add("active");
         }
         reportIceCream003PCS2Value.value = reportCountObject.iceCream003PCS2;
         if (reportIceCream003PCS2Value.value > 0) {
             parent = reportIceCream003PCS2Value.closest(".all-report__item");
             parent.classList.add("active");
+            parent = reportIceCream003PCS2Value.closest(".report__all");
+            parent.classList.add("active");
         }
         reportIceCream003PCS3Value.value = reportCountObject.iceCream003PCS3;
         if (reportIceCream003PCS3Value.value > 0) {
             parent = reportIceCream003PCS3Value.closest(".all-report__item");
+            parent.classList.add("active");
+            parent = reportIceCream003PCS3Value.closest(".report__all");
             parent.classList.add("active");
         }
         reportIceCream004Value.value = reportCountObject.iceCream004;
         if (reportIceCream004Value.value > 0) {
             parent = reportIceCream004Value.closest(".all-report__item");
             parent.classList.add("active");
+            parent = reportIceCream004Value.closest(".report__all");
+            parent.classList.add("active");
         }
         reportIceCream004PCS2Value.value = reportCountObject.iceCream004PCS2;
         if (reportIceCream004PCS2Value.value > 0) {
             parent = reportIceCream004PCS2Value.closest(".all-report__item");
+            parent.classList.add("active");
+            parent = reportIceCream004PCS2Value.closest(".report__all");
             parent.classList.add("active");
         }
         reportIceCream004PCS3Value.value = reportCountObject.iceCream004PCS3;
         if (reportIceCream004PCS3Value.value > 0) {
             parent = reportIceCream004PCS3Value.closest(".all-report__item");
             parent.classList.add("active");
+            parent = reportIceCream004PCS3Value.closest(".report__all");
+            parent.classList.add("active");
         }
         reportWaffle001Value.value = reportCountObject.waffle001;
         if (reportWaffle001Value.value > 0) {
             parent = reportWaffle001Value.closest(".all-report__item");
+            parent.classList.add("active");
+            parent = reportWaffle001Value.closest(".report__all");
             parent.classList.add("active");
         }
         reportWaffle002Value.value = reportCountObject.waffle002;
         if (reportWaffle002Value.value > 0) {
             parent = reportWaffle002Value.closest(".all-report__item");
             parent.classList.add("active");
+            parent = reportWaffle002Value.closest(".report__all");
+            parent.classList.add("active");
         }
         reportWaffle003Value.value = reportCountObject.waffle003;
         if (reportWaffle003Value.value > 0) {
             parent = reportWaffle003Value.closest(".all-report__item");
+            parent.classList.add("active");
+            parent = reportWaffle003Value.closest(".report__all");
             parent.classList.add("active");
         }
         reportWaffle004Value.value = reportCountObject.waffle004;
         if (reportWaffle004Value.value > 0) {
             parent = reportWaffle004Value.closest(".all-report__item");
             parent.classList.add("active");
+            parent = reportWaffle004Value.closest(".report__all");
+            parent.classList.add("active");
         }
         reportWaffle005Value.value = reportCountObject.waffle005;
         if (reportWaffle005Value.value > 0) {
             parent = reportWaffle005Value.closest(".all-report__item");
+            parent.classList.add("active");
+            parent = reportWaffle005Value.closest(".report__all");
             parent.classList.add("active");
         }
         reportWaffle006Value.value = reportCountObject.waffle006;
         if (reportWaffle006Value.value > 0) {
             parent = reportWaffle006Value.closest(".all-report__item");
             parent.classList.add("active");
+            parent = reportWaffle006Value.closest(".report__all");
+            parent.classList.add("active");
         }
         reportWaffle007Value.value = reportCountObject.waffle007;
         if (reportWaffle007Value.value > 0) {
             parent = reportWaffle007Value.closest(".all-report__item");
+            parent.classList.add("active");
+            parent = reportWaffle007Value.closest(".report__all");
             parent.classList.add("active");
         }
         reportWaffle008Value.value = reportCountObject.waffle008;
         if (reportWaffle008Value.value > 0) {
             parent = reportWaffle008Value.closest(".all-report__item");
             parent.classList.add("active");
+            parent = reportWaffle008Value.closest(".report__all");
+            parent.classList.add("active");
         }
         reportWaffle009Value.value = reportCountObject.waffle009;
         if (reportWaffle009Value.value > 0) {
             parent = reportWaffle009Value.closest(".all-report__item");
+            parent.classList.add("active");
+            parent = reportWaffle009Value.closest(".report__all");
             parent.classList.add("active");
         }
         reportWaffle0091Value.value = reportCountObject.waffle0091;
         if (reportWaffle0091Value.value > 0) {
             parent = reportWaffle0091Value.closest(".all-report__item");
             parent.classList.add("active");
+            parent = reportWaffle0091Value.closest(".report__all");
+            parent.classList.add("active");
         }
         reportWaffle010Value.value = reportCountObject.waffle010;
         if (reportWaffle010Value.value > 0) {
             parent = reportWaffle010Value.closest(".all-report__item");
+            parent.classList.add("active");
+            parent = reportWaffle010Value.closest(".report__all");
             parent.classList.add("active");
         }
         reportWaffle0101Value.value = reportCountObject.waffle0101;
         if (reportWaffle0101Value.value > 0) {
             parent = reportWaffle0101Value.closest(".all-report__item");
             parent.classList.add("active");
+            parent = reportWaffle0101Value.closest(".report__all");
+            parent.classList.add("active");
         }
         reportWaffle011Value.value = reportCountObject.waffle011;
         if (reportWaffle011Value.value > 0) {
             parent = reportWaffle011Value.closest(".all-report__item");
+            parent.classList.add("active");
+            parent = reportWaffle011Value.closest(".report__all");
             parent.classList.add("active");
         }
         reportWaffle012Value.value = reportCountObject.waffle012;
         if (reportWaffle012Value.value > 0) {
             parent = reportWaffle012Value.closest(".all-report__item");
             parent.classList.add("active");
+            parent = reportWaffle012Value.closest(".report__all");
+            parent.classList.add("active");
         }
         reportWaffle013Value.value = reportCountObject.waffle013;
         if (reportWaffle013Value.value > 0) {
             parent = reportWaffle013Value.closest(".all-report__item");
+            parent.classList.add("active");
+            parent = reportWaffle013Value.closest(".report__all");
             parent.classList.add("active");
         }
         reportWaffle014Value.value = reportCountObject.waffle014;
         if (reportWaffle014Value.value > 0) {
             parent = reportWaffle014Value.closest(".all-report__item");
             parent.classList.add("active");
+            parent = reportWaffle014Value.closest(".report__all");
+            parent.classList.add("active");
         }
         reportWaffle015Value.value = reportCountObject.waffle015;
         if (reportWaffle015Value.value > 0) {
             parent = reportWaffle015Value.closest(".all-report__item");
             parent.classList.add("active");
+            parent = reportWaffle015Value.closest(".report__all");
+            parent.classList.add("active");
         }
         reportSellCount.espressoValue.value = reportCountObject.espressoSell;
         if (reportSellCount.espressoValue.value > 0) {
-            let parent = reportSellCount.espressoValue.closest(".all-report__item");
+            parent = reportSellCount.espressoValue.closest(".all-report__item");
+            parent.classList.add("active");
+            parent = reportSellCount.espressoValue.closest(".report__all");
             parent.classList.add("active");
         }
         reportSellCount.americanoValue.value = reportCountObject.americanoSell;
         if (reportSellCount.americanoValue.value > 0) {
-            let parent = reportSellCount.americanoValue.closest(".all-report__item");
+            parent = reportSellCount.americanoValue.closest(".all-report__item");
+            parent.classList.add("active");
+            parent = reportSellCount.americanoValue.closest(".report__all");
             parent.classList.add("active");
         }
         reportSellCount.dopioValue.value = reportCountObject.dopioSell;
         if (reportSellCount.dopioValue.value > 0) {
-            let parent = reportSellCount.dopioValue.closest(".all-report__item");
+            parent = reportSellCount.dopioValue.closest(".all-report__item");
+            parent.classList.add("active");
+            parent = reportSellCount.dopioValue.closest(".report__all");
             parent.classList.add("active");
         }
         reportSellCount.kapucinoSValue.value = reportCountObject.kapucinoSSell;
         if (reportSellCount.kapucinoSValue.value > 0) {
-            let parent = reportSellCount.kapucinoSValue.closest(".all-report__item");
+            parent = reportSellCount.kapucinoSValue.closest(".all-report__item");
+            parent.classList.add("active");
+            parent = reportSellCount.kapucinoSValue.closest(".report__all");
             parent.classList.add("active");
         }
         reportSellCount.kapucinoMValue.value = reportCountObject.kapucinoMSell;
         if (reportSellCount.kapucinoMValue.value > 0) {
-            let parent = reportSellCount.kapucinoMValue.closest(".all-report__item");
+            parent = reportSellCount.kapucinoMValue.closest(".all-report__item");
+            parent.classList.add("active");
+            parent = reportSellCount.kapucinoMValue.closest(".report__all");
             parent.classList.add("active");
         }
         reportSellCount.kapucinoLValue.value = reportCountObject.kapucinoLSell;
         if (reportSellCount.kapucinoLValue.value > 0) {
-            let parent = reportSellCount.kapucinoLValue.closest(".all-report__item");
+            parent = reportSellCount.kapucinoLValue.closest(".all-report__item");
+            parent.classList.add("active");
+            parent = reportSellCount.kapucinoLValue.closest(".report__all");
             parent.classList.add("active");
         }
         reportSellCount.latteSValue.value = reportCountObject.latteSSell;
         if (reportSellCount.latteSValue.value > 0) {
-            let parent = reportSellCount.latteSValue.closest(".all-report__item");
+            parent = reportSellCount.latteSValue.closest(".all-report__item");
+            parent.classList.add("active");
+            parent = reportSellCount.latteSValue.closest(".report__all");
             parent.classList.add("active");
         }
         reportSellCount.latteMValue.value = reportCountObject.latteMSell;
         if (reportSellCount.latteMValue.value > 0) {
-            let parent = reportSellCount.latteMValue.closest(".all-report__item");
+            parent = reportSellCount.latteMValue.closest(".all-report__item");
+            parent.classList.add("active");
+            parent = reportSellCount.latteMValue.closest(".report__all");
             parent.classList.add("active");
         }
         reportSellCount.latteLValue.value = reportCountObject.latteLSell;
         if (reportSellCount.latteLValue.value > 0) {
-            let parent = reportSellCount.latteLValue.closest(".all-report__item");
+            parent = reportSellCount.latteLValue.closest(".all-report__item");
+            parent.classList.add("active");
+            parent = reportSellCount.latteLValue.closest(".report__all");
             parent.classList.add("active");
         }
         reportSellCount.rafSValue.value = reportCountObject.rafSSell;
         if (reportSellCount.rafSValue.value > 0) {
-            let parent = reportSellCount.rafSValue.closest(".all-report__item");
+            parent = reportSellCount.rafSValue.closest(".all-report__item");
+            parent.classList.add("active");
+            parent = reportSellCount.rafSValue.closest(".report__all");
             parent.classList.add("active");
         }
         reportSellCount.rafMValue.value = reportCountObject.rafMSell;
         if (reportSellCount.rafMValue.value > 0) {
-            let parent = reportSellCount.rafMValue.closest(".all-report__item");
+            parent = reportSellCount.rafMValue.closest(".all-report__item");
+            parent.classList.add("active");
+            parent = reportSellCount.rafMValue.closest(".report__all");
             parent.classList.add("active");
         }
         reportSellCount.fletWhiteSValue.value = reportCountObject.fletWhiteSSell;
         if (reportSellCount.fletWhiteSValue.value > 0) {
-            let parent = reportSellCount.fletWhiteSValue.closest(".all-report__item");
+            parent = reportSellCount.fletWhiteSValue.closest(".all-report__item");
+            parent.classList.add("active");
+            parent = reportSellCount.fletWhiteSValue.closest(".report__all");
             parent.classList.add("active");
         }
         reportSellCount.fletWhiteMValue.value = reportCountObject.fletWhiteMSell;
         if (reportSellCount.fletWhiteMValue.value > 0) {
             parent = reportSellCount.fletWhiteMValue.closest(".all-report__item");
             parent.classList.add("active");
+            parent = reportSellCount.fletWhiteMValue.closest(".report__all");
+            parent.classList.add("active");
         }
         reportSellCount.creamValue.value = reportCountObject.creamSell;
         if (reportSellCount.creamValue.value > 0) {
             parent = reportSellCount.creamValue.closest(".all-report__item");
+            parent.classList.add("active");
+            parent = reportSellCount.creamValue.closest(".report__all");
             parent.classList.add("active");
         }
         reportSellCount.syrupValue.value = reportCountObject.syrupSell;
         if (reportSellCount.syrupValue.value > 0) {
             parent = reportSellCount.syrupValue.closest(".all-report__item");
             parent.classList.add("active");
+            parent = reportSellCount.syrupValue.closest(".report__all");
+            parent.classList.add("active");
         }
         reportSellCount.milkValue.value = reportCountObject.milkSell;
         if (reportSellCount.milkValue.value > 0) {
             parent = reportSellCount.milkValue.closest(".all-report__item");
+            parent.classList.add("active");
+            parent = reportSellCount.milkValue.closest(".report__all");
             parent.classList.add("active");
         }
         reportSellCount.vegetableMilkValue.value = reportCountObject.vegetableMilkSell;
         if (reportSellCount.vegetableMilkValue.value > 0) {
             parent = reportSellCount.vegetableMilkValue.closest(".all-report__item");
             parent.classList.add("active");
+            parent = reportSellCount.vegetableMilkValue.closest(".report__all");
+            parent.classList.add("active");
         }
         reportSellCount.lactoseFreeMilkValue.value = reportCountObject.lactoseFreeMilkSell;
         if (reportSellCount.lactoseFreeMilkValue.value > 0) {
             parent = reportSellCount.lactoseFreeMilkValue.closest(".all-report__item");
+            parent.classList.add("active");
+            parent = reportSellCount.lactoseFreeMilkValue.closest(".report__all");
             parent.classList.add("active");
         }
         reportSellCount.peanutValue.value = reportCountObject.peanutSell;
         if (reportSellCount.peanutValue.value > 0) {
             parent = reportSellCount.peanutValue.closest(".all-report__item");
             parent.classList.add("active");
+            parent = reportSellCount.peanutValue.closest(".report__all");
+            parent.classList.add("active");
         }
         reportSellCount.coconutShavingsValue.value = reportCountObject.coconutShavingsSell;
         if (reportSellCount.coconutShavingsValue.value > 0) {
             parent = reportSellCount.coconutShavingsValue.closest(".all-report__item");
+            parent.classList.add("active");
+            parent = reportSellCount.coconutShavingsValue.closest(".report__all");
             parent.classList.add("active");
         }
         reportSellCount.marshmellowValue.value = reportCountObject.marshmellowSell;
         if (reportSellCount.marshmellowValue.value > 0) {
             parent = reportSellCount.marshmellowValue.closest(".all-report__item");
             parent.classList.add("active");
+            parent = reportSellCount.marshmellowValue.closest(".report__all");
+            parent.classList.add("active");
         }
         reportSellCount.oreoCoffeValue.value = reportCountObject.oreoCoffeSell;
         if (reportSellCount.oreoCoffeValue.value > 0) {
             parent = reportSellCount.oreoCoffeValue.closest(".all-report__item");
+            parent.classList.add("active");
+            parent = reportSellCount.oreoCoffeValue.closest(".report__all");
             parent.classList.add("active");
         }
         reportSellCount.lionCoffeValue.value = reportCountObject.lionCoffeSell;
         if (reportSellCount.lionCoffeValue.value > 0) {
             parent = reportSellCount.lionCoffeValue.closest(".all-report__item");
             parent.classList.add("active");
+            parent = reportSellCount.lionCoffeValue.closest(".report__all");
+            parent.classList.add("active");
         }
         reportSellCount.bananaCoffeValue.value = reportCountObject.bananaCoffeSell;
         if (reportSellCount.bananaCoffeValue.value > 0) {
             parent = reportSellCount.bananaCoffeValue.closest(".all-report__item");
+            parent.classList.add("active");
+            parent = reportSellCount.bananaCoffeValue.closest(".report__all");
             parent.classList.add("active");
         }
         reportSellCount.coconutCoffeValue.value = reportCountObject.coconutCoffeSell;
         if (reportSellCount.coconutCoffeValue.value > 0) {
             parent = reportSellCount.coconutCoffeValue.closest(".all-report__item");
             parent.classList.add("active");
+            parent = reportSellCount.coconutCoffeValue.closest(".report__all");
+            parent.classList.add("active");
         }
         reportSellCount.kendyNutCoffeValue.value = reportCountObject.kendyNutCoffeSell;
         if (reportSellCount.kendyNutCoffeValue.value > 0) {
             parent = reportSellCount.kendyNutCoffeValue.closest(".all-report__item");
+            parent.classList.add("active");
+            parent = reportSellCount.kendyNutCoffeValue.closest(".report__all");
             parent.classList.add("active");
         }
         reportSellCount.mmsCoffeValue.value = reportCountObject.mmsCoffeSell;
         if (reportSellCount.mmsCoffeValue.value > 0) {
             parent = reportSellCount.mmsCoffeValue.closest(".all-report__item");
             parent.classList.add("active");
+            parent = reportSellCount.mmsCoffeValue.closest(".report__all");
+            parent.classList.add("active");
         }
         reportSellCount.cherryCoffeValue.value = reportCountObject.cherryCoffeSell;
         if (reportSellCount.cherryCoffeValue.value > 0) {
             parent = reportSellCount.cherryCoffeValue.closest(".all-report__item");
+            parent.classList.add("active");
+            parent = reportSellCount.cherryCoffeValue.closest(".report__all");
             parent.classList.add("active");
         }
         reportSellCount.glyaseCoffeValue.value = reportCountObject.glyaseCoffeSell;
         if (reportSellCount.glyaseCoffeValue.value > 0) {
             parent = reportSellCount.glyaseCoffeValue.closest(".all-report__item");
             parent.classList.add("active");
+            parent = reportSellCount.glyaseCoffeValue.closest(".report__all");
+            parent.classList.add("active");
         }
         reportSellCount.kakaoRainbowCoffeValue.value = reportCountObject.kakaoRainbowCoffeSell;
         if (reportSellCount.kakaoRainbowCoffeValue.value > 0) {
             parent = reportSellCount.kakaoRainbowCoffeValue.closest(".all-report__item");
+            parent.classList.add("active");
+            parent = reportSellCount.kakaoRainbowCoffeValue.closest(".report__all");
             parent.classList.add("active");
         }
         reportSellCount.coldLatteValue.value = reportCountObject.coldLatteSell;
         if (reportSellCount.coldLatteValue.value > 0) {
             parent = reportSellCount.coldLatteValue.closest(".all-report__item");
             parent.classList.add("active");
+            parent = reportSellCount.coldLatteValue.closest(".report__all");
+            parent.classList.add("active");
         }
         reportSellCount.tigerLatteValue.value = reportCountObject.tigerLatteSell;
         if (reportSellCount.tigerLatteValue.value > 0) {
             parent = reportSellCount.tigerLatteValue.closest(".all-report__item");
+            parent.classList.add("active");
+            parent = reportSellCount.tigerLatteValue.closest(".report__all");
             parent.classList.add("active");
         }
         reportSellCount.fruitMexicanValue.value = reportCountObject.fruitMexicanSell;
         if (reportSellCount.fruitMexicanValue.value > 0) {
             parent = reportSellCount.fruitMexicanValue.closest(".all-report__item");
             parent.classList.add("active");
+            parent = reportSellCount.fruitMexicanValue.closest(".report__all");
+            parent.classList.add("active");
         }
         reportSellCount.teeValue.value = reportCountObject.teeSell;
         if (reportSellCount.teeValue.value > 0) {
             parent = reportSellCount.teeValue.closest(".all-report__item");
+            parent.classList.add("active");
+            parent = reportSellCount.teeValue.closest(".report__all");
             parent.classList.add("active");
         }
         reportSellCount.ekoTeeValue.value = reportCountObject.ekoTeeSell;
         if (reportSellCount.ekoTeeValue.value > 0) {
             parent = reportSellCount.ekoTeeValue.closest(".all-report__item");
             parent.classList.add("active");
+            parent = reportSellCount.ekoTeeValue.closest(".report__all");
+            parent.classList.add("active");
         }
         reportSellCount.chokolateValue.value = reportCountObject.chokolateSell;
         if (reportSellCount.chokolateValue.value > 0) {
             parent = reportSellCount.chokolateValue.closest(".all-report__item");
+            parent.classList.add("active");
+            parent = reportSellCount.chokolateValue.closest(".report__all");
             parent.classList.add("active");
         }
         reportSellCount.chokolatePlusValue.value = reportCountObject.chokolatePlusSell;
         if (reportSellCount.chokolatePlusValue.value > 0) {
             parent = reportSellCount.chokolatePlusValue.closest(".all-report__item");
             parent.classList.add("active");
+            parent = reportSellCount.chokolatePlusValue.closest(".report__all");
+            parent.classList.add("active");
         }
         reportSellCount.mulledWineValue.value = reportCountObject.mulledWineSell;
         if (reportSellCount.mulledWineValue.value > 0) {
             parent = reportSellCount.mulledWineValue.closest(".all-report__item");
+            parent.classList.add("active");
+            parent = reportSellCount.mulledWineValue.closest(".report__all");
             parent.classList.add("active");
         }
         reportSellCount.cacaoNaturalValue.value = reportCountObject.cacaoNaturalSell;
         if (reportSellCount.cacaoNaturalValue.value > 0) {
             parent = reportSellCount.cacaoNaturalValue.closest(".all-report__item");
             parent.classList.add("active");
+            parent = reportSellCount.cacaoNaturalValue.closest(".report__all");
+            parent.classList.add("active");
         }
         reportSellCount.nesquikSValue.value = reportCountObject.nesquikSSell;
         if (reportSellCount.nesquikSValue.value > 0) {
             parent = reportSellCount.nesquikSValue.closest(".all-report__item");
+            parent.classList.add("active");
+            parent = reportSellCount.nesquikSValue.closest(".report__all");
             parent.classList.add("active");
         }
         reportSellCount.nesquikMValue.value = reportCountObject.nesquikMSell;
         if (reportSellCount.nesquikMValue.value > 0) {
             parent = reportSellCount.nesquikMValue.closest(".all-report__item");
             parent.classList.add("active");
+            parent = reportSellCount.nesquikMValue.closest(".report__all");
+            parent.classList.add("active");
         }
         reportSellCount.matchaValue.value = reportCountObject.matchaSell;
         if (reportSellCount.matchaValue.value > 0) {
             parent = reportSellCount.matchaValue.closest(".all-report__item");
+            parent.classList.add("active");
+            parent = reportSellCount.matchaValue.closest(".report__all");
             parent.classList.add("active");
         }
         reportSellCount.matchaLatteValue.value = reportCountObject.matchaLatteSell;
         if (reportSellCount.matchaLatteValue.value > 0) {
             parent = reportSellCount.matchaLatteValue.closest(".all-report__item");
             parent.classList.add("active");
+            parent = reportSellCount.matchaLatteValue.closest(".report__all");
+            parent.classList.add("active");
         }
         reportSellCount.kapucinoSLactoseFreeValue.value = reportCountObject.kapucinoSLactoseFreeSell;
         if (reportSellCount.kapucinoSLactoseFreeValue.value > 0) {
             parent = reportSellCount.kapucinoSLactoseFreeValue.closest(".all-report__item");
+            parent.classList.add("active");
+            parent = reportSellCount.kapucinoSLactoseFreeValue.closest(".report__all");
             parent.classList.add("active");
         }
         reportSellCount.kapucinoMLactoseFreeValue.value = reportCountObject.kapucinoMLactoseFreeSell;
         if (reportSellCount.kapucinoMLactoseFreeValue.value > 0) {
             parent = reportSellCount.kapucinoMLactoseFreeValue.closest(".all-report__item");
             parent.classList.add("active");
+            parent = reportSellCount.kapucinoMLactoseFreeValue.closest(".report__all");
+            parent.classList.add("active");
         }
         reportSellCount.kapucinoLLactoseFreeValue.value = reportCountObject.kapucinoLLactoseFreeSell;
         if (reportSellCount.kapucinoLLactoseFreeValue.value > 0) {
             parent = reportSellCount.kapucinoLLactoseFreeValue.closest(".all-report__item");
+            parent.classList.add("active");
+            parent = reportSellCount.kapucinoLLactoseFreeValue.closest(".report__all");
             parent.classList.add("active");
         }
         reportSellCount.latteSLactoseFreeValue.value = reportCountObject.latteSLactoseFreeSell;
         if (reportSellCount.latteSLactoseFreeValue.value > 0) {
             parent = reportSellCount.latteSLactoseFreeValue.closest(".all-report__item");
             parent.classList.add("active");
+            parent = reportSellCount.latteSLactoseFreeValue.closest(".report__all");
+            parent.classList.add("active");
         }
         reportSellCount.latteMLactoseFreeValue.value = reportCountObject.latteMLactoseFreeSell;
         if (reportSellCount.latteMLactoseFreeValue.value > 0) {
             parent = reportSellCount.latteMLactoseFreeValue.closest(".all-report__item");
+            parent.classList.add("active");
+            parent = reportSellCount.latteMLactoseFreeValue.closest(".report__all");
             parent.classList.add("active");
         }
         reportSellCount.latteLLactoseFreeValue.value = reportCountObject.latteLLactoseFreeSell;
         if (reportSellCount.latteLLactoseFreeValue.value > 0) {
             parent = reportSellCount.latteLLactoseFreeValue.closest(".all-report__item");
             parent.classList.add("active");
+            parent = reportSellCount.latteLLactoseFreeValue.closest(".report__all");
+            parent.classList.add("active");
         }
         reportSellCount.nesquikSLactoseFreeValue.value = reportCountObject.nesquikSLactoseFreeSell;
         if (reportSellCount.nesquikSLactoseFreeValue.value > 0) {
             parent = reportSellCount.nesquikSLactoseFreeValue.closest(".all-report__item");
+            parent.classList.add("active");
+            parent = reportSellCount.nesquikSLactoseFreeValue.closest(".report__all");
             parent.classList.add("active");
         }
         reportSellCount.cacaoNaturalLactoseFreeValue.value = reportCountObject.cacaoNaturalLactoseFreeSell;
         if (reportSellCount.cacaoNaturalLactoseFreeValue.value > 0) {
             parent = reportSellCount.cacaoNaturalLactoseFreeValue.closest(".all-report__item");
             parent.classList.add("active");
+            parent = reportSellCount.cacaoNaturalLactoseFreeValue.closest(".report__all");
+            parent.classList.add("active");
         }
         reportSellCount.fletWhiteSLactoseFreeValue.value = reportCountObject.fletWhiteSLactoseFreeSell;
         if (reportSellCount.fletWhiteSLactoseFreeValue.value > 0) {
             parent = reportSellCount.fletWhiteSLactoseFreeValue.closest(".all-report__item");
+            parent.classList.add("active");
+            parent = reportSellCount.fletWhiteSLactoseFreeValue.closest(".report__all");
             parent.classList.add("active");
         }
         reportSellCount.kapucinoSVegetableValue.value = reportCountObject.kapucinoSVegetableSell;
         if (reportSellCount.kapucinoSVegetableValue.value > 0) {
             parent = reportSellCount.kapucinoSVegetableValue.closest(".all-report__item");
             parent.classList.add("active");
+            parent = reportSellCount.kapucinoSVegetableValue.closest(".report__all");
+            parent.classList.add("active");
         }
         reportSellCount.kapucinoMVegetableValue.value = reportCountObject.kapucinoMVegetableSell;
         if (reportSellCount.kapucinoMVegetableValue.value > 0) {
             parent = reportSellCount.kapucinoMVegetableValue.closest(".all-report__item");
+            parent.classList.add("active");
+            parent = reportSellCount.kapucinoMVegetableValue.closest(".report__all");
             parent.classList.add("active");
         }
         reportSellCount.latteSVegetableValue.value = reportCountObject.latteSVegetableSell;
         if (reportSellCount.latteSVegetableValue.value > 0) {
             parent = reportSellCount.latteSVegetableValue.closest(".all-report__item");
             parent.classList.add("active");
+            parent = reportSellCount.latteSVegetableValue.closest(".report__all");
+            parent.classList.add("active");
         }
         reportSellCount.latteMVegetableValue.value = reportCountObject.latteMVegetableSell;
         if (reportSellCount.latteMVegetableValue.value > 0) {
             parent = reportSellCount.latteMVegetableValue.closest(".all-report__item");
+            parent.classList.add("active");
+            parent = reportSellCount.latteMVegetableValue.closest(".report__all");
             parent.classList.add("active");
         }
         reportSellCount.cacaoNaturalVegetableValue.value = reportCountObject.cacaoNaturalVegetableSell;
         if (reportSellCount.cacaoNaturalVegetableValue.value > 0) {
             parent = reportSellCount.cacaoNaturalVegetableValue.closest(".all-report__item");
             parent.classList.add("active");
+            parent = reportSellCount.cacaoNaturalVegetableValue.closest(".report__all");
+            parent.classList.add("active");
         }
         reportSellCount.fletWhiteSVegetableValue.value = reportCountObject.fletWhiteSVegetableSell;
         if (reportSellCount.fletWhiteSVegetableValue.value > 0) {
             parent = reportSellCount.fletWhiteSVegetableValue.closest(".all-report__item");
+            parent.classList.add("active");
+            parent = reportSellCount.fletWhiteSVegetableValue.closest(".report__all");
             parent.classList.add("active");
         }
         reportSellCount.jarIceCreamValue.value = reportCountObject.jarIceCreamSell;
         if (reportSellCount.jarIceCreamValue.value > 0) {
             parent = reportSellCount.jarIceCreamValue.closest(".all-report__item");
             parent.classList.add("active");
+            parent = reportSellCount.jarIceCreamValue.closest(".report__all");
+            parent.classList.add("active");
         }
         reportSellCount.jarSorbetValue.value = reportCountObject.jarSorbetSell;
         if (reportSellCount.jarSorbetValue.value > 0) {
             parent = reportSellCount.jarSorbetValue.closest(".all-report__item");
+            parent.classList.add("active");
+            parent = reportSellCount.jarSorbetValue.closest(".report__all");
             parent.classList.add("active");
         }
         reportSellCount.iceCream001Value.value = reportCountObject.iceCream001Sell;
         if (reportSellCount.iceCream001Value.value > 0) {
             parent = reportSellCount.iceCream001Value.closest(".all-report__item");
             parent.classList.add("active");
+            parent = reportSellCount.iceCream001Value.closest(".report__all");
+            parent.classList.add("active");
         }
         reportSellCount.iceCream001ValuePCS2.value = reportCountObject.iceCream001PCS2Sell;
         if (reportSellCount.iceCream001ValuePCS2.value > 0) {
             parent = reportSellCount.iceCream001ValuePCS2.closest(".all-report__item");
+            parent.classList.add("active");
+            parent = reportSellCount.iceCream001ValuePCS2.closest(".report__all");
             parent.classList.add("active");
         }
         reportSellCount.iceCream001ValuePCS3.value = reportCountObject.iceCream001PCS3Sell;
         if (reportSellCount.iceCream001ValuePCS3.value > 0) {
             parent = reportSellCount.iceCream001ValuePCS3.closest(".all-report__item");
             parent.classList.add("active");
+            parent = reportSellCount.iceCream001ValuePCS3.closest(".report__all");
+            parent.classList.add("active");
         }
         reportSellCount.iceCream002Value.value = reportCountObject.iceCream002Sell;
         if (reportSellCount.iceCream002Value.value > 0) {
             parent = reportSellCount.iceCream002Value.closest(".all-report__item");
+            parent.classList.add("active");
+            parent = reportSellCount.iceCream002Value.closest(".report__all");
             parent.classList.add("active");
         }
         reportSellCount.iceCream002ValuePCS2.value = reportCountObject.iceCream002PCS2Sell;
         if (reportSellCount.iceCream002ValuePCS2.value > 0) {
             parent = reportSellCount.iceCream002ValuePCS2.closest(".all-report__item");
             parent.classList.add("active");
+            parent = reportSellCount.iceCream002ValuePCS2.closest(".report__all");
+            parent.classList.add("active");
         }
         reportSellCount.iceCream002ValuePCS3.value = reportCountObject.iceCream002PCS3Sell;
         if (reportSellCount.iceCream002ValuePCS3.value > 0) {
             parent = reportSellCount.iceCream002ValuePCS3.closest(".all-report__item");
+            parent.classList.add("active");
+            parent = reportSellCount.iceCream002ValuePCS3.closest(".report__all");
             parent.classList.add("active");
         }
         reportSellCount.iceCream003Value.value = reportCountObject.iceCream003Sell;
         if (reportSellCount.iceCream003Value.value > 0) {
             parent = reportSellCount.iceCream003Value.closest(".all-report__item");
             parent.classList.add("active");
+            parent = reportSellCount.iceCream003Value.closest(".report__all");
+            parent.classList.add("active");
         }
         reportSellCount.iceCream003ValuePCS2.value = reportCountObject.iceCream003PCS2Sell;
         if (reportSellCount.iceCream003ValuePCS2.value > 0) {
             parent = reportSellCount.iceCream003ValuePCS2.closest(".all-report__item");
+            parent.classList.add("active");
+            parent = reportSellCount.iceCream003ValuePCS2.closest(".report__all");
             parent.classList.add("active");
         }
         reportSellCount.iceCream003ValuePCS3.value = reportCountObject.iceCream003PCS3Sell;
         if (reportSellCount.iceCream003ValuePCS3.value > 0) {
             parent = reportSellCount.iceCream003ValuePCS3.closest(".all-report__item");
             parent.classList.add("active");
+            parent = reportSellCount.iceCream003ValuePCS3.closest(".report__all");
+            parent.classList.add("active");
         }
         reportSellCount.iceCream004Value.value = reportCountObject.iceCream004Sell;
         if (reportSellCount.iceCream004Value.value > 0) {
             parent = reportSellCount.iceCream004Value.closest(".all-report__item");
+            parent.classList.add("active");
+            parent = reportSellCount.iceCream004Value.closest(".report__all");
             parent.classList.add("active");
         }
         reportSellCount.iceCream004ValuePCS2.value = reportCountObject.iceCream004PCS2Sell;
         if (reportSellCount.iceCream004ValuePCS2.value > 0) {
             parent = reportSellCount.iceCream004ValuePCS2.closest(".all-report__item");
             parent.classList.add("active");
+            parent = reportSellCount.iceCream004ValuePCS2.closest(".report__all");
+            parent.classList.add("active");
         }
         reportSellCount.iceCream004ValuePCS3.value = reportCountObject.iceCream004PCS3Sell;
         if (reportSellCount.iceCream004ValuePCS3.value > 0) {
             parent = reportSellCount.iceCream004ValuePCS3.closest(".all-report__item");
+            parent.classList.add("active");
+            parent = reportSellCount.iceCream004ValuePCS3.closest(".report__all");
             parent.classList.add("active");
         }
         reportSellCount.waffle001Value.value = reportCountObject.waffle001Sell;
         if (reportSellCount.waffle001Value.value > 0) {
             parent = reportSellCount.waffle001Value.closest(".all-report__item");
             parent.classList.add("active");
+            parent = reportSellCount.waffle001Value.closest(".report__all");
+            parent.classList.add("active");
         }
         reportSellCount.waffle002Value.value = reportCountObject.waffle002Sell;
         if (reportSellCount.waffle002Value.value > 0) {
             parent = reportSellCount.waffle002Value.closest(".all-report__item");
+            parent.classList.add("active");
+            parent = reportSellCount.waffle002Value.closest(".report__all");
             parent.classList.add("active");
         }
         reportSellCount.waffle003Value.value = reportCountObject.waffle003Sell;
         if (reportSellCount.waffle003Value.value > 0) {
             parent = reportSellCount.waffle003Value.closest(".all-report__item");
             parent.classList.add("active");
+            parent = reportSellCount.waffle003Value.closest(".report__all");
+            parent.classList.add("active");
         }
         reportSellCount.waffle004Value.value = reportCountObject.waffle004Sell;
         if (reportSellCount.waffle004Value.value > 0) {
             parent = reportSellCount.waffle004Value.closest(".all-report__item");
+            parent.classList.add("active");
+            parent = reportSellCount.waffle004Value.closest(".report__all");
             parent.classList.add("active");
         }
         reportSellCount.waffle005Value.value = reportCountObject.waffle005Sell;
         if (reportSellCount.waffle005Value.value > 0) {
             parent = reportSellCount.waffle005Value.closest(".all-report__item");
             parent.classList.add("active");
+            parent = reportSellCount.waffle005Value.closest(".report__all");
+            parent.classList.add("active");
         }
         reportSellCount.waffle006Value.value = reportCountObject.waffle006Sell;
         if (reportSellCount.waffle006Value.value > 0) {
             parent = reportSellCount.waffle006Value.closest(".all-report__item");
+            parent.classList.add("active");
+            parent = reportSellCount.waffle006Value.closest(".report__all");
             parent.classList.add("active");
         }
         reportSellCount.waffle007Value.value = reportCountObject.waffle007Sell;
         if (reportSellCount.waffle007Value.value > 0) {
             parent = reportSellCount.waffle007Value.closest(".all-report__item");
             parent.classList.add("active");
+            parent = reportSellCount.waffle007Value.closest(".report__all");
+            parent.classList.add("active");
         }
         reportSellCount.waffle008Value.value = reportCountObject.waffle008Sell;
         if (reportSellCount.waffle008Value.value > 0) {
             parent = reportSellCount.waffle008Value.closest(".all-report__item");
+            parent.classList.add("active");
+            parent = reportSellCount.waffle008Value.closest(".report__all");
             parent.classList.add("active");
         }
         reportSellCount.waffle009Value.value = reportCountObject.waffle009Sell;
         if (reportSellCount.waffle009Value.value > 0) {
             parent = reportSellCount.waffle009Value.closest(".all-report__item");
             parent.classList.add("active");
+            parent = reportSellCount.waffle009Value.closest(".report__all");
+            parent.classList.add("active");
         }
         reportSellCount.waffle0091Value.value = reportCountObject.waffle0091Sell;
         if (reportSellCount.waffle0091Value.value > 0) {
             parent = reportSellCount.waffle0091Value.closest(".all-report__item");
+            parent.classList.add("active");
+            parent = reportSellCount.waffle0091Value.closest(".report__all");
             parent.classList.add("active");
         }
         reportSellCount.waffle010Value.value = reportCountObject.waffle010Sell;
         if (reportSellCount.waffle010Value.value > 0) {
             parent = reportSellCount.waffle010Value.closest(".all-report__item");
             parent.classList.add("active");
+            parent = reportSellCount.waffle010Value.closest(".report__all");
+            parent.classList.add("active");
         }
         reportSellCount.waffle0101Value.value = reportCountObject.waffle0101Sell;
         if (reportSellCount.waffle0101Value.value > 0) {
             parent = reportSellCount.waffle0101Value.closest(".all-report__item");
+            parent.classList.add("active");
+            parent = reportSellCount.waffle0101Value.closest(".report__all");
             parent.classList.add("active");
         }
         reportSellCount.waffle011Value.value = reportCountObject.waffle011Sell;
         if (reportSellCount.waffle011Value.value > 0) {
             parent = reportSellCount.waffle011Value.closest(".all-report__item");
             parent.classList.add("active");
+            parent = reportSellCount.waffle011Value.closest(".report__all");
+            parent.classList.add("active");
         }
         reportSellCount.waffle012Value.value = reportCountObject.waffle012Sell;
         if (reportSellCount.waffle012Value.value > 0) {
             parent = reportSellCount.waffle012Value.closest(".all-report__item");
+            parent.classList.add("active");
+            parent = reportSellCount.waffle012Value.closest(".report__all");
             parent.classList.add("active");
         }
         reportSellCount.waffle013Value.value = reportCountObject.waffle013Sell;
         if (reportSellCount.waffle013Value.value > 0) {
             parent = reportSellCount.waffle013Value.closest(".all-report__item");
             parent.classList.add("active");
+            parent = reportSellCount.waffle013Value.closest(".report__all");
+            parent.classList.add("active");
         }
         reportSellCount.waffle014Value.value = reportCountObject.waffle014Sell;
         if (reportSellCount.waffle014Value.value > 0) {
             parent = reportSellCount.waffle014Value.closest(".all-report__item");
             parent.classList.add("active");
+            parent = reportSellCount.waffle014Value.closest("report__all");
+            parent.classList.add("active");
         }
         reportSellCount.waffle015Value.value = reportCountObject.waffle015Sell;
         if (reportSellCount.waffle015Value.value > 0) {
+            console.log("zhopa");
             parent = reportSellCount.waffle015Value.closest(".all-report__item");
+            parent.classList.add("active");
+            parent = reportSellCount.waffle015Value.closest(".report__all");
             parent.classList.add("active");
         }
     }

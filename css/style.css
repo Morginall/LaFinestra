@@ -800,6 +800,13 @@ body::after {
   background-color: #D0B8A8;
   border-radius: 1.875rem;
   padding: 0.9375rem;
+  display: none;
+}
+
+.report__all.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .header-report__item {
@@ -837,9 +844,6 @@ body::after {
 }
 
 .all-report {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
